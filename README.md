@@ -26,3 +26,38 @@ python3 scripts/generate-audio.py --force  # regenerate all
 ```
 
 Because filenames are index-based, if you insert/reorder words in the JSON, rerun with `--force`. Generation needs internet; playback in the app does not.
+
+## Phase 2: Android APK (private sideload, Capacitor)
+
+The app is exported as static files (`output: "export"` → `out/`) and wrapped by Capacitor (`android/`). App id `com.adwnk.onewordaday`, name "One Word A Day".
+
+### One-time setup on Windows
+1. Install **Android Studio** (https://developer.android.com/studio) with defaults — it includes the Android SDK and a bundled JDK.
+2. Open Android Studio once and let it finish downloading SDK components.
+3. In PowerShell, point Gradle at the bundled JDK and SDK (adjust if installed elsewhere):
+   ```powershell
+   setx JAVA_HOME "C:\Program Files\Android\Android Studio\jbr"
+   setx ANDROID_HOME "$env:LOCALAPPDATA\Android\Sdk"
+   ```
+   Close and reopen PowerShell.
+
+### Build the APK
+```powershell
+cd $HOME\Desktop\onewordaday
+git pull
+cmd /c "npm install"
+cmd /c "npm run apk:debug"
+```
+APK: `android\app\build\outputs\apk\debug\app-debug.apk`
+
+Alternative: `cmd /c "npm run android"` then `cmd /c "npm run cap:open"` and in Android Studio use **Build → Build App Bundle(s)/APK(s) → Build APK(s)**.
+
+### Install on a Samsung phone
+Copy `app-debug.apk` to the phone (USB, Google Drive, etc.), tap it, and allow "Install unknown apps" for the app you opened it from.
+
+### Scripts
+- `npm run build:app` – static export to `out/`
+- `npm run cap:sync` – copy `out/` into the Android project
+- `npm run android` – build + sync
+- `npm run cap:open` – open in Android Studio
+- `npm run apk:debug` – build + sync + Gradle debug APK
