@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Pre-generate pronunciation clips with edge-tts (pip install edge-tts).
 Reads data/pairs.json and writes, per pair id:
-  public/audio/ko/<id>.mp3, public/audio/ko/<id>-example.mp3
-  public/audio/tl/<id>.mp3, public/audio/tl/<id>-example.mp3
+  public/audio/<ko|tl>/<id>.mp3 and <id>-ex<N>.mp3 (one per example, N from 1)
+Edit scripts/build-pairs.py, run it to rebuild data/pairs.json, then run this.
 Usage: python3 scripts/generate-audio.py [--force]
 """
 import asyncio, json, sys
@@ -20,11 +20,16 @@ async def main(force):
         out.mkdir(parents=True, exist_ok=True)
         for p in pairs:
             w = p[key]
-            for name, text in ((p["id"], w["word"]), (f"{p['id']}-example", w["example"])):
+            items = [(p["id"], w["word"])] + [(f"{p['id']}-ex{i+1}", e["text"]) for i, e in enumerate(w["examples"])]
+            for name, text in items:
                 f = out / f"{name}.mp3"
                 if f.exists() and not force:
                     continue
-                await edge_tts.Communicate(text, voice, rate=RATE).save(str(f))
+                for attempt in range(4):
+                    try:
+                        await edge_tts.Communicate(text, voice, rate=RATE).save(str(f)); break
+                    except Exception as e:
+                        print("retry", name, e); await asyncio.sleep(2 * (attempt + 1))
                 print(f"{code}/{name}.mp3  {text}")
 
 asyncio.run(main("--force" in sys.argv))
