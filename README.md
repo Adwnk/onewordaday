@@ -1,6 +1,6 @@
 # One Word A Day
 
-Learn one everyday **Korean** and one **Filipino** word each day: native script with a 🔊 pronounce button, romanization / pronunciation tip, and a short definition. A date-seeded pair shows by default; **New words** swaps to another unused pair.
+Learn one everyday **Korean** and one **Tagalog** (Filipino) word each day: native script with a 🔊 pronounce button, romanization / pronunciation tip, and a short definition. A date-seeded pair shows by default; **New words** swaps to another unused pair.
 
 ## Run
 
@@ -9,8 +9,20 @@ npm install
 npm run dev   # http://localhost:3000
 ```
 
-Words live in `data/korean.json` and `data/filipino.json` (`{ word, romanization, definition }`).
+Words live in `data/korean.json` and `data/tagalog.json` (`{ word, romanization, definition }`).
 
 ## Speech
 
-Pronunciation uses the browser's Web Speech API (`speechSynthesis`) with `ko-KR` and `fil-PH`/`tl`. Voice availability depends on your browser/OS — Chrome and Safari usually have Korean; Filipino voices are rarer, so it may fall back to a default voice.
+Pronunciation plays pre-generated MP3s in `public/audio/ko/<index>.mp3` and `public/audio/tl/<index>.mp3` (`<index>` = position in the JSON list). If a clip is missing or fails, it falls back to the browser's Web Speech API.
+
+### Regenerating audio
+
+Clips were made with [edge-tts](https://github.com/rany2/edge-tts) (Microsoft Edge online neural voices, no API key): `ko-KR-SunHiNeural` for Korean and `fil-PH-BlessicaNeural` for Tagalog, at rate -15%.
+
+```bash
+pip install edge-tts
+python3 scripts/generate-audio.py          # only creates missing clips
+python3 scripts/generate-audio.py --force  # regenerate all
+```
+
+Because filenames are index-based, if you insert/reorder words in the JSON, rerun with `--force`. Generation needs internet; playback in the app does not.

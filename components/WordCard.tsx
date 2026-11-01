@@ -3,10 +3,10 @@ import type { Word, Language } from "@/lib/words";
 
 const LANGS: Record<Language, { label: string; codes: string[]; flag: string }> = {
   korean: { label: "Korean", codes: ["ko-KR", "ko"], flag: "🇰🇷" },
-  filipino: { label: "Filipino", codes: ["fil-PH", "fil", "tl-PH", "tl"], flag: "🇵🇭" },
+  tagalog: { label: "Tagalog", codes: ["fil-PH", "fil", "tl-PH", "tl"], flag: "🇵🇭" },
 };
 
-function speak(text: string, codes: string[]) {
+function speakSynth(text: string, codes: string[]) {
   if (typeof window === "undefined" || !("speechSynthesis" in window)) {
     alert("Speech isn't supported in this browser.");
     return;
@@ -24,6 +24,23 @@ function speak(text: string, codes: string[]) {
   synth.speak(u);
 }
 
+let current: HTMLAudioElement | null = null;
+
+/** Play the pre-generated clip; fall back to browser speech if it's missing or fails. */
+function speak(word: Word, codes: string[]) {
+  current?.pause();
+  const audio = new Audio(word.audio);
+  current = audio;
+  let fell = false;
+  const fallback = () => {
+    if (fell) return;
+    fell = true;
+    speakSynth(word.word, codes);
+  };
+  audio.addEventListener("error", fallback);
+  audio.play().catch(fallback);
+}
+
 export default function WordCard({ word, language }: { word: Word; language: Language }) {
   const l = LANGS[language];
   return (
@@ -35,7 +52,7 @@ export default function WordCard({ word, language }: { word: Word; language: Lan
         <h2 className="text-4xl font-semibold text-stone-900">{word.word}</h2>
         <button
           type="button"
-          onClick={() => speak(word.word, l.codes)}
+          onClick={() => speak(word, l.codes)}
           aria-label={`Hear ${word.word} pronounced`}
           className="rounded-full bg-teal-50 p-2 text-2xl ring-1 ring-teal-200 hover:bg-teal-100 active:scale-95"
         >
@@ -43,7 +60,7 @@ export default function WordCard({ word, language }: { word: Word; language: Lan
         </button>
       </div>
       <p className="mt-2 text-lg italic text-teal-700">
-        {language === "filipino" ? `Say it: ${word.romanization}` : word.romanization}
+        {language === "tagalog" ? `Say it: ${word.romanization}` : word.romanization}
       </p>
       <p className="mt-3 text-stone-700">{word.definition}</p>
     </section>

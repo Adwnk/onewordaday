@@ -1,13 +1,19 @@
 import koreanData from "@/data/korean.json";
-import filipinoData from "@/data/filipino.json";
+import tagalogData from "@/data/tagalog.json";
 
-export type Word = { word: string; romanization: string; definition: string };
-export type Language = "korean" | "filipino";
+export type Word = { word: string; romanization: string; definition: string; audio: string };
+export type Language = "korean" | "tagalog";
 
-export const korean: Word[] = koreanData;
-export const filipino: Word[] = filipinoData;
+/** Attach the pre-generated clip path (public/audio/<code>/<index>.mp3). */
+const withAudio = (code: string) => (w: Omit<Word, "audio">, i: number): Word => ({
+  ...w,
+  audio: `/audio/${code}/${i}.mp3`,
+});
 
-export const pairCount = Math.min(korean.length, filipino.length);
+export const korean: Word[] = koreanData.map(withAudio("ko"));
+export const tagalog: Word[] = tagalogData.map(withAudio("tl"));
+
+export const pairCount = Math.min(korean.length, tagalog.length);
 
 /** Days since epoch in local time. */
 export function dayNumber(date = new Date()): number {
@@ -16,15 +22,15 @@ export function dayNumber(date = new Date()): number {
   );
 }
 
-/** Date-seeded pair index (Filipino offset so pairs vary). */
+/** Date-seeded pair index (Tagalog offset so pairs vary). */
 export function dailyIndex(date = new Date()): number {
   return dayNumber(date) % pairCount;
 }
 
-export function getPair(index: number): { korean: Word; filipino: Word } {
+export function getPair(index: number): { korean: Word; tagalog: Word } {
   return {
     korean: korean[index % korean.length],
-    filipino: filipino[(index * 7 + 3) % filipino.length],
+    tagalog: tagalog[(index * 7 + 3) % tagalog.length],
   };
 }
 

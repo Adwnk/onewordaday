@@ -23,7 +23,7 @@ export default function DailyWords() {
   return (
     <div className="flex flex-col gap-5">
       <WordCard word={pair.korean} language="korean" />
-      <WordCard word={pair.filipino} language="filipino" />
+      <WordCard word={pair.tagalog} language="tagalog" />
       <button
         type="button"
         onClick={refresh}

@@ -6,7 +6,7 @@ export default function Home() {
       <header className="text-center">
         <h1 className="text-3xl font-bold text-stone-900">One Word A Day</h1>
         <p className="mt-2 text-stone-600">
-          An everyday Korean & Filipino word — read it, hear it, learn it.
+          An everyday Korean & Tagalog word — read it, hear it, learn it.
         </p>
       </header>
       <DailyWords />
