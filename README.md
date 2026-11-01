@@ -9,11 +9,11 @@ npm install
 npm run dev   # http://localhost:3000
 ```
 
-Words live in `data/korean.json` and `data/tagalog.json` (`{ word, romanization, definition }`).
+Words live in `data/pairs.json`: one entry per shared meaning (`{ id, english, korean: {word, romanization, definition, example, exampleEn}, tagalog: {...} }`). Each day (or refresh) shows one meaning in both languages, with a short conversational example sentence.
 
 ## Speech
 
-Pronunciation plays pre-generated MP3s in `public/audio/ko/<index>.mp3` and `public/audio/tl/<index>.mp3` (`<index>` = position in the JSON list). If a clip is missing or fails, it falls back to the browser's Web Speech API.
+Pronunciation plays pre-generated MP3s in `public/audio/ko/<id>.mp3` / `<id>-example.mp3` and the same under `public/audio/tl/` (`<id>` = pair id, e.g. `water`). If a clip is missing or fails, it falls back to the browser's Web Speech API.
 
 ### Regenerating audio
 

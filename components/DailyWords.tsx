@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import WordCard from "./WordCard";
-import { dailyIndex, getPair, randomUnusedIndex } from "@/lib/words";
+import { dailyIndex, getPair, randomUnusedIndex, pairCount } from "@/lib/words";
 
 export default function DailyWords() {
   const [used, setUsed] = useState<number[]>([]);
@@ -17,11 +17,14 @@ export default function DailyWords() {
 
   const refresh = () => {
     const next = randomUnusedIndex(used);
-    setUsed((u) => (u.length >= 25 ? [next] : [...u, next]));
+    setUsed((u) => (u.length >= pairCount ? [next] : [...u, next]));
   };
 
   return (
     <div className="flex flex-col gap-5">
+      <p className="text-center text-xl font-medium text-stone-600">
+        Today&apos;s word: <span className="text-teal-700">{pair.english}</span>
+      </p>
       <WordCard word={pair.korean} language="korean" />
       <WordCard word={pair.tagalog} language="tagalog" />
       <button
@@ -29,7 +32,7 @@ export default function DailyWords() {
         onClick={refresh}
         className="self-center rounded-full bg-teal-600 px-6 py-3 font-medium text-white shadow hover:bg-teal-700 active:scale-95"
       >
-        ↻ New words
+        ↻ New word
       </button>
     </div>
   );

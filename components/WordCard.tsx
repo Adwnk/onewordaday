@@ -27,15 +27,15 @@ function speakSynth(text: string, codes: string[]) {
 let current: HTMLAudioElement | null = null;
 
 /** Play the pre-generated clip; fall back to browser speech if it's missing or fails. */
-function speak(word: Word, codes: string[]) {
+function speak(src: string, text: string, codes: string[]) {
   current?.pause();
-  const audio = new Audio(word.audio);
+  const audio = new Audio(src);
   current = audio;
   let fell = false;
   const fallback = () => {
     if (fell) return;
     fell = true;
-    speakSynth(word.word, codes);
+    speakSynth(text, codes);
   };
   audio.addEventListener("error", fallback);
   audio.play().catch(fallback);
@@ -52,7 +52,7 @@ export default function WordCard({ word, language }: { word: Word; language: Lan
         <h2 className="text-4xl font-semibold text-stone-900">{word.word}</h2>
         <button
           type="button"
-          onClick={() => speak(word, l.codes)}
+          onClick={() => speak(word.audio, word.word, l.codes)}
           aria-label={`Hear ${word.word} pronounced`}
           className="rounded-full bg-teal-50 p-2 text-2xl ring-1 ring-teal-200 hover:bg-teal-100 active:scale-95"
         >
@@ -63,6 +63,20 @@ export default function WordCard({ word, language }: { word: Word; language: Lan
         {language === "tagalog" ? `Say it: ${word.romanization}` : word.romanization}
       </p>
       <p className="mt-3 text-stone-700">{word.definition}</p>
+      <div className="mt-4 rounded-xl bg-stone-50 p-3 ring-1 ring-stone-200">
+        <div className="flex items-center gap-2">
+          <p className="text-lg text-stone-900">{word.example}</p>
+          <button
+            type="button"
+            onClick={() => speak(word.exampleAudio, word.example, l.codes)}
+            aria-label={`Hear the example sentence`}
+            className="shrink-0 rounded-full bg-teal-50 p-1.5 text-lg ring-1 ring-teal-200 hover:bg-teal-100 active:scale-95"
+          >
+            🔊
+          </button>
+        </div>
+        <p className="mt-1 text-sm italic text-stone-500">{word.exampleEn}</p>
+      </div>
     </section>
   );
 }

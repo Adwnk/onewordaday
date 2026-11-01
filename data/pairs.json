@@ -1,0 +1,452 @@
+[
+ {
+  "id": "water",
+  "english": "water",
+  "korean": {
+   "word": "물",
+   "romanization": "mul",
+   "definition": "water",
+   "example": "물 마실래요?",
+   "exampleEn": "Do you want some water?"
+  },
+  "tagalog": {
+   "word": "tubig",
+   "romanization": "TOO-big",
+   "definition": "water",
+   "example": "Gusto mo ng tubig?",
+   "exampleEn": "Do you want some water?"
+  }
+ },
+ {
+  "id": "rice",
+  "english": "rice",
+  "korean": {
+   "word": "밥",
+   "romanization": "bap",
+   "definition": "cooked rice; a meal",
+   "example": "밥 먹었어요?",
+   "exampleEn": "Have you eaten?"
+  },
+  "tagalog": {
+   "word": "kanin",
+   "romanization": "KA-nin",
+   "definition": "cooked rice",
+   "example": "Kain tayo ng kanin.",
+   "exampleEn": "Let's eat rice."
+  }
+ },
+ {
+  "id": "thank-you",
+  "english": "thank you",
+  "korean": {
+   "word": "감사합니다",
+   "romanization": "gamsahamnida",
+   "definition": "thank you (polite)",
+   "example": "도와줘서 감사합니다.",
+   "exampleEn": "Thank you for helping."
+  },
+  "tagalog": {
+   "word": "salamat",
+   "romanization": "sa-LA-mat",
+   "definition": "thank you",
+   "example": "Salamat sa tulong mo.",
+   "exampleEn": "Thanks for your help."
+  }
+ },
+ {
+  "id": "hello",
+  "english": "hello",
+  "korean": {
+   "word": "안녕하세요",
+   "romanization": "annyeonghaseyo",
+   "definition": "hello (polite)",
+   "example": "안녕하세요, 반가워요!",
+   "exampleEn": "Hello, nice to meet you!"
+  },
+  "tagalog": {
+   "word": "kumusta",
+   "romanization": "ku-MUS-ta",
+   "definition": "hello; how are you",
+   "example": "Kumusta ka na?",
+   "exampleEn": "How are you doing?"
+  }
+ },
+ {
+  "id": "yes",
+  "english": "yes",
+  "korean": {
+   "word": "네",
+   "romanization": "ne",
+   "definition": "yes (polite)",
+   "example": "네, 좋아요.",
+   "exampleEn": "Yes, sounds good."
+  },
+  "tagalog": {
+   "word": "oo",
+   "romanization": "OH-oh",
+   "definition": "yes",
+   "example": "Oo, sige.",
+   "exampleEn": "Yes, okay."
+  }
+ },
+ {
+  "id": "no",
+  "english": "no",
+  "korean": {
+   "word": "아니요",
+   "romanization": "aniyo",
+   "definition": "no (polite)",
+   "example": "아니요, 괜찮아요.",
+   "exampleEn": "No, I'm okay."
+  },
+  "tagalog": {
+   "word": "hindi",
+   "romanization": "hin-DEE",
+   "definition": "no; not",
+   "example": "Hindi, salamat.",
+   "exampleEn": "No, thank you."
+  }
+ },
+ {
+  "id": "house",
+  "english": "house",
+  "korean": {
+   "word": "집",
+   "romanization": "jip",
+   "definition": "house; home",
+   "example": "집에 가요.",
+   "exampleEn": "I'm going home."
+  },
+  "tagalog": {
+   "word": "bahay",
+   "romanization": "BA-hai",
+   "definition": "house; home",
+   "example": "Uuwi na ako sa bahay.",
+   "exampleEn": "I'm heading home now."
+  }
+ },
+ {
+  "id": "friend",
+  "english": "friend",
+  "korean": {
+   "word": "친구",
+   "romanization": "chingu",
+   "definition": "friend",
+   "example": "제 친구예요.",
+   "exampleEn": "This is my friend."
+  },
+  "tagalog": {
+   "word": "kaibigan",
+   "romanization": "ka-i-BEE-gan",
+   "definition": "friend",
+   "example": "Kaibigan ko siya.",
+   "exampleEn": "He/She is my friend."
+  }
+ },
+ {
+  "id": "love",
+  "english": "love",
+  "korean": {
+   "word": "사랑",
+   "romanization": "sarang",
+   "definition": "love",
+   "example": "사랑해요.",
+   "exampleEn": "I love you."
+  },
+  "tagalog": {
+   "word": "mahal",
+   "romanization": "ma-HAL",
+   "definition": "love; dear (also: expensive)",
+   "example": "Mahal kita.",
+   "exampleEn": "I love you."
+  }
+ },
+ {
+  "id": "food",
+  "english": "food",
+  "korean": {
+   "word": "음식",
+   "romanization": "eumsik",
+   "definition": "food",
+   "example": "음식이 맛있어요.",
+   "exampleEn": "The food is delicious."
+  },
+  "tagalog": {
+   "word": "pagkain",
+   "romanization": "pag-KA-in",
+   "definition": "food",
+   "example": "Masarap ang pagkain.",
+   "exampleEn": "The food is delicious."
+  }
+ },
+ {
+  "id": "delicious",
+  "english": "delicious",
+  "korean": {
+   "word": "맛있어요",
+   "romanization": "masisseoyo",
+   "definition": "it's delicious",
+   "example": "이거 정말 맛있어요!",
+   "exampleEn": "This is really tasty!"
+  },
+  "tagalog": {
+   "word": "masarap",
+   "romanization": "ma-sa-RAP",
+   "definition": "delicious; tasty",
+   "example": "Ang sarap nito!",
+   "exampleEn": "This is so tasty!"
+  }
+ },
+ {
+  "id": "coffee",
+  "english": "coffee",
+  "korean": {
+   "word": "커피",
+   "romanization": "keopi",
+   "definition": "coffee",
+   "example": "커피 한 잔 주세요.",
+   "exampleEn": "One coffee, please."
+  },
+  "tagalog": {
+   "word": "kape",
+   "romanization": "KA-peh",
+   "definition": "coffee",
+   "example": "Gusto mo ng kape?",
+   "exampleEn": "Do you want coffee?"
+  }
+ },
+ {
+  "id": "today",
+  "english": "today",
+  "korean": {
+   "word": "오늘",
+   "romanization": "oneul",
+   "definition": "today",
+   "example": "오늘 바빠요?",
+   "exampleEn": "Are you busy today?"
+  },
+  "tagalog": {
+   "word": "ngayon",
+   "romanization": "nga-YON",
+   "definition": "today; now",
+   "example": "Ano'ng gagawin mo ngayon?",
+   "exampleEn": "What are you doing today?"
+  }
+ },
+ {
+  "id": "tomorrow",
+  "english": "tomorrow",
+  "korean": {
+   "word": "내일",
+   "romanization": "naeil",
+   "definition": "tomorrow",
+   "example": "내일 만나요.",
+   "exampleEn": "See you tomorrow."
+  },
+  "tagalog": {
+   "word": "bukas",
+   "romanization": "BU-kas",
+   "definition": "tomorrow",
+   "example": "Kita tayo bukas.",
+   "exampleEn": "See you tomorrow."
+  }
+ },
+ {
+  "id": "money",
+  "english": "money",
+  "korean": {
+   "word": "돈",
+   "romanization": "don",
+   "definition": "money",
+   "example": "돈 있어요?",
+   "exampleEn": "Do you have money?"
+  },
+  "tagalog": {
+   "word": "pera",
+   "romanization": "PEH-ra",
+   "definition": "money",
+   "example": "Wala akong pera.",
+   "exampleEn": "I don't have money."
+  }
+ },
+ {
+  "id": "good",
+  "english": "good",
+  "korean": {
+   "word": "좋아요",
+   "romanization": "joayo",
+   "definition": "good; I like it",
+   "example": "날씨가 좋아요.",
+   "exampleEn": "The weather is nice."
+  },
+  "tagalog": {
+   "word": "mabuti",
+   "romanization": "ma-BU-ti",
+   "definition": "good; well",
+   "example": "Mabuti naman ako.",
+   "exampleEn": "I'm doing well."
+  }
+ },
+ {
+  "id": "eat",
+  "english": "eat",
+  "korean": {
+   "word": "먹다",
+   "romanization": "meokda",
+   "definition": "to eat",
+   "example": "같이 먹어요.",
+   "exampleEn": "Let's eat together."
+  },
+  "tagalog": {
+   "word": "kain",
+   "romanization": "KA-in",
+   "definition": "eat",
+   "example": "Kain na tayo!",
+   "exampleEn": "Let's eat!"
+  }
+ },
+ {
+  "id": "sleep",
+  "english": "sleep",
+  "korean": {
+   "word": "자다",
+   "romanization": "jada",
+   "definition": "to sleep",
+   "example": "잘 자요.",
+   "exampleEn": "Sleep well."
+  },
+  "tagalog": {
+   "word": "tulog",
+   "romanization": "TU-log",
+   "definition": "sleep",
+   "example": "Matulog ka na.",
+   "exampleEn": "Go to sleep now."
+  }
+ },
+ {
+  "id": "mother",
+  "english": "mother",
+  "korean": {
+   "word": "엄마",
+   "romanization": "eomma",
+   "definition": "mom",
+   "example": "엄마 어디 있어요?",
+   "exampleEn": "Where's Mom?"
+  },
+  "tagalog": {
+   "word": "nanay",
+   "romanization": "NA-nai",
+   "definition": "mother; mom",
+   "example": "Nasaan si Nanay?",
+   "exampleEn": "Where's Mom?"
+  }
+ },
+ {
+  "id": "father",
+  "english": "father",
+  "korean": {
+   "word": "아빠",
+   "romanization": "appa",
+   "definition": "dad",
+   "example": "아빠가 요리해요.",
+   "exampleEn": "Dad is cooking."
+  },
+  "tagalog": {
+   "word": "tatay",
+   "romanization": "TA-tai",
+   "definition": "father; dad",
+   "example": "Nagluluto si Tatay.",
+   "exampleEn": "Dad is cooking."
+  }
+ },
+ {
+  "id": "child",
+  "english": "child",
+  "korean": {
+   "word": "아이",
+   "romanization": "ai",
+   "definition": "child",
+   "example": "아이가 귀여워요.",
+   "exampleEn": "The child is cute."
+  },
+  "tagalog": {
+   "word": "bata",
+   "romanization": "ba-TA",
+   "definition": "child; kid",
+   "example": "Ang cute ng bata.",
+   "exampleEn": "The kid is so cute."
+  }
+ },
+ {
+  "id": "hungry",
+  "english": "hungry",
+  "korean": {
+   "word": "배고파요",
+   "romanization": "baegopayo",
+   "definition": "I'm hungry",
+   "example": "배고파요, 밥 먹자!",
+   "exampleEn": "I'm hungry, let's eat!"
+  },
+  "tagalog": {
+   "word": "gutom",
+   "romanization": "GU-tom",
+   "definition": "hungry",
+   "example": "Gutom na ako.",
+   "exampleEn": "I'm hungry now."
+  }
+ },
+ {
+  "id": "where",
+  "english": "where",
+  "korean": {
+   "word": "어디",
+   "romanization": "eodi",
+   "definition": "where",
+   "example": "화장실 어디예요?",
+   "exampleEn": "Where's the bathroom?"
+  },
+  "tagalog": {
+   "word": "saan",
+   "romanization": "sa-AN",
+   "definition": "where",
+   "example": "Saan ka pupunta?",
+   "exampleEn": "Where are you going?"
+  }
+ },
+ {
+  "id": "beautiful",
+  "english": "beautiful",
+  "korean": {
+   "word": "예뻐요",
+   "romanization": "yeppeoyo",
+   "definition": "pretty; beautiful",
+   "example": "정말 예뻐요.",
+   "exampleEn": "It's really pretty."
+  },
+  "tagalog": {
+   "word": "maganda",
+   "romanization": "ma-gan-DA",
+   "definition": "beautiful; pretty",
+   "example": "Ang ganda mo!",
+   "exampleEn": "You're so beautiful!"
+  }
+ },
+ {
+  "id": "okay",
+  "english": "okay",
+  "korean": {
+   "word": "괜찮아요",
+   "romanization": "gwaenchanayo",
+   "definition": "it's okay; I'm fine",
+   "example": "괜찮아요?",
+   "exampleEn": "Are you okay?"
+  },
+  "tagalog": {
+   "word": "sige",
+   "romanization": "SEE-geh",
+   "definition": "okay; go ahead",
+   "example": "Sige, tara na.",
+   "exampleEn": "Okay, let's go."
+  }
+ }
+]
