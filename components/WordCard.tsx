@@ -73,21 +73,29 @@ export default function WordCard({ word, language }: { word: Word; language: Lan
         {word.examples.map((ex, i) => {
           const [a, hl, b] = splitHighlight(ex.text, ex.highlight);
           return (
-            <li key={i} className="rounded-xl bg-stone-50 p-3 ring-1 ring-stone-200">
+            <li
+              key={i}
+              role="button"
+              tabIndex={0}
+              aria-label={`Hear example ${i + 1}: ${ex.text}`}
+              onClick={() => speak(ex.audio, ex.text, l.codes)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  speak(ex.audio, ex.text, l.codes);
+                }
+              }}
+              className="cursor-pointer select-none rounded-xl bg-stone-50 p-3 ring-1 ring-stone-200 transition hover:bg-teal-50/60 hover:ring-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 active:scale-[0.99] active:bg-teal-100/60"
+            >
               <div className="flex items-start gap-2">
                 <p className="flex-1 text-lg text-stone-900">
                   {a}
                   {hl && <mark className="rounded bg-amber-100 px-1 font-semibold text-stone-900">{hl}</mark>}
                   {b}
                 </p>
-                <button
-                  type="button"
-                  onClick={() => speak(ex.audio, ex.text, l.codes)}
-                  aria-label={`Hear example ${i + 1}`}
-                  className="shrink-0 rounded-full bg-teal-50 p-1.5 text-lg ring-1 ring-teal-200 hover:bg-teal-100 active:scale-95"
-                >
+                <span aria-hidden="true" className="shrink-0 rounded-full bg-teal-50 p-1.5 text-lg ring-1 ring-teal-200">
                   🔊
-                </button>
+                </span>
               </div>
               {ex.romanization && <p className="mt-0.5 text-sm italic text-teal-700">{ex.romanization}</p>}
               <div className="mt-1 flex items-center gap-2">
