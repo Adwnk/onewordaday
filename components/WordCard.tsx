@@ -89,6 +89,7 @@ export default function WordCard({ word, language }: { word: Word; language: Lan
                   🔊
                 </button>
               </div>
+              {ex.romanization && <p className="mt-0.5 text-sm italic text-teal-700">{ex.romanization}</p>}
               <div className="mt-1 flex items-center gap-2">
                 {ex.tense && (
                   <span className={`rounded-full px-2 py-0.5 text-xs font-medium uppercase tracking-wide ring-1 ${TENSE_STYLE[ex.tense] ?? "bg-amber-50 text-amber-800 ring-amber-200"}`}>

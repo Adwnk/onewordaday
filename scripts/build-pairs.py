@@ -3,6 +3,9 @@
 `highlight` must be a substring of text (the target word as it appears)."""
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from romanize import ko as ro_ko, tl as ro_tl
 P=[]
 def add(i,en,ko,tl): P.append((i,en,ko,tl))
 add("water","water",("물","mul","water",[("물 마실래요?","물","Do you want some water?","present"),("물을 많이 마셨어요.","물","I drank a lot of water.","past"),("물 좀 주세요.","물","Some water, please.","polite")]),
@@ -120,14 +123,16 @@ add("weather","weather",("날씨","nalssi","weather",[("오늘 날씨 어때요?
 P_ = P
 out=[]
 for i,en,ko,tl in P_:
-    def w(t):
+    def w(t,lang):
         word,rom,d,ex=t
+        R=ro_ko if lang=='ko' else ro_tl
+        if lang=='ko': rom=R(word)
         exs=[]
         for text,hl,e,tense in ex:
             assert hl in text,(i,text,hl)
-            exs.append({"text":text,"highlight":hl,"en":e,"tense":tense})
+            exs.append({"text":text,"romanization":R(text),"highlight":hl,"en":e,"tense":tense})
         return {"word":word,"romanization":rom,"definition":d,"examples":exs}
-    out.append({"id":i,"english":en,"korean":w(ko),"tagalog":w(tl)})
+    out.append({"id":i,"english":en,"korean":w(ko,"ko"),"tagalog":w(tl,"tl")})
 ids=[o["id"] for o in out]; assert len(ids)==len(set(ids))
 Path(__file__).resolve().parent.parent.joinpath("data/pairs.json").write_text(json.dumps(out,ensure_ascii=False,indent=1)+"\n",encoding="utf-8")
 print(len(out),"pairs")
