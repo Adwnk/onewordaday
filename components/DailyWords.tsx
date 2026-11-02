@@ -11,7 +11,7 @@ export default function DailyWords() {
     setUsed([dailyIndex()]);
   }, []);
   if (used.length === 0) {
-    return <p className="text-center text-stone-500">Loading today&apos;s words…</p>;
+    return <p className="text-center text-stone-500">Loading today&apos;s verb…</p>;
   }
   const pair = getPair(used[used.length - 1]);
 
@@ -23,7 +23,7 @@ export default function DailyWords() {
   return (
     <div className="flex flex-col gap-5">
       <p className="text-center text-xl font-medium text-stone-600">
-        Today&apos;s word: <span className="text-teal-700">{pair.english}</span>
+        Today&apos;s verb: <span className="text-teal-700">{pair.english}</span>
       </p>
       <WordCard word={pair.korean} language="korean" />
       <WordCard word={pair.tagalog} language="tagalog" />
@@ -32,7 +32,7 @@ export default function DailyWords() {
         onClick={refresh}
         className="self-center rounded-full bg-teal-600 px-6 py-3 font-medium text-white shadow hover:bg-teal-700 active:scale-95"
       >
-        ↻ New word
+        ↻ New verb
       </button>
     </div>
   );

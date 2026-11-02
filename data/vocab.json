@@ -1,0 +1,5367 @@
+[
+ {
+  "id": "ko-bap",
+  "lang": "korean",
+  "word": "밥",
+  "romanization": "bap",
+  "english": "rice; meal",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "eat",
+    "ex": 0,
+    "surface": "밥"
+   }
+  ]
+ },
+ {
+  "id": "ko-i-tta-ga",
+  "lang": "korean",
+  "word": "이따가",
+  "romanization": "i-tta-ga",
+  "english": "later",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "eat",
+    "ex": 1,
+    "surface": "이따가"
+   },
+   {
+    "verb": "call",
+    "ex": 0,
+    "surface": "이따가"
+   }
+  ]
+ },
+ {
+  "id": "ko-ga-chi",
+  "lang": "korean",
+  "word": "같이",
+  "romanization": "ga-chi",
+  "english": "together",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "eat",
+    "ex": 1,
+    "surface": "같이"
+   },
+   {
+    "verb": "study",
+    "ex": 1,
+    "surface": "같이"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-ma-ya",
+  "lang": "tagalog",
+  "word": "mamaya",
+  "romanization": "ma-ma-ya",
+  "english": "later",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "eat",
+    "ex": 1,
+    "surface": "mamaya"
+   },
+   {
+    "verb": "call",
+    "ex": 0,
+    "surface": "mamaya"
+   }
+  ]
+ },
+ {
+  "id": "ko-ji-geum",
+  "lang": "korean",
+  "word": "지금",
+  "romanization": "ji-geum",
+  "english": "now",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "eat",
+    "ex": 2,
+    "surface": "지금"
+   },
+   {
+    "verb": "start",
+    "ex": 1,
+    "surface": "지금"
+   }
+  ]
+ },
+ {
+  "id": "ko-jeom-sim",
+  "lang": "korean",
+  "word": "점심",
+  "romanization": "jeom-sim",
+  "english": "lunch",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "eat",
+    "ex": 2,
+    "surface": "점심"
+   }
+  ]
+ },
+ {
+  "id": "tl-tang-ha-li-an",
+  "lang": "tagalog",
+  "word": "tanghalian",
+  "romanization": "tang-ha-li-an",
+  "english": "lunch",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "eat",
+    "ex": 2,
+    "surface": "tanghalian"
+   }
+  ]
+ },
+ {
+  "id": "tl-nga-yon",
+  "lang": "tagalog",
+  "word": "ngayon",
+  "romanization": "nga-yon",
+  "english": "now; today",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "eat",
+    "ex": 2,
+    "surface": "ngayon"
+   },
+   {
+    "verb": "exercise",
+    "ex": 1,
+    "surface": "ngayon"
+   }
+  ]
+ },
+ {
+  "id": "ko-mwo",
+  "lang": "korean",
+  "word": "뭐",
+  "romanization": "mwo",
+  "english": "what",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "drink",
+    "ex": 0,
+    "surface": "뭐"
+   },
+   {
+    "verb": "look-for",
+    "ex": 0,
+    "surface": "뭐"
+   }
+  ]
+ },
+ {
+  "id": "tl-gus-to",
+  "lang": "tagalog",
+  "word": "gusto",
+  "romanization": "gus-to",
+  "english": "want; like",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "drink",
+    "ex": 0,
+    "surface": "gusto"
+   },
+   {
+    "verb": "travel",
+    "ex": 0,
+    "surface": "Gusto"
+   }
+  ]
+ },
+ {
+  "id": "ko-o-neul",
+  "lang": "korean",
+  "word": "오늘",
+  "romanization": "o-neul",
+  "english": "today",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "drink",
+    "ex": 1,
+    "surface": "오늘"
+   },
+   {
+    "verb": "work",
+    "ex": 0,
+    "surface": "오늘"
+   },
+   {
+    "verb": "exercise",
+    "ex": 1,
+    "surface": "오늘"
+   }
+  ]
+ },
+ {
+  "id": "ko-keo-pi",
+  "lang": "korean",
+  "word": "커피",
+  "romanization": "keo-pi",
+  "english": "coffee",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "drink",
+    "ex": 1,
+    "surface": "커피를"
+   }
+  ]
+ },
+ {
+  "id": "ko-neo-mu",
+  "lang": "korean",
+  "word": "너무",
+  "romanization": "neo-mu",
+  "english": "so; too",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "drink",
+    "ex": 1,
+    "surface": "너무"
+   },
+   {
+    "verb": "speak",
+    "ex": 1,
+    "surface": "너무"
+   },
+   {
+    "verb": "love",
+    "ex": 1,
+    "surface": "너무"
+   },
+   {
+    "verb": "shop",
+    "ex": 1,
+    "surface": "너무"
+   }
+  ]
+ },
+ {
+  "id": "tl-so-bra",
+  "lang": "tagalog",
+  "word": "sobra",
+  "romanization": "so-bra",
+  "english": "too much",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "drink",
+    "ex": 1,
+    "surface": "Sobra"
+   },
+   {
+    "verb": "shop",
+    "ex": 1,
+    "surface": "Sobra"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-pe",
+  "lang": "tagalog",
+  "word": "kape",
+  "romanization": "ka-pe",
+  "english": "coffee",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "drink",
+    "ex": 1,
+    "surface": "kape"
+   }
+  ]
+ },
+ {
+  "id": "ko-eo-di",
+  "lang": "korean",
+  "word": "어디",
+  "romanization": "eo-di",
+  "english": "where",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "go",
+    "ex": 0,
+    "surface": "어디"
+   },
+   {
+    "verb": "live",
+    "ex": 0,
+    "surface": "어디"
+   },
+   {
+    "verb": "hurt",
+    "ex": 1,
+    "surface": "어디가"
+   }
+  ]
+ },
+ {
+  "id": "tl-sa-an",
+  "lang": "tagalog",
+  "word": "saan",
+  "romanization": "sa-an",
+  "english": "where",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "go",
+    "ex": 0,
+    "surface": "Saan"
+   },
+   {
+    "verb": "learn",
+    "ex": 1,
+    "surface": "Saan"
+   },
+   {
+    "verb": "live",
+    "ex": 0,
+    "surface": "Saan"
+   },
+   {
+    "verb": "hurt",
+    "ex": 1,
+    "surface": "Saan"
+   }
+  ]
+ },
+ {
+  "id": "ko-a-chim",
+  "lang": "korean",
+  "word": "아침",
+  "romanization": "a-chim",
+  "english": "morning",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "go",
+    "ex": 1,
+    "surface": "아침에"
+   },
+   {
+    "verb": "call",
+    "ex": 1,
+    "surface": "아침에"
+   },
+   {
+    "verb": "run",
+    "ex": 1,
+    "surface": "아침에"
+   }
+  ]
+ },
+ {
+  "id": "ko-si-jang",
+  "lang": "korean",
+  "word": "시장",
+  "romanization": "si-jang",
+  "english": "market",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "go",
+    "ex": 1,
+    "surface": "시장에"
+   }
+  ]
+ },
+ {
+  "id": "tl-pa-leng-ke",
+  "lang": "tagalog",
+  "word": "palengke",
+  "romanization": "pa-leng-ke",
+  "english": "market",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "go",
+    "ex": 1,
+    "surface": "palengke"
+   }
+  ]
+ },
+ {
+  "id": "tl-u-ma-ga",
+  "lang": "tagalog",
+  "word": "umaga",
+  "romanization": "u-ma-ga",
+  "english": "morning",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "go",
+    "ex": 1,
+    "surface": "umaga"
+   },
+   {
+    "verb": "call",
+    "ex": 1,
+    "surface": "umaga"
+   },
+   {
+    "verb": "run",
+    "ex": 1,
+    "surface": "umaga"
+   }
+  ]
+ },
+ {
+  "id": "ko-bang-geum",
+  "lang": "korean",
+  "word": "방금",
+  "romanization": "bang-geum",
+  "english": "just now",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "arrive",
+    "ex": 0,
+    "surface": "방금"
+   },
+   {
+    "verb": "go-out",
+    "ex": 1,
+    "surface": "방금"
+   }
+  ]
+ },
+ {
+  "id": "ko-si",
+  "lang": "korean",
+  "word": "시",
+  "romanization": "si",
+  "english": "o'clock; hour",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "arrive",
+    "ex": 1,
+    "surface": "시에"
+   }
+  ]
+ },
+ {
+  "id": "tl-o-ras",
+  "lang": "tagalog",
+  "word": "oras",
+  "romanization": "o-ras",
+  "english": "time; hour",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "arrive",
+    "ex": 1,
+    "surface": "oras"
+   },
+   {
+    "verb": "go-home",
+    "ex": 0,
+    "surface": "oras"
+   }
+  ]
+ },
+ {
+  "id": "ko-i-je",
+  "lang": "korean",
+  "word": "이제",
+  "romanization": "i-je",
+  "english": "now (already)",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "sleep",
+    "ex": 0,
+    "surface": "이제"
+   },
+   {
+    "verb": "leave",
+    "ex": 0,
+    "surface": "이제"
+   }
+  ]
+ },
+ {
+  "id": "ko-eo-jet-bam",
+  "lang": "korean",
+  "word": "어젯밤",
+  "romanization": "eo-jet-bam",
+  "english": "last night",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sleep",
+    "ex": 1,
+    "surface": "어젯밤에"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-ga-bi",
+  "lang": "tagalog",
+  "word": "kagabi",
+  "romanization": "ka-ga-bi",
+  "english": "last night",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "sleep",
+    "ex": 1,
+    "surface": "kagabi"
+   }
+  ]
+ },
+ {
+  "id": "ko-neut-ge",
+  "lang": "korean",
+  "word": "늦게",
+  "romanization": "neut-ge",
+  "english": "late",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "wake-up",
+    "ex": 0,
+    "surface": "늦게"
+   },
+   {
+    "verb": "work",
+    "ex": 1,
+    "surface": "늦게"
+   },
+   {
+    "verb": "go-home",
+    "ex": 1,
+    "surface": "늦게"
+   }
+  ]
+ },
+ {
+  "id": "tl-late",
+  "lang": "tagalog",
+  "word": "late",
+  "romanization": "late",
+  "english": "late",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "wake-up",
+    "ex": 0,
+    "surface": "Late"
+   },
+   {
+    "verb": "hurry",
+    "ex": 0,
+    "surface": "late"
+   }
+  ]
+ },
+ {
+  "id": "ko-beol-sseo",
+  "lang": "korean",
+  "word": "벌써",
+  "romanization": "beol-sseo",
+  "english": "already",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "wake-up",
+    "ex": 1,
+    "surface": "벌써"
+   },
+   {
+    "verb": "clean",
+    "ex": 1,
+    "surface": "벌써"
+   },
+   {
+    "verb": "close",
+    "ex": 1,
+    "surface": "벌써"
+   },
+   {
+    "verb": "leave",
+    "ex": 1,
+    "surface": "벌써"
+   },
+   {
+    "verb": "apologize",
+    "ex": 0,
+    "surface": "벌써"
+   }
+  ]
+ },
+ {
+  "id": "ko-il-gop",
+  "lang": "korean",
+  "word": "일곱",
+  "romanization": "il-gop",
+  "english": "seven",
+  "pos": "num",
+  "sources": [
+   {
+    "verb": "wake-up",
+    "ex": 1,
+    "surface": "일곱"
+   }
+  ]
+ },
+ {
+  "id": "tl-a-las-si-ye-te",
+  "lang": "tagalog",
+  "word": "alas-siyete",
+  "romanization": "a-las-si-ye-te",
+  "english": "seven o'clock",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wake-up",
+    "ex": 1,
+    "surface": "alas-siyete"
+   }
+  ]
+ },
+ {
+  "id": "ko-bam",
+  "lang": "korean",
+  "word": "밤",
+  "romanization": "bam",
+  "english": "night",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "watch",
+    "ex": 0,
+    "surface": "밤에"
+   },
+   {
+    "verb": "study",
+    "ex": 0,
+    "surface": "밤"
+   },
+   {
+    "verb": "laugh",
+    "ex": 1,
+    "surface": "밤"
+   },
+   {
+    "verb": "order",
+    "ex": 1,
+    "surface": "밤에"
+   },
+   {
+    "verb": "celebrate",
+    "ex": 1,
+    "surface": "밤에"
+   }
+  ]
+ },
+ {
+  "id": "ko-yeong-hwa",
+  "lang": "korean",
+  "word": "영화",
+  "romanization": "yeong-hwa",
+  "english": "movie",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "watch",
+    "ex": 0,
+    "surface": "영화"
+   },
+   {
+    "verb": "cry",
+    "ex": 1,
+    "surface": "영화"
+   },
+   {
+    "verb": "start",
+    "ex": 0,
+    "surface": "영화가"
+   }
+  ]
+ },
+ {
+  "id": "tl-si-ne",
+  "lang": "tagalog",
+  "word": "sine",
+  "romanization": "si-ne",
+  "english": "movie; cinema",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "watch",
+    "ex": 0,
+    "surface": "sine"
+   }
+  ]
+ },
+ {
+  "id": "tl-ga-bi",
+  "lang": "tagalog",
+  "word": "gabi",
+  "romanization": "ga-bi",
+  "english": "night; evening",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "watch",
+    "ex": 0,
+    "surface": "gabi"
+   },
+   {
+    "verb": "study",
+    "ex": 0,
+    "surface": "gabi"
+   },
+   {
+    "verb": "work",
+    "ex": 1,
+    "surface": "gabi"
+   },
+   {
+    "verb": "cook",
+    "ex": 0,
+    "surface": "gabi"
+   },
+   {
+    "verb": "sing",
+    "ex": 1,
+    "surface": "gabi"
+   },
+   {
+    "verb": "go-home",
+    "ex": 1,
+    "surface": "Gabi"
+   },
+   {
+    "verb": "celebrate",
+    "ex": 1,
+    "surface": "gabi"
+   }
+  ]
+ },
+ {
+  "id": "ko-deu-ra-ma",
+  "lang": "korean",
+  "word": "드라마",
+  "romanization": "deu-ra-ma",
+  "english": "drama (TV)",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "watch",
+    "ex": 1,
+    "surface": "드라마"
+   }
+  ]
+ },
+ {
+  "id": "tl-dra-ma",
+  "lang": "tagalog",
+  "word": "drama",
+  "romanization": "dra-ma",
+  "english": "drama (TV)",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "watch",
+    "ex": 1,
+    "surface": "drama"
+   }
+  ]
+ },
+ {
+  "id": "ko-nae-il",
+  "lang": "korean",
+  "word": "내일",
+  "romanization": "nae-il",
+  "english": "tomorrow",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "meet",
+    "ex": 0,
+    "surface": "내일"
+   },
+   {
+    "verb": "wear",
+    "ex": 1,
+    "surface": "내일"
+   },
+   {
+    "verb": "rain",
+    "ex": 1,
+    "surface": "내일"
+   }
+  ]
+ },
+ {
+  "id": "tl-bu-kas",
+  "lang": "tagalog",
+  "word": "bukas",
+  "romanization": "bu-kas",
+  "english": "tomorrow",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "meet",
+    "ex": 0,
+    "surface": "bukas"
+   },
+   {
+    "verb": "wear",
+    "ex": 1,
+    "surface": "bukas"
+   },
+   {
+    "verb": "rain",
+    "ex": 1,
+    "surface": "bukas"
+   }
+  ]
+ },
+ {
+  "id": "ko-ka-pe",
+  "lang": "korean",
+  "word": "카페",
+  "romanization": "ka-pe",
+  "english": "café",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "meet",
+    "ex": 1,
+    "surface": "카페에서"
+   }
+  ]
+ },
+ {
+  "id": "ko-chin-gu",
+  "lang": "korean",
+  "word": "친구",
+  "romanization": "chin-gu",
+  "english": "friend",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "meet",
+    "ex": 1,
+    "surface": "친구를"
+   },
+   {
+    "verb": "receive",
+    "ex": 1,
+    "surface": "친구한테서"
+   },
+   {
+    "verb": "visit",
+    "ex": 1,
+    "surface": "친구들이"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-i-bi-gan",
+  "lang": "tagalog",
+  "word": "kaibigan",
+  "romanization": "ka-i-bi-gan",
+  "english": "friend",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "meet",
+    "ex": 1,
+    "surface": "kaibigan"
+   },
+   {
+    "verb": "receive",
+    "ex": 1,
+    "surface": "kaibigan"
+   },
+   {
+    "verb": "visit",
+    "ex": 1,
+    "surface": "kaibigan"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-pe-han",
+  "lang": "tagalog",
+  "word": "kapehan",
+  "romanization": "ka-pe-han",
+  "english": "café",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "meet",
+    "ex": 1,
+    "surface": "kapehan"
+   }
+  ]
+ },
+ {
+  "id": "ko-sae",
+  "lang": "korean",
+  "word": "새",
+  "romanization": "sae",
+  "english": "new",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "buy",
+    "ex": 0,
+    "surface": "새"
+   },
+   {
+    "verb": "show",
+    "ex": 1,
+    "surface": "새"
+   }
+  ]
+ },
+ {
+  "id": "ko-sin-bal",
+  "lang": "korean",
+  "word": "신발",
+  "romanization": "sin-bal",
+  "english": "shoes",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "buy",
+    "ex": 0,
+    "surface": "신발을"
+   }
+  ]
+ },
+ {
+  "id": "tl-ba-go",
+  "lang": "tagalog",
+  "word": "bago",
+  "romanization": "ba-go",
+  "english": "new; before",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "buy",
+    "ex": 0,
+    "surface": "bagong"
+   },
+   {
+    "verb": "read",
+    "ex": 0,
+    "surface": "bago"
+   },
+   {
+    "verb": "pray",
+    "ex": 0,
+    "surface": "bago"
+   },
+   {
+    "verb": "kiss",
+    "ex": 0,
+    "surface": "bago"
+   }
+  ]
+ },
+ {
+  "id": "tl-sa-pa-tos",
+  "lang": "tagalog",
+  "word": "sapatos",
+  "romanization": "sa-pa-tos",
+  "english": "shoes",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "buy",
+    "ex": 0,
+    "surface": "sapatos"
+   }
+  ]
+ },
+ {
+  "id": "ko-jeo-nyeok",
+  "lang": "korean",
+  "word": "저녁",
+  "romanization": "jeo-nyeok",
+  "english": "dinner; evening",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "buy",
+    "ex": 1,
+    "surface": "저녁으로"
+   },
+   {
+    "verb": "cook",
+    "ex": 0,
+    "surface": "저녁은"
+   },
+   {
+    "verb": "go-down",
+    "ex": 1,
+    "surface": "저녁"
+   },
+   {
+    "verb": "get-ready",
+    "ex": 1,
+    "surface": "저녁"
+   }
+  ]
+ },
+ {
+  "id": "tl-ha-pu-nan",
+  "lang": "tagalog",
+  "word": "hapunan",
+  "romanization": "ha-pu-nan",
+  "english": "dinner",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "buy",
+    "ex": 1,
+    "surface": "hapunan"
+   },
+   {
+    "verb": "get-ready",
+    "ex": 1,
+    "surface": "hapunan"
+   }
+  ]
+ },
+ {
+  "id": "ko-yeo-gi",
+  "lang": "korean",
+  "word": "여기",
+  "romanization": "yeo-gi",
+  "english": "here",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "sell",
+    "ex": 0,
+    "surface": "여기"
+   },
+   {
+    "verb": "sit",
+    "ex": 0,
+    "surface": "여기"
+   },
+   {
+    "verb": "stop",
+    "ex": 0,
+    "surface": "여기서"
+   },
+   {
+    "verb": "go-down",
+    "ex": 0,
+    "surface": "여기서"
+   }
+  ]
+ },
+ {
+  "id": "ko-mul",
+  "lang": "korean",
+  "word": "물",
+  "romanization": "mul",
+  "english": "water",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sell",
+    "ex": 0,
+    "surface": "물"
+   }
+  ]
+ },
+ {
+  "id": "tl-tu-big",
+  "lang": "tagalog",
+  "word": "tubig",
+  "romanization": "tu-big",
+  "english": "water",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sell",
+    "ex": 0,
+    "surface": "tubig"
+   }
+  ]
+ },
+ {
+  "id": "tl-di-to",
+  "lang": "tagalog",
+  "word": "dito",
+  "romanization": "di-to",
+  "english": "here",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "sell",
+    "ex": 0,
+    "surface": "dito"
+   },
+   {
+    "verb": "help",
+    "ex": 0,
+    "surface": "dito"
+   },
+   {
+    "verb": "stop",
+    "ex": 0,
+    "surface": "dito"
+   }
+  ]
+ },
+ {
+  "id": "ko-ppang",
+  "lang": "korean",
+  "word": "빵",
+  "romanization": "ppang",
+  "english": "bread",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sell",
+    "ex": 1,
+    "surface": "빵"
+   }
+  ]
+ },
+ {
+  "id": "ko-da",
+  "lang": "korean",
+  "word": "다",
+  "romanization": "da",
+  "english": "all",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "sell",
+    "ex": 1,
+    "surface": "다"
+   },
+   {
+    "verb": "spend",
+    "ex": 1,
+    "surface": "다"
+   }
+  ]
+ },
+ {
+  "id": "tl-pa-bo-ri-to",
+  "lang": "tagalog",
+  "word": "paborito",
+  "romanization": "pa-bo-ri-to",
+  "english": "favorite",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "sell",
+    "ex": 1,
+    "surface": "paborito"
+   }
+  ]
+ },
+ {
+  "id": "tl-ti-na-pay",
+  "lang": "tagalog",
+  "word": "tinapay",
+  "romanization": "ti-na-pay",
+  "english": "bread",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sell",
+    "ex": 1,
+    "surface": "tinapay"
+   }
+  ]
+ },
+ {
+  "id": "ko-i-beon",
+  "lang": "korean",
+  "word": "이번",
+  "romanization": "i-beon",
+  "english": "this time",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "pay",
+    "ex": 0,
+    "surface": "이번에는"
+   }
+  ]
+ },
+ {
+  "id": "ko-jeon-gi-se",
+  "lang": "korean",
+  "word": "전기세",
+  "romanization": "jeon-gi-se",
+  "english": "electric bill",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "pay",
+    "ex": 1,
+    "surface": "전기세"
+   }
+  ]
+ },
+ {
+  "id": "tl-kur-yen-te",
+  "lang": "tagalog",
+  "word": "kuryente",
+  "romanization": "kur-yen-te",
+  "english": "electricity",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "pay",
+    "ex": 1,
+    "surface": "kuryente"
+   }
+  ]
+ },
+ {
+  "id": "ko-jeon",
+  "lang": "korean",
+  "word": "전",
+  "romanization": "jeon",
+  "english": "before",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "read",
+    "ex": 0,
+    "surface": "전에"
+   },
+   {
+    "verb": "pray",
+    "ex": 0,
+    "surface": "전에"
+   }
+  ]
+ },
+ {
+  "id": "ko-jo-geum",
+  "lang": "korean",
+  "word": "조금",
+  "romanization": "jo-geum",
+  "english": "a little",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "read",
+    "ex": 0,
+    "surface": "조금"
+   },
+   {
+    "verb": "save-money",
+    "ex": 1,
+    "surface": "조금"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-un-ti",
+  "lang": "tagalog",
+  "word": "kaunti",
+  "romanization": "ka-un-ti",
+  "english": "a little",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "read",
+    "ex": 0,
+    "surface": "kaunti"
+   },
+   {
+    "verb": "save-money",
+    "ex": 1,
+    "surface": "kaunti"
+   }
+  ]
+ },
+ {
+  "id": "ko-me-si-ji",
+  "lang": "korean",
+  "word": "메시지",
+  "romanization": "me-si-ji",
+  "english": "message",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "read",
+    "ex": 1,
+    "surface": "메시지"
+   },
+   {
+    "verb": "send",
+    "ex": 1,
+    "surface": "메시지"
+   }
+  ]
+ },
+ {
+  "id": "tl-men-sa-he",
+  "lang": "tagalog",
+  "word": "mensahe",
+  "romanization": "men-sa-he",
+  "english": "message",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "read",
+    "ex": 1,
+    "surface": "mensahe"
+   },
+   {
+    "verb": "send",
+    "ex": 1,
+    "surface": "mensahe"
+   }
+  ]
+ },
+ {
+  "id": "ko-i-reum",
+  "lang": "korean",
+  "word": "이름",
+  "romanization": "i-reum",
+  "english": "name",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "write",
+    "ex": 0,
+    "surface": "이름을"
+   },
+   {
+    "verb": "remember",
+    "ex": 1,
+    "surface": "이름이"
+   }
+  ]
+ },
+ {
+  "id": "tl-pa-nga-lan",
+  "lang": "tagalog",
+  "word": "pangalan",
+  "romanization": "pa-nga-lan",
+  "english": "name",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "write",
+    "ex": 0,
+    "surface": "pangalan"
+   },
+   {
+    "verb": "remember",
+    "ex": 1,
+    "surface": "pangalan"
+   }
+  ]
+ },
+ {
+  "id": "ko-eom-ma",
+  "lang": "korean",
+  "word": "엄마",
+  "romanization": "eom-ma",
+  "english": "mom",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "write",
+    "ex": 1,
+    "surface": "엄마한테"
+   },
+   {
+    "verb": "call",
+    "ex": 1,
+    "surface": "엄마가"
+   }
+  ]
+ },
+ {
+  "id": "ko-pyeon-ji",
+  "lang": "korean",
+  "word": "편지",
+  "romanization": "pyeon-ji",
+  "english": "letter",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "write",
+    "ex": 1,
+    "surface": "편지를"
+   }
+  ]
+ },
+ {
+  "id": "tl-li-ham",
+  "lang": "tagalog",
+  "word": "liham",
+  "romanization": "li-ham",
+  "english": "letter",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "write",
+    "ex": 1,
+    "surface": "liham"
+   }
+  ]
+ },
+ {
+  "id": "tl-na-nay",
+  "lang": "tagalog",
+  "word": "Nanay",
+  "romanization": "na-nay",
+  "english": "mom",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "write",
+    "ex": 1,
+    "surface": "Nanay"
+   },
+   {
+    "verb": "call",
+    "ex": 1,
+    "surface": "Nanay"
+   }
+  ]
+ },
+ {
+  "id": "ko-cheon-cheon-hi",
+  "lang": "korean",
+  "word": "천천히",
+  "romanization": "cheon-cheon-hi",
+  "english": "slowly",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "speak",
+    "ex": 0,
+    "surface": "천천히"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-ba-gal",
+  "lang": "tagalog",
+  "word": "mabagal",
+  "romanization": "ma-ba-gal",
+  "english": "slow",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "speak",
+    "ex": 0,
+    "surface": "mabagal"
+   }
+  ]
+ },
+ {
+  "id": "ko-ppal-li",
+  "lang": "korean",
+  "word": "빨리",
+  "romanization": "ppal-li",
+  "english": "fast",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "speak",
+    "ex": 1,
+    "surface": "빨리"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-bi-lis",
+  "lang": "tagalog",
+  "word": "mabilis",
+  "romanization": "ma-bi-lis",
+  "english": "fast",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "speak",
+    "ex": 1,
+    "surface": "mabilis"
+   }
+  ]
+ },
+ {
+  "id": "ko-mal",
+  "lang": "korean",
+  "word": "말",
+  "romanization": "mal",
+  "english": "words; what one says",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "listen",
+    "ex": 0,
+    "surface": "말"
+   }
+  ]
+ },
+ {
+  "id": "ko-beo-seu",
+  "lang": "korean",
+  "word": "버스",
+  "romanization": "beo-seu",
+  "english": "bus",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "listen",
+    "ex": 1,
+    "surface": "버스에서"
+   },
+   {
+    "verb": "run",
+    "ex": 0,
+    "surface": "버스"
+   },
+   {
+    "verb": "ride",
+    "ex": 1,
+    "surface": "버스를"
+   },
+   {
+    "verb": "leave",
+    "ex": 1,
+    "surface": "버스가"
+   }
+  ]
+ },
+ {
+  "id": "ko-eu-mak",
+  "lang": "korean",
+  "word": "음악",
+  "romanization": "eu-mak",
+  "english": "music",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "listen",
+    "ex": 1,
+    "surface": "음악을"
+   }
+  ]
+ },
+ {
+  "id": "tl-mu-si-ka",
+  "lang": "tagalog",
+  "word": "musika",
+  "romanization": "mu-si-ka",
+  "english": "music",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "listen",
+    "ex": 1,
+    "surface": "musika"
+   }
+  ]
+ },
+ {
+  "id": "tl-bus",
+  "lang": "tagalog",
+  "word": "bus",
+  "romanization": "bus",
+  "english": "bus",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "listen",
+    "ex": 1,
+    "surface": "bus"
+   },
+   {
+    "verb": "run",
+    "ex": 0,
+    "surface": "bus"
+   },
+   {
+    "verb": "leave",
+    "ex": 1,
+    "surface": "bus"
+   }
+  ]
+ },
+ {
+  "id": "ko-ha-na",
+  "lang": "korean",
+  "word": "하나",
+  "romanization": "ha-na",
+  "english": "one (thing)",
+  "pos": "num",
+  "sources": [
+   {
+    "verb": "ask",
+    "ex": 0,
+    "surface": "하나"
+   }
+  ]
+ },
+ {
+  "id": "tl-pu-we-de",
+  "lang": "tagalog",
+  "word": "puwede",
+  "romanization": "pu-we-de",
+  "english": "can; may",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "ask",
+    "ex": 0,
+    "surface": "Puwede"
+   },
+   {
+    "verb": "teach",
+    "ex": 0,
+    "surface": "Puwede"
+   },
+   {
+    "verb": "enter",
+    "ex": 1,
+    "surface": "Puwede"
+   }
+  ]
+ },
+ {
+  "id": "ko-seon-saeng-nim",
+  "lang": "korean",
+  "word": "선생님",
+  "romanization": "seon-saeng-nim",
+  "english": "teacher",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "ask",
+    "ex": 1,
+    "surface": "선생님한테"
+   }
+  ]
+ },
+ {
+  "id": "tl-gu-ro",
+  "lang": "tagalog",
+  "word": "guro",
+  "romanization": "gu-ro",
+  "english": "teacher",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "ask",
+    "ex": 1,
+    "surface": "guro"
+   }
+  ]
+ },
+ {
+  "id": "ko-wae",
+  "lang": "korean",
+  "word": "왜",
+  "romanization": "wae",
+  "english": "why",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "answer",
+    "ex": 0,
+    "surface": "왜"
+   },
+   {
+    "verb": "cry",
+    "ex": 0,
+    "surface": "왜"
+   }
+  ]
+ },
+ {
+  "id": "tl-ba-kit",
+  "lang": "tagalog",
+  "word": "bakit",
+  "romanization": "ba-kit",
+  "english": "why",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "answer",
+    "ex": 0,
+    "surface": "Bakit"
+   },
+   {
+    "verb": "cry",
+    "ex": 0,
+    "surface": "Bakit"
+   }
+  ]
+ },
+ {
+  "id": "ko-sol-ji-ka-ge",
+  "lang": "korean",
+  "word": "솔직하게",
+  "romanization": "sol-ji-ka-ge",
+  "english": "honestly",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "answer",
+    "ex": 1,
+    "surface": "솔직하게"
+   }
+  ]
+ },
+ {
+  "id": "tl-ta-pat",
+  "lang": "tagalog",
+  "word": "tapat",
+  "romanization": "ta-pat",
+  "english": "honest",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "answer",
+    "ex": 1,
+    "surface": "tapat"
+   }
+  ]
+ },
+ {
+  "id": "ko-geo-gi",
+  "lang": "korean",
+  "word": "거기",
+  "romanization": "geo-gi",
+  "english": "there",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "know",
+    "ex": 0,
+    "surface": "거기"
+   }
+  ]
+ },
+ {
+  "id": "tl-lu-gar",
+  "lang": "tagalog",
+  "word": "lugar",
+  "romanization": "lu-gar",
+  "english": "place",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "know",
+    "ex": 0,
+    "surface": "lugar"
+   }
+  ]
+ },
+ {
+  "id": "ko-ji-gap",
+  "lang": "korean",
+  "word": "지갑",
+  "romanization": "ji-gap",
+  "english": "wallet",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "forget",
+    "ex": 0,
+    "surface": "지갑을"
+   }
+  ]
+ },
+ {
+  "id": "tl-pi-ta-ka",
+  "lang": "tagalog",
+  "word": "pitaka",
+  "romanization": "pi-ta-ka",
+  "english": "wallet",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "forget",
+    "ex": 0,
+    "surface": "pitaka"
+   }
+  ]
+ },
+ {
+  "id": "ko-jeo",
+  "lang": "korean",
+  "word": "저",
+  "romanization": "jeo",
+  "english": "me (polite)",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "remember",
+    "ex": 0,
+    "surface": "저"
+   }
+  ]
+ },
+ {
+  "id": "ko-han-gu-geo",
+  "lang": "korean",
+  "word": "한국어",
+  "romanization": "han-gu-geo",
+  "english": "Korean (language)",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "learn",
+    "ex": 0,
+    "surface": "한국어를"
+   }
+  ]
+ },
+ {
+  "id": "ko-yo-ri",
+  "lang": "korean",
+  "word": "요리",
+  "romanization": "yo-ri",
+  "english": "cooking; dish",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "learn",
+    "ex": 1,
+    "surface": "요리는"
+   }
+  ]
+ },
+ {
+  "id": "ko-eo-di-seo",
+  "lang": "korean",
+  "word": "어디서",
+  "romanization": "eo-di-seo",
+  "english": "where (at)",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "learn",
+    "ex": 1,
+    "surface": "어디서"
+   }
+  ]
+ },
+ {
+  "id": "ko-a-nae",
+  "lang": "korean",
+  "word": "아내",
+  "romanization": "a-nae",
+  "english": "wife",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "teach",
+    "ex": 1,
+    "surface": "아내가"
+   }
+  ]
+ },
+ {
+  "id": "tl-a-sa-wa",
+  "lang": "tagalog",
+  "word": "asawa",
+  "romanization": "a-sa-wa",
+  "english": "spouse; wife",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "teach",
+    "ex": 1,
+    "surface": "asawa"
+   }
+  ]
+ },
+ {
+  "id": "ko-mae-il",
+  "lang": "korean",
+  "word": "매일",
+  "romanization": "mae-il",
+  "english": "every day",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "study",
+    "ex": 0,
+    "surface": "매일"
+   },
+   {
+    "verb": "use",
+    "ex": 1,
+    "surface": "매일"
+   }
+  ]
+ },
+ {
+  "id": "tl-tu-wing",
+  "lang": "tagalog",
+  "word": "tuwing",
+  "romanization": "tu-wing",
+  "english": "every",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "study",
+    "ex": 0,
+    "surface": "tuwing"
+   },
+   {
+    "verb": "run",
+    "ex": 1,
+    "surface": "tuwing"
+   }
+  ]
+ },
+ {
+  "id": "tl-sa-bay",
+  "lang": "tagalog",
+  "word": "sabay",
+  "romanization": "sa-bay",
+  "english": "together",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "study",
+    "ex": 1,
+    "surface": "Sabay"
+   }
+  ]
+ },
+ {
+  "id": "ko-yeo-seot",
+  "lang": "korean",
+  "word": "여섯",
+  "romanization": "yeo-seot",
+  "english": "six",
+  "pos": "num",
+  "sources": [
+   {
+    "verb": "work",
+    "ex": 0,
+    "surface": "여섯"
+   }
+  ]
+ },
+ {
+  "id": "tl-hang-gang",
+  "lang": "tagalog",
+  "word": "hanggang",
+  "romanization": "hang-gang",
+  "english": "until",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "work",
+    "ex": 0,
+    "surface": "hanggang"
+   }
+  ]
+ },
+ {
+  "id": "ko-tto",
+  "lang": "korean",
+  "word": "또",
+  "romanization": "tto",
+  "english": "again",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "work",
+    "ex": 1,
+    "surface": "또"
+   },
+   {
+    "verb": "lose",
+    "ex": 0,
+    "surface": "또"
+   },
+   {
+    "verb": "break",
+    "ex": 1,
+    "surface": "또"
+   },
+   {
+    "verb": "go-up",
+    "ex": 1,
+    "surface": "또"
+   }
+  ]
+ },
+ {
+  "id": "ko-jom",
+  "lang": "korean",
+  "word": "좀",
+  "romanization": "jom",
+  "english": "a little; please",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "rest",
+    "ex": 0,
+    "surface": "좀"
+   }
+  ]
+ },
+ {
+  "id": "tl-mu-na",
+  "lang": "tagalog",
+  "word": "muna",
+  "romanization": "mu-na",
+  "english": "first; for now",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "rest",
+    "ex": 0,
+    "surface": "muna"
+   },
+   {
+    "verb": "wash",
+    "ex": 0,
+    "surface": "muna"
+   },
+   {
+    "verb": "shower",
+    "ex": 0,
+    "surface": "muna"
+   },
+   {
+    "verb": "think",
+    "ex": 1,
+    "surface": "muna"
+   }
+  ]
+ },
+ {
+  "id": "ko-ju-mal",
+  "lang": "korean",
+  "word": "주말",
+  "romanization": "ju-mal",
+  "english": "weekend",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "rest",
+    "ex": 1,
+    "surface": "주말"
+   },
+   {
+    "verb": "clean",
+    "ex": 0,
+    "surface": "주말에"
+   },
+   {
+    "verb": "play",
+    "ex": 1,
+    "surface": "주말에"
+   }
+  ]
+ },
+ {
+  "id": "ko-nae-nae",
+  "lang": "korean",
+  "word": "내내",
+  "romanization": "nae-nae",
+  "english": "throughout",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "rest",
+    "ex": 1,
+    "surface": "내내"
+   }
+  ]
+ },
+ {
+  "id": "tl-bu-o",
+  "lang": "tagalog",
+  "word": "buo",
+  "romanization": "bu-o",
+  "english": "whole",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "rest",
+    "ex": 1,
+    "surface": "buong"
+   }
+  ]
+ },
+ {
+  "id": "ko-naem-sae",
+  "lang": "korean",
+  "word": "냄새",
+  "romanization": "naem-sae",
+  "english": "smell",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "cook",
+    "ex": 1,
+    "surface": "냄새"
+   }
+  ]
+ },
+ {
+  "id": "ko-jo-ta",
+  "lang": "korean",
+  "word": "좋다",
+  "romanization": "jo-ta",
+  "english": "good",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "cook",
+    "ex": 1,
+    "surface": "좋아요"
+   }
+  ]
+ },
+ {
+  "id": "tl-ba-ngo",
+  "lang": "tagalog",
+  "word": "bango",
+  "romanization": "ba-ngo",
+  "english": "fragrant",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "cook",
+    "ex": 1,
+    "surface": "bango"
+   }
+  ]
+ },
+ {
+  "id": "ko-meon-jeo",
+  "lang": "korean",
+  "word": "먼저",
+  "romanization": "meon-jeo",
+  "english": "first",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "wash",
+    "ex": 0,
+    "surface": "먼저"
+   },
+   {
+    "verb": "shower",
+    "ex": 0,
+    "surface": "먼저"
+   }
+  ]
+ },
+ {
+  "id": "ko-son",
+  "lang": "korean",
+  "word": "손",
+  "romanization": "son",
+  "english": "hand",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wash",
+    "ex": 0,
+    "surface": "손"
+   },
+   {
+    "verb": "hold",
+    "ex": 0,
+    "surface": "손"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-may",
+  "lang": "tagalog",
+  "word": "kamay",
+  "romanization": "ka-may",
+  "english": "hand",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wash",
+    "ex": 0,
+    "surface": "kamay"
+   },
+   {
+    "verb": "hold",
+    "ex": 0,
+    "surface": "kamay"
+   }
+  ]
+ },
+ {
+  "id": "ko-seol-geo-ji",
+  "lang": "korean",
+  "word": "설거지",
+  "romanization": "seol-geo-ji",
+  "english": "dishwashing",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wash",
+    "ex": 1,
+    "surface": "설거지는"
+   }
+  ]
+ },
+ {
+  "id": "tl-ping-gan",
+  "lang": "tagalog",
+  "word": "pinggan",
+  "romanization": "ping-gan",
+  "english": "dishes; plate",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wash",
+    "ex": 1,
+    "surface": "pinggan"
+   }
+  ]
+ },
+ {
+  "id": "ko-jip",
+  "lang": "korean",
+  "word": "집",
+  "romanization": "jip",
+  "english": "house; home",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "clean",
+    "ex": 0,
+    "surface": "집"
+   },
+   {
+    "verb": "walk",
+    "ex": 0,
+    "surface": "집까지"
+   },
+   {
+    "verb": "go-home",
+    "ex": 0,
+    "surface": "집에"
+   },
+   {
+    "verb": "show",
+    "ex": 1,
+    "surface": "집을"
+   }
+  ]
+ },
+ {
+  "id": "tl-ba-hay",
+  "lang": "tagalog",
+  "word": "bahay",
+  "romanization": "ba-hay",
+  "english": "house",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "clean",
+    "ex": 0,
+    "surface": "bahay"
+   },
+   {
+    "verb": "show",
+    "ex": 1,
+    "surface": "bahay"
+   }
+  ]
+ },
+ {
+  "id": "ko-bang",
+  "lang": "korean",
+  "word": "방",
+  "romanization": "bang",
+  "english": "room",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "clean",
+    "ex": 1,
+    "surface": "방"
+   }
+  ]
+ },
+ {
+  "id": "tl-ku-war-to",
+  "lang": "tagalog",
+  "word": "kuwarto",
+  "romanization": "ku-war-to",
+  "english": "room",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "clean",
+    "ex": 1,
+    "surface": "kuwarto"
+   }
+  ]
+ },
+ {
+  "id": "ko-jam-kkan",
+  "lang": "korean",
+  "word": "잠깐",
+  "romanization": "jam-kkan",
+  "english": "a moment",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "wait",
+    "ex": 0,
+    "surface": "잠깐만"
+   },
+   {
+    "verb": "lie-down",
+    "ex": 0,
+    "surface": "잠깐"
+   }
+  ]
+ },
+ {
+  "id": "tl-san-da-li",
+  "lang": "tagalog",
+  "word": "sandali",
+  "romanization": "san-da-li",
+  "english": "a moment",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wait",
+    "ex": 0,
+    "surface": "Sandali"
+   },
+   {
+    "verb": "lie-down",
+    "ex": 0,
+    "surface": "sandali"
+   }
+  ]
+ },
+ {
+  "id": "ko-bun",
+  "lang": "korean",
+  "word": "분",
+  "romanization": "bun",
+  "english": "minute",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wait",
+    "ex": 1,
+    "surface": "분"
+   }
+  ]
+ },
+ {
+  "id": "tl-mi-nu-to",
+  "lang": "tagalog",
+  "word": "minuto",
+  "romanization": "mi-nu-to",
+  "english": "minute",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wait",
+    "ex": 1,
+    "surface": "minuto"
+   },
+   {
+    "verb": "give",
+    "ex": 0,
+    "surface": "minuto"
+   }
+  ]
+ },
+ {
+  "id": "ko-i-geo",
+  "lang": "korean",
+  "word": "이거",
+  "romanization": "i-geo",
+  "english": "this (thing)",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "help",
+    "ex": 0,
+    "surface": "이거"
+   },
+   {
+    "verb": "taste",
+    "ex": 0,
+    "surface": "이거"
+   }
+  ]
+ },
+ {
+  "id": "ko-go-map-da",
+  "lang": "korean",
+  "word": "고맙다",
+  "romanization": "go-map-da",
+  "english": "thankful",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "help",
+    "ex": 1,
+    "surface": "고마워요"
+   }
+  ]
+ },
+ {
+  "id": "tl-sa-la-mat",
+  "lang": "tagalog",
+  "word": "salamat",
+  "romanization": "sa-la-mat",
+  "english": "thanks",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "help",
+    "ex": 1,
+    "surface": "Salamat"
+   }
+  ]
+ },
+ {
+  "id": "ko-chang-mun",
+  "lang": "korean",
+  "word": "창문",
+  "romanization": "chang-mun",
+  "english": "window",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "open",
+    "ex": 0,
+    "surface": "창문"
+   }
+  ]
+ },
+ {
+  "id": "tl-bin-ta-na",
+  "lang": "tagalog",
+  "word": "bintana",
+  "romanization": "bin-ta-na",
+  "english": "window",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "open",
+    "ex": 0,
+    "surface": "bintana"
+   }
+  ]
+ },
+ {
+  "id": "ko-ga-ge",
+  "lang": "korean",
+  "word": "가게",
+  "romanization": "ga-ge",
+  "english": "store",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "open",
+    "ex": 1,
+    "surface": "가게는"
+   }
+  ]
+ },
+ {
+  "id": "tl-tin-da-han",
+  "lang": "tagalog",
+  "word": "tindahan",
+  "romanization": "tin-da-han",
+  "english": "store",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "open",
+    "ex": 1,
+    "surface": "tindahan"
+   }
+  ]
+ },
+ {
+  "id": "ko-mun",
+  "lang": "korean",
+  "word": "문",
+  "romanization": "mun",
+  "english": "door",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "close",
+    "ex": 0,
+    "surface": "문"
+   },
+   {
+    "verb": "fix",
+    "ex": 1,
+    "surface": "문을"
+   },
+   {
+    "verb": "push",
+    "ex": 0,
+    "surface": "문을"
+   }
+  ]
+ },
+ {
+  "id": "tl-pin-to",
+  "lang": "tagalog",
+  "word": "pinto",
+  "romanization": "pin-to",
+  "english": "door",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "close",
+    "ex": 0,
+    "surface": "pinto"
+   },
+   {
+    "verb": "fix",
+    "ex": 1,
+    "surface": "pinto"
+   },
+   {
+    "verb": "push",
+    "ex": 0,
+    "surface": "pinto"
+   }
+  ]
+ },
+ {
+  "id": "ko-eun-haeng",
+  "lang": "korean",
+  "word": "은행",
+  "romanization": "eun-haeng",
+  "english": "bank",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "close",
+    "ex": 1,
+    "surface": "은행이"
+   }
+  ]
+ },
+ {
+  "id": "tl-bang-ko",
+  "lang": "tagalog",
+  "word": "bangko",
+  "romanization": "bang-ko",
+  "english": "bank",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "close",
+    "ex": 1,
+    "surface": "bangko"
+   }
+  ]
+ },
+ {
+  "id": "ko-si-gan",
+  "lang": "korean",
+  "word": "시간",
+  "romanization": "si-gan",
+  "english": "time",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "give",
+    "ex": 0,
+    "surface": "시간"
+   }
+  ]
+ },
+ {
+  "id": "ko-yeo-ja-chin-gu",
+  "lang": "korean",
+  "word": "여자친구",
+  "romanization": "yeo-ja-chin-gu",
+  "english": "girlfriend",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "give",
+    "ex": 1,
+    "surface": "여자친구한테"
+   }
+  ]
+ },
+ {
+  "id": "ko-kkot",
+  "lang": "korean",
+  "word": "꽃",
+  "romanization": "kkot",
+  "english": "flower",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "give",
+    "ex": 1,
+    "surface": "꽃을"
+   }
+  ]
+ },
+ {
+  "id": "tl-bu-lak-lak",
+  "lang": "tagalog",
+  "word": "bulaklak",
+  "romanization": "bu-lak-lak",
+  "english": "flower",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "give",
+    "ex": 1,
+    "surface": "bulaklak"
+   }
+  ]
+ },
+ {
+  "id": "tl-girl-friend",
+  "lang": "tagalog",
+  "word": "girlfriend",
+  "romanization": "girl-friend",
+  "english": "girlfriend",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "give",
+    "ex": 1,
+    "surface": "girlfriend"
+   }
+  ]
+ },
+ {
+  "id": "ko-taek-bae",
+  "lang": "korean",
+  "word": "택배",
+  "romanization": "taek-bae",
+  "english": "package",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "receive",
+    "ex": 0,
+    "surface": "택배"
+   }
+  ]
+ },
+ {
+  "id": "tl-pack-age",
+  "lang": "tagalog",
+  "word": "package",
+  "romanization": "pack-age",
+  "english": "package",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "receive",
+    "ex": 0,
+    "surface": "package"
+   }
+  ]
+ },
+ {
+  "id": "ko-seon-mul",
+  "lang": "korean",
+  "word": "선물",
+  "romanization": "seon-mul",
+  "english": "gift",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "receive",
+    "ex": 1,
+    "surface": "선물을"
+   }
+  ]
+ },
+ {
+  "id": "tl-re-ga-lo",
+  "lang": "tagalog",
+  "word": "regalo",
+  "romanization": "re-ga-lo",
+  "english": "gift",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "receive",
+    "ex": 1,
+    "surface": "regalo"
+   }
+  ]
+ },
+ {
+  "id": "ko-u-san",
+  "lang": "korean",
+  "word": "우산",
+  "romanization": "u-san",
+  "english": "umbrella",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "bring",
+    "ex": 0,
+    "surface": "우산"
+   },
+   {
+    "verb": "lose",
+    "ex": 0,
+    "surface": "우산을"
+   }
+  ]
+ },
+ {
+  "id": "tl-pa-yong",
+  "lang": "tagalog",
+  "word": "payong",
+  "romanization": "pa-yong",
+  "english": "umbrella",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "bring",
+    "ex": 0,
+    "surface": "payong"
+   },
+   {
+    "verb": "lose",
+    "ex": 0,
+    "surface": "payong"
+   }
+  ]
+ },
+ {
+  "id": "ko-gwa-ja",
+  "lang": "korean",
+  "word": "과자",
+  "romanization": "gwa-ja",
+  "english": "snack",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "bring",
+    "ex": 1,
+    "surface": "과자"
+   }
+  ]
+ },
+ {
+  "id": "tl-mer-yen-da",
+  "lang": "tagalog",
+  "word": "meryenda",
+  "romanization": "mer-yen-da",
+  "english": "snack",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "bring",
+    "ex": 1,
+    "surface": "meryenda"
+   }
+  ]
+ },
+ {
+  "id": "ko-te-i-beul",
+  "lang": "korean",
+  "word": "테이블",
+  "romanization": "te-i-beul",
+  "english": "table",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "put",
+    "ex": 0,
+    "surface": "테이블"
+   }
+  ]
+ },
+ {
+  "id": "ko-wi",
+  "lang": "korean",
+  "word": "위",
+  "romanization": "wi",
+  "english": "on top",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "put",
+    "ex": 0,
+    "surface": "위에"
+   }
+  ]
+ },
+ {
+  "id": "tl-me-sa",
+  "lang": "tagalog",
+  "word": "mesa",
+  "romanization": "me-sa",
+  "english": "table",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "put",
+    "ex": 0,
+    "surface": "mesa"
+   }
+  ]
+ },
+ {
+  "id": "ko-yeol-soe",
+  "lang": "korean",
+  "word": "열쇠",
+  "romanization": "yeol-soe",
+  "english": "key",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "put",
+    "ex": 1,
+    "surface": "열쇠"
+   }
+  ]
+ },
+ {
+  "id": "tl-su-si",
+  "lang": "tagalog",
+  "word": "susi",
+  "romanization": "su-si",
+  "english": "key",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "put",
+    "ex": 1,
+    "surface": "susi"
+   }
+  ]
+ },
+ {
+  "id": "ko-haen-deu-pon",
+  "lang": "korean",
+  "word": "핸드폰",
+  "romanization": "haen-deu-pon",
+  "english": "cell phone",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "look-for",
+    "ex": 1,
+    "surface": "핸드폰"
+   },
+   {
+    "verb": "break",
+    "ex": 0,
+    "surface": "핸드폰이"
+   }
+  ]
+ },
+ {
+  "id": "tl-cell-phone",
+  "lang": "tagalog",
+  "word": "cellphone",
+  "romanization": "cell-phone",
+  "english": "cell phone",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "look-for",
+    "ex": 1,
+    "surface": "cellphone"
+   },
+   {
+    "verb": "break",
+    "ex": 0,
+    "surface": "cellphone"
+   }
+  ]
+ },
+ {
+  "id": "ko-pyo",
+  "lang": "korean",
+  "word": "표",
+  "romanization": "pyo",
+  "english": "ticket",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "lose",
+    "ex": 1,
+    "surface": "표"
+   }
+  ]
+ },
+ {
+  "id": "tl-ti-ket",
+  "lang": "tagalog",
+  "word": "tiket",
+  "romanization": "ti-ket",
+  "english": "ticket",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "lose",
+    "ex": 1,
+    "surface": "tiket"
+   }
+  ]
+ },
+ {
+  "id": "ko-chung-jeon-gi",
+  "lang": "korean",
+  "word": "충전기",
+  "romanization": "chung-jeon-gi",
+  "english": "charger",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "use",
+    "ex": 0,
+    "surface": "충전기"
+   }
+  ]
+ },
+ {
+  "id": "tl-char-ger",
+  "lang": "tagalog",
+  "word": "charger",
+  "romanization": "char-ger",
+  "english": "charger",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "use",
+    "ex": 0,
+    "surface": "charger"
+   }
+  ]
+ },
+ {
+  "id": "ko-aep",
+  "lang": "korean",
+  "word": "앱",
+  "romanization": "aep",
+  "english": "app",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "use",
+    "ex": 1,
+    "surface": "앱을"
+   }
+  ]
+ },
+ {
+  "id": "tl-a-raw-a-raw",
+  "lang": "tagalog",
+  "word": "araw-araw",
+  "romanization": "a-raw-a-raw",
+  "english": "every day",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "use",
+    "ex": 1,
+    "surface": "araw-araw"
+   }
+  ]
+ },
+ {
+  "id": "ko-gim-chi-bo-kkeum-bap",
+  "lang": "korean",
+  "word": "김치볶음밥",
+  "romanization": "gim-chi-bo-kkeum-bap",
+  "english": "kimchi fried rice",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "make",
+    "ex": 0,
+    "surface": "김치볶음밥"
+   }
+  ]
+ },
+ {
+  "id": "ko-a-i",
+  "lang": "korean",
+  "word": "아이",
+  "romanization": "a-i",
+  "english": "child",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "play",
+    "ex": 0,
+    "surface": "아이들이"
+   }
+  ]
+ },
+ {
+  "id": "ko-bak",
+  "lang": "korean",
+  "word": "밖",
+  "romanization": "bak",
+  "english": "outside",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "play",
+    "ex": 0,
+    "surface": "밖에서"
+   },
+   {
+    "verb": "rain",
+    "ex": 0,
+    "surface": "밖에"
+   }
+  ]
+ },
+ {
+  "id": "tl-ba-ta",
+  "lang": "tagalog",
+  "word": "bata",
+  "romanization": "ba-ta",
+  "english": "child",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "play",
+    "ex": 0,
+    "surface": "bata"
+   }
+  ]
+ },
+ {
+  "id": "tl-la-bas",
+  "lang": "tagalog",
+  "word": "labas",
+  "romanization": "la-bas",
+  "english": "outside",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "play",
+    "ex": 0,
+    "surface": "labas"
+   },
+   {
+    "verb": "rain",
+    "ex": 0,
+    "surface": "labas"
+   }
+  ]
+ },
+ {
+  "id": "tl-pa-u-wi",
+  "lang": "tagalog",
+  "word": "pauwi",
+  "romanization": "pa-u-wi",
+  "english": "homeward",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "walk",
+    "ex": 0,
+    "surface": "pauwi"
+   }
+  ]
+ },
+ {
+  "id": "ko-ma-ni",
+  "lang": "korean",
+  "word": "많이",
+  "romanization": "ma-ni",
+  "english": "a lot",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "walk",
+    "ex": 1,
+    "surface": "많이"
+   },
+   {
+    "verb": "laugh",
+    "ex": 1,
+    "surface": "많이"
+   },
+   {
+    "verb": "worry",
+    "ex": 1,
+    "surface": "많이"
+   },
+   {
+    "verb": "take-photo",
+    "ex": 1,
+    "surface": "많이"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-ra-mi",
+  "lang": "tagalog",
+  "word": "marami",
+  "romanization": "ma-ra-mi",
+  "english": "a lot; many",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "walk",
+    "ex": 1,
+    "surface": "Marami"
+   }
+  ]
+ },
+ {
+  "id": "ko-yeop",
+  "lang": "korean",
+  "word": "옆",
+  "romanization": "yeop",
+  "english": "side; next to",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sit",
+    "ex": 1,
+    "surface": "옆에"
+   }
+  ]
+ },
+ {
+  "id": "tl-ta-bi",
+  "lang": "tagalog",
+  "word": "tabi",
+  "romanization": "ta-bi",
+  "english": "side; next to",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sit",
+    "ex": 1,
+    "surface": "tabi"
+   }
+  ]
+ },
+ {
+  "id": "ko-ji-ha-cheol",
+  "lang": "korean",
+  "word": "지하철",
+  "romanization": "ji-ha-cheol",
+  "english": "subway",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "stand",
+    "ex": 1,
+    "surface": "지하철에서"
+   }
+  ]
+ },
+ {
+  "id": "ko-gye-sok",
+  "lang": "korean",
+  "word": "계속",
+  "romanization": "gye-sok",
+  "english": "the whole time",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "stand",
+    "ex": 1,
+    "surface": "계속"
+   }
+  ]
+ },
+ {
+  "id": "tl-tren",
+  "lang": "tagalog",
+  "word": "tren",
+  "romanization": "tren",
+  "english": "train",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "stand",
+    "ex": 1,
+    "surface": "tren"
+   }
+  ]
+ },
+ {
+  "id": "tl-bi-ya-he",
+  "lang": "tagalog",
+  "word": "biyahe",
+  "romanization": "bi-ya-he",
+  "english": "trip",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "stand",
+    "ex": 1,
+    "surface": "biyahe"
+   },
+   {
+    "verb": "save-money",
+    "ex": 0,
+    "surface": "biyahe"
+   }
+  ]
+ },
+ {
+  "id": "ko-taek-si",
+  "lang": "korean",
+  "word": "택시",
+  "romanization": "taek-si",
+  "english": "taxi",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "ride",
+    "ex": 0,
+    "surface": "택시"
+   }
+  ]
+ },
+ {
+  "id": "ko-jal-mot",
+  "lang": "korean",
+  "word": "잘못",
+  "romanization": "jal-mot",
+  "english": "wrongly",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "ride",
+    "ex": 1,
+    "surface": "잘못"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-li",
+  "lang": "tagalog",
+  "word": "mali",
+  "romanization": "ma-li",
+  "english": "wrong",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "ride",
+    "ex": 1,
+    "surface": "Mali"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-ru-nong",
+  "lang": "tagalog",
+  "word": "marunong",
+  "romanization": "ma-ru-nong",
+  "english": "knows how",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "drive",
+    "ex": 0,
+    "surface": "Marunong"
+   },
+   {
+    "verb": "swim",
+    "ex": 0,
+    "surface": "Marunong"
+   }
+  ]
+ },
+ {
+  "id": "ko-jo-sim-hi",
+  "lang": "korean",
+  "word": "조심히",
+  "romanization": "jo-sim-hi",
+  "english": "carefully",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "drive",
+    "ex": 1,
+    "surface": "조심히"
+   }
+  ]
+ },
+ {
+  "id": "ko-nyeon",
+  "lang": "korean",
+  "word": "년",
+  "romanization": "nyeon",
+  "english": "year",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "live",
+    "ex": 1,
+    "surface": "년"
+   },
+   {
+    "verb": "marry",
+    "ex": 0,
+    "surface": "년에"
+   }
+  ]
+ },
+ {
+  "id": "tl-ta-on",
+  "lang": "tagalog",
+  "word": "taon",
+  "romanization": "ta-on",
+  "english": "year",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "live",
+    "ex": 1,
+    "surface": "taon"
+   },
+   {
+    "verb": "travel",
+    "ex": 1,
+    "surface": "taon"
+   }
+  ]
+ },
+ {
+  "id": "ko-ga-jok",
+  "lang": "korean",
+  "word": "가족",
+  "romanization": "ga-jok",
+  "english": "family",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "love",
+    "ex": 1,
+    "surface": "가족을"
+   }
+  ]
+ },
+ {
+  "id": "tl-pa-mil-ya",
+  "lang": "tagalog",
+  "word": "pamilya",
+  "romanization": "pa-mil-ya",
+  "english": "family",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "love",
+    "ex": 1,
+    "surface": "pamilya"
+   }
+  ]
+ },
+ {
+  "id": "ko-no-rae",
+  "lang": "korean",
+  "word": "노래",
+  "romanization": "no-rae",
+  "english": "song",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "like",
+    "ex": 0,
+    "surface": "노래"
+   },
+   {
+    "verb": "sing",
+    "ex": 0,
+    "surface": "노래"
+   }
+  ]
+ },
+ {
+  "id": "ko-jeong-mal",
+  "lang": "korean",
+  "word": "정말",
+  "romanization": "jeong-mal",
+  "english": "really",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "like",
+    "ex": 0,
+    "surface": "정말"
+   },
+   {
+    "verb": "thank",
+    "ex": 0,
+    "surface": "정말"
+   }
+  ]
+ },
+ {
+  "id": "tl-kan-ta",
+  "lang": "tagalog",
+  "word": "kanta",
+  "romanization": "kan-ta",
+  "english": "song",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "like",
+    "ex": 0,
+    "surface": "kanta"
+   },
+   {
+    "verb": "sing",
+    "ex": 0,
+    "surface": "kanta"
+   }
+  ]
+ },
+ {
+  "id": "ko-eum-sik",
+  "lang": "korean",
+  "word": "음식",
+  "romanization": "eum-sik",
+  "english": "food",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "like",
+    "ex": 1,
+    "surface": "음식"
+   }
+  ]
+ },
+ {
+  "id": "tl-pag-ka-in",
+  "lang": "tagalog",
+  "word": "pagkain",
+  "romanization": "pag-ka-in",
+  "english": "food",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "like",
+    "ex": 1,
+    "surface": "pagkain"
+   }
+  ]
+ },
+ {
+  "id": "tl-pe-li-ku-la",
+  "lang": "tagalog",
+  "word": "pelikula",
+  "romanization": "pe-li-ku-la",
+  "english": "movie",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "cry",
+    "ex": 1,
+    "surface": "pelikula"
+   },
+   {
+    "verb": "start",
+    "ex": 0,
+    "surface": "pelikula"
+   }
+  ]
+ },
+ {
+  "id": "tl-da-mi",
+  "lang": "tagalog",
+  "word": "dami",
+  "romanization": "da-mi",
+  "english": "amount; many",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "laugh",
+    "ex": 1,
+    "surface": "dami"
+   },
+   {
+    "verb": "take-photo",
+    "ex": 1,
+    "surface": "dami"
+   }
+  ]
+ },
+ {
+  "id": "ko-gok",
+  "lang": "korean",
+  "word": "곡",
+  "romanization": "gok",
+  "english": "(song) counter",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sing",
+    "ex": 0,
+    "surface": "곡"
+   }
+  ]
+ },
+ {
+  "id": "ko-bam-sae",
+  "lang": "korean",
+  "word": "밤새",
+  "romanization": "bam-sae",
+  "english": "all night",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "sing",
+    "ex": 1,
+    "surface": "밤새"
+   }
+  ]
+ },
+ {
+  "id": "ko-no-rae-bang",
+  "lang": "korean",
+  "word": "노래방",
+  "romanization": "no-rae-bang",
+  "english": "karaoke room",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "sing",
+    "ex": 1,
+    "surface": "노래방에서"
+   }
+  ]
+ },
+ {
+  "id": "ko-chum",
+  "lang": "korean",
+  "word": "춤",
+  "romanization": "chum",
+  "english": "dance",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "dance",
+    "ex": 1,
+    "surface": "춤을"
+   }
+  ]
+ },
+ {
+  "id": "ko-jal",
+  "lang": "korean",
+  "word": "잘",
+  "romanization": "jal",
+  "english": "well",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "dance",
+    "ex": 1,
+    "surface": "잘"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-ga-ling",
+  "lang": "tagalog",
+  "word": "magaling",
+  "romanization": "ma-ga-ling",
+  "english": "good at; skilled",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "dance",
+    "ex": 1,
+    "surface": "Magaling"
+   }
+  ]
+ },
+ {
+  "id": "ko-ba-da",
+  "lang": "korean",
+  "word": "바다",
+  "romanization": "ba-da",
+  "english": "sea; beach",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "swim",
+    "ex": 1,
+    "surface": "바다에서"
+   }
+  ]
+ },
+ {
+  "id": "tl-da-gat",
+  "lang": "tagalog",
+  "word": "dagat",
+  "romanization": "da-gat",
+  "english": "sea",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "swim",
+    "ex": 1,
+    "surface": "dagat"
+   }
+  ]
+ },
+ {
+  "id": "ko-jae-kit",
+  "lang": "korean",
+  "word": "재킷",
+  "romanization": "jae-kit",
+  "english": "jacket",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "wear",
+    "ex": 0,
+    "surface": "재킷"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-la-mig",
+  "lang": "tagalog",
+  "word": "malamig",
+  "romanization": "ma-la-mig",
+  "english": "cold",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "wear",
+    "ex": 0,
+    "surface": "malamig"
+   }
+  ]
+ },
+ {
+  "id": "ko-il",
+  "lang": "korean",
+  "word": "일",
+  "romanization": "il",
+  "english": "work",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "finish",
+    "ex": 0,
+    "surface": "일"
+   }
+  ]
+ },
+ {
+  "id": "ko-eon-je",
+  "lang": "korean",
+  "word": "언제",
+  "romanization": "eon-je",
+  "english": "when",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "finish",
+    "ex": 0,
+    "surface": "언제"
+   },
+   {
+    "verb": "move",
+    "ex": 1,
+    "surface": "언제"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-i-lan",
+  "lang": "tagalog",
+  "word": "kailan",
+  "romanization": "ka-i-lan",
+  "english": "when",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "finish",
+    "ex": 0,
+    "surface": "Kailan"
+   },
+   {
+    "verb": "move",
+    "ex": 1,
+    "surface": "Kailan"
+   }
+  ]
+ },
+ {
+  "id": "tl-tra-ba-ho",
+  "lang": "tagalog",
+  "word": "trabaho",
+  "romanization": "tra-ba-ho",
+  "english": "work; job",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "finish",
+    "ex": 0,
+    "surface": "trabaho"
+   }
+  ]
+ },
+ {
+  "id": "ko-suk-je",
+  "lang": "korean",
+  "word": "숙제",
+  "romanization": "suk-je",
+  "english": "homework",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "finish",
+    "ex": 1,
+    "surface": "숙제"
+   }
+  ]
+ },
+ {
+  "id": "ko-ja-gi",
+  "lang": "korean",
+  "word": "자기",
+  "romanization": "ja-gi",
+  "english": "honey (couples)",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "decide",
+    "ex": 1,
+    "surface": "자기"
+   },
+   {
+    "verb": "choose",
+    "ex": 0,
+    "surface": "자기"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-hal",
+  "lang": "tagalog",
+  "word": "mahal",
+  "romanization": "ma-hal",
+  "english": "love; dear",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "decide",
+    "ex": 1,
+    "surface": "mahal"
+   },
+   {
+    "verb": "choose",
+    "ex": 0,
+    "surface": "mahal"
+   }
+  ]
+ },
+ {
+  "id": "ko-eo-tteo-ke",
+  "lang": "korean",
+  "word": "어떻게",
+  "romanization": "eo-tteo-ke",
+  "english": "how",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "think",
+    "ex": 0,
+    "surface": "어떻게"
+   }
+  ]
+ },
+ {
+  "id": "ko-meo-ri",
+  "lang": "korean",
+  "word": "머리",
+  "romanization": "meo-ri",
+  "english": "head; hair",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "hurt",
+    "ex": 0,
+    "surface": "머리가"
+   },
+   {
+    "verb": "cut",
+    "ex": 0,
+    "surface": "머리"
+   }
+  ]
+ },
+ {
+  "id": "tl-u-lo",
+  "lang": "tagalog",
+  "word": "ulo",
+  "romanization": "u-lo",
+  "english": "head",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "hurt",
+    "ex": 0,
+    "surface": "ulo"
+   }
+  ]
+ },
+ {
+  "id": "ko-han-guk",
+  "lang": "korean",
+  "word": "한국",
+  "romanization": "han-guk",
+  "english": "Korea",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "travel",
+    "ex": 0,
+    "surface": "한국으로"
+   }
+  ]
+ },
+ {
+  "id": "ko-jang-nyeon",
+  "lang": "korean",
+  "word": "작년",
+  "romanization": "jang-nyeon",
+  "english": "last year",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "travel",
+    "ex": 1,
+    "surface": "작년에"
+   }
+  ]
+ },
+ {
+  "id": "ko-da-eum",
+  "lang": "korean",
+  "word": "다음",
+  "romanization": "da-eum",
+  "english": "next",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "move",
+    "ex": 0,
+    "surface": "다음"
+   }
+  ]
+ },
+ {
+  "id": "ko-dal",
+  "lang": "korean",
+  "word": "달",
+  "romanization": "dal",
+  "english": "month",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "move",
+    "ex": 0,
+    "surface": "달에"
+   },
+   {
+    "verb": "save-money",
+    "ex": 1,
+    "surface": "달에"
+   },
+   {
+    "verb": "spend",
+    "ex": 0,
+    "surface": "달에"
+   }
+  ]
+ },
+ {
+  "id": "tl-su-su-nod",
+  "lang": "tagalog",
+  "word": "susunod",
+  "romanization": "su-su-nod",
+  "english": "next",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "move",
+    "ex": 0,
+    "surface": "susunod"
+   }
+  ]
+ },
+ {
+  "id": "tl-bu-wan",
+  "lang": "tagalog",
+  "word": "buwan",
+  "romanization": "bu-wan",
+  "english": "month",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "move",
+    "ex": 0,
+    "surface": "buwan"
+   },
+   {
+    "verb": "save-money",
+    "ex": 1,
+    "surface": "buwan"
+   },
+   {
+    "verb": "spend",
+    "ex": 0,
+    "surface": "buwan"
+   }
+  ]
+ },
+ {
+  "id": "ko-i-ryo-il",
+  "lang": "korean",
+  "word": "일요일",
+  "romanization": "i-ryo-il",
+  "english": "Sunday",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "visit",
+    "ex": 0,
+    "surface": "일요일에"
+   }
+  ]
+ },
+ {
+  "id": "ko-hal-meo-ni",
+  "lang": "korean",
+  "word": "할머니",
+  "romanization": "hal-meo-ni",
+  "english": "grandma",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "visit",
+    "ex": 0,
+    "surface": "할머니"
+   }
+  ]
+ },
+ {
+  "id": "tl-lo-la",
+  "lang": "tagalog",
+  "word": "Lola",
+  "romanization": "lo-la",
+  "english": "grandma",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "visit",
+    "ex": 0,
+    "surface": "Lola"
+   }
+  ]
+ },
+ {
+  "id": "tl-ling-go",
+  "lang": "tagalog",
+  "word": "Linggo",
+  "romanization": "ling-go",
+  "english": "Sunday",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "visit",
+    "ex": 0,
+    "surface": "Linggo"
+   }
+  ]
+ },
+ {
+  "id": "ko-eo-je",
+  "lang": "korean",
+  "word": "어제",
+  "romanization": "eo-je",
+  "english": "yesterday",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "visit",
+    "ex": 1,
+    "surface": "어제"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-ha-pon",
+  "lang": "tagalog",
+  "word": "kahapon",
+  "romanization": "ka-ha-pon",
+  "english": "yesterday",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "visit",
+    "ex": 1,
+    "surface": "kahapon"
+   }
+  ]
+ },
+ {
+  "id": "ko-sa-jin",
+  "lang": "korean",
+  "word": "사진",
+  "romanization": "sa-jin",
+  "english": "photo",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "send",
+    "ex": 0,
+    "surface": "사진"
+   },
+   {
+    "verb": "show",
+    "ex": 0,
+    "surface": "사진"
+   },
+   {
+    "verb": "take-photo",
+    "ex": 0,
+    "surface": "사진"
+   }
+  ]
+ },
+ {
+  "id": "tl-li-tra-to",
+  "lang": "tagalog",
+  "word": "litrato",
+  "romanization": "li-tra-to",
+  "english": "photo",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "send",
+    "ex": 0,
+    "surface": "litrato"
+   },
+   {
+    "verb": "show",
+    "ex": 0,
+    "surface": "litrato"
+   },
+   {
+    "verb": "take-photo",
+    "ex": 0,
+    "surface": "litrato"
+   }
+  ]
+ },
+ {
+  "id": "ko-pen",
+  "lang": "korean",
+  "word": "펜",
+  "romanization": "pen",
+  "english": "pen",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "borrow",
+    "ex": 0,
+    "surface": "펜"
+   }
+  ]
+ },
+ {
+  "id": "tl-ball-pen",
+  "lang": "tagalog",
+  "word": "ballpen",
+  "romanization": "ball-pen",
+  "english": "pen",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "borrow",
+    "ex": 0,
+    "surface": "ballpen"
+   }
+  ]
+ },
+ {
+  "id": "ko-do-seo-gwan",
+  "lang": "korean",
+  "word": "도서관",
+  "romanization": "do-seo-gwan",
+  "english": "library",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "borrow",
+    "ex": 1,
+    "surface": "도서관에서"
+   }
+  ]
+ },
+ {
+  "id": "ko-chaek",
+  "lang": "korean",
+  "word": "책",
+  "romanization": "chaek",
+  "english": "book",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "borrow",
+    "ex": 1,
+    "surface": "책을"
+   }
+  ]
+ },
+ {
+  "id": "tl-li-bro",
+  "lang": "tagalog",
+  "word": "libro",
+  "romanization": "li-bro",
+  "english": "book",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "borrow",
+    "ex": 1,
+    "surface": "libro"
+   }
+  ]
+ },
+ {
+  "id": "tl-han-da",
+  "lang": "tagalog",
+  "word": "handa",
+  "romanization": "han-da",
+  "english": "ready",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "order",
+    "ex": 0,
+    "surface": "Handa"
+   }
+  ]
+ },
+ {
+  "id": "ko-chi-kin",
+  "lang": "korean",
+  "word": "치킨",
+  "romanization": "chi-kin",
+  "english": "fried chicken",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "order",
+    "ex": 1,
+    "surface": "치킨"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-nok",
+  "lang": "tagalog",
+  "word": "manok",
+  "romanization": "ma-nok",
+  "english": "chicken",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "order",
+    "ex": 1,
+    "surface": "manok"
+   }
+  ]
+ },
+ {
+  "id": "ko-sik-dang",
+  "lang": "korean",
+  "word": "식당",
+  "romanization": "sik-dang",
+  "english": "restaurant",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "choose",
+    "ex": 0,
+    "surface": "식당은"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-i-nan",
+  "lang": "tagalog",
+  "word": "kainan",
+  "romanization": "ka-i-nan",
+  "english": "eatery",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "choose",
+    "ex": 0,
+    "surface": "kainan"
+   }
+  ]
+ },
+ {
+  "id": "ko-eo-tteon",
+  "lang": "korean",
+  "word": "어떤",
+  "romanization": "eo-tteon",
+  "english": "which",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "choose",
+    "ex": 1,
+    "surface": "어떤"
+   }
+  ]
+ },
+ {
+  "id": "tl-a-lin",
+  "lang": "tagalog",
+  "word": "alin",
+  "romanization": "a-lin",
+  "english": "which",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "choose",
+    "ex": 1,
+    "surface": "Alin"
+   }
+  ]
+ },
+ {
+  "id": "ko-ja-ri",
+  "lang": "korean",
+  "word": "자리",
+  "romanization": "ja-ri",
+  "english": "seat",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "change",
+    "ex": 0,
+    "surface": "자리"
+   }
+  ]
+ },
+ {
+  "id": "tl-u-pu-an",
+  "lang": "tagalog",
+  "word": "upuan",
+  "romanization": "u-pu-an",
+  "english": "seat; chair",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "change",
+    "ex": 0,
+    "surface": "upuan"
+   }
+  ]
+ },
+ {
+  "id": "ko-jeon-hwa-beon-ho",
+  "lang": "korean",
+  "word": "전화번호",
+  "romanization": "jeon-hwa-beon-ho",
+  "english": "phone number",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "change",
+    "ex": 1,
+    "surface": "전화번호"
+   }
+  ]
+ },
+ {
+  "id": "tl-nu-me-ro",
+  "lang": "tagalog",
+  "word": "numero",
+  "romanization": "nu-me-ro",
+  "english": "number",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "change",
+    "ex": 1,
+    "surface": "numero"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-ya",
+  "lang": "tagalog",
+  "word": "kaya",
+  "romanization": "ka-ya",
+  "english": "can; able",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "fix",
+    "ex": 0,
+    "surface": "Kaya"
+   }
+  ]
+ },
+ {
+  "id": "ko-a-ppa",
+  "lang": "korean",
+  "word": "아빠",
+  "romanization": "a-ppa",
+  "english": "dad",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "fix",
+    "ex": 1,
+    "surface": "아빠가"
+   }
+  ]
+ },
+ {
+  "id": "tl-ta-tay",
+  "lang": "tagalog",
+  "word": "Tatay",
+  "romanization": "ta-tay",
+  "english": "dad",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "fix",
+    "ex": 1,
+    "surface": "Tatay"
+   }
+  ]
+ },
+ {
+  "id": "ko-e-eo-keon",
+  "lang": "korean",
+  "word": "에어컨",
+  "romanization": "e-eo-keon",
+  "english": "air conditioner",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "break",
+    "ex": 1,
+    "surface": "에어컨이"
+   }
+  ]
+ },
+ {
+  "id": "tl-air-con",
+  "lang": "tagalog",
+  "word": "aircon",
+  "romanization": "air-con",
+  "english": "air conditioner",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "break",
+    "ex": 1,
+    "surface": "aircon"
+   }
+  ]
+ },
+ {
+  "id": "ko-bul",
+  "lang": "korean",
+  "word": "불",
+  "romanization": "bul",
+  "english": "light; fire",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "turn-off",
+    "ex": 0,
+    "surface": "불"
+   }
+  ]
+ },
+ {
+  "id": "tl-i-law",
+  "lang": "tagalog",
+  "word": "ilaw",
+  "romanization": "i-law",
+  "english": "light",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "turn-off",
+    "ex": 0,
+    "surface": "ilaw"
+   }
+  ]
+ },
+ {
+  "id": "ko-ga-seu-re-in-ji",
+  "lang": "korean",
+  "word": "가스레인지",
+  "romanization": "ga-seu-re-in-ji",
+  "english": "gas stove",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "turn-off",
+    "ex": 1,
+    "surface": "가스레인지"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-lan",
+  "lang": "tagalog",
+  "word": "kalan",
+  "romanization": "ka-lan",
+  "english": "stove",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "turn-off",
+    "ex": 1,
+    "surface": "kalan"
+   }
+  ]
+ },
+ {
+  "id": "ko-pi-ryo",
+  "lang": "korean",
+  "word": "필요",
+  "romanization": "pi-ryo",
+  "english": "need",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "hurry",
+    "ex": 1,
+    "surface": "필요"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-i-la-ngan",
+  "lang": "tagalog",
+  "word": "kailangan",
+  "romanization": "ka-i-la-ngan",
+  "english": "need",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "hurry",
+    "ex": 1,
+    "surface": "kailangan"
+   }
+  ]
+ },
+ {
+  "id": "ko-bi",
+  "lang": "korean",
+  "word": "비",
+  "romanization": "bi",
+  "english": "rain",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "stop",
+    "ex": 1,
+    "surface": "비가"
+   },
+   {
+    "verb": "rain",
+    "ex": 0,
+    "surface": "비가"
+   }
+  ]
+ },
+ {
+  "id": "tl-u-lan",
+  "lang": "tagalog",
+  "word": "ulan",
+  "romanization": "u-lan",
+  "english": "rain",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "stop",
+    "ex": 1,
+    "surface": "ulan"
+   }
+  ]
+ },
+ {
+  "id": "ko-to-yo-il",
+  "lang": "korean",
+  "word": "토요일",
+  "romanization": "to-yo-il",
+  "english": "Saturday",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "shop",
+    "ex": 0,
+    "surface": "토요일에"
+   }
+  ]
+ },
+ {
+  "id": "tl-sa-ba-do",
+  "lang": "tagalog",
+  "word": "Sabado",
+  "romanization": "sa-ba-do",
+  "english": "Saturday",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "shop",
+    "ex": 0,
+    "surface": "Sabado"
+   }
+  ]
+ },
+ {
+  "id": "ko-syo-ping",
+  "lang": "korean",
+  "word": "쇼핑",
+  "romanization": "syo-ping",
+  "english": "shopping",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "shop",
+    "ex": 1,
+    "surface": "쇼핑을"
+   }
+  ]
+ },
+ {
+  "id": "ko-guk",
+  "lang": "korean",
+  "word": "국",
+  "romanization": "guk",
+  "english": "soup",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "taste",
+    "ex": 1,
+    "surface": "국"
+   }
+  ]
+ },
+ {
+  "id": "tl-sa-baw",
+  "lang": "tagalog",
+  "word": "sabaw",
+  "romanization": "sa-baw",
+  "english": "soup; broth",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "taste",
+    "ex": 1,
+    "surface": "sabaw"
+   }
+  ]
+ },
+ {
+  "id": "ko-gi-bun",
+  "lang": "korean",
+  "word": "기분",
+  "romanization": "gi-bun",
+  "english": "mood; feeling",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "feel",
+    "ex": 0,
+    "surface": "기분이"
+   }
+  ]
+ },
+ {
+  "id": "ko-i-sang-ha-da",
+  "lang": "korean",
+  "word": "이상하다",
+  "romanization": "i-sang-ha-da",
+  "english": "strange",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "feel",
+    "ex": 1,
+    "surface": "이상한"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-ka-i-ba",
+  "lang": "tagalog",
+  "word": "kakaiba",
+  "romanization": "ka-ka-i-ba",
+  "english": "strange",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "feel",
+    "ex": 1,
+    "surface": "kakaiba"
+   }
+  ]
+ },
+ {
+  "id": "ko-kkam-jjak",
+  "lang": "korean",
+  "word": "깜짝",
+  "romanization": "kkam-jjak",
+  "english": "suddenly (startled)",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "be-surprised",
+    "ex": 0,
+    "surface": "깜짝"
+   }
+  ]
+ },
+ {
+  "id": "ko-so-pa",
+  "lang": "korean",
+  "word": "소파",
+  "romanization": "so-pa",
+  "english": "sofa",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "lie-down",
+    "ex": 1,
+    "surface": "소파에"
+   }
+  ]
+ },
+ {
+  "id": "tl-so-fa",
+  "lang": "tagalog",
+  "word": "sofa",
+  "romanization": "so-fa",
+  "english": "sofa",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "lie-down",
+    "ex": 1,
+    "surface": "sofa"
+   }
+  ]
+ },
+ {
+  "id": "ko-gye-dan",
+  "lang": "korean",
+  "word": "계단",
+  "romanization": "gye-dan",
+  "english": "stairs",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "go-up",
+    "ex": 0,
+    "surface": "계단으로"
+   }
+  ]
+ },
+ {
+  "id": "tl-hag-dan",
+  "lang": "tagalog",
+  "word": "hagdan",
+  "romanization": "hag-dan",
+  "english": "stairs",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "go-up",
+    "ex": 0,
+    "surface": "hagdan"
+   }
+  ]
+ },
+ {
+  "id": "ko-mul-ga",
+  "lang": "korean",
+  "word": "물가",
+  "romanization": "mul-ga",
+  "english": "prices",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "go-up",
+    "ex": 1,
+    "surface": "물가가"
+   }
+  ]
+ },
+ {
+  "id": "tl-pre-syo",
+  "lang": "tagalog",
+  "word": "presyo",
+  "romanization": "pre-syo",
+  "english": "price",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "go-up",
+    "ex": 1,
+    "surface": "presyo"
+   }
+  ]
+ },
+ {
+  "id": "ko-ga-bang",
+  "lang": "korean",
+  "word": "가방",
+  "romanization": "ga-bang",
+  "english": "bag",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "carry",
+    "ex": 1,
+    "surface": "가방"
+   }
+  ]
+ },
+ {
+  "id": "ko-mu-geop-da",
+  "lang": "korean",
+  "word": "무겁다",
+  "romanization": "mu-geop-da",
+  "english": "heavy",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "carry",
+    "ex": 1,
+    "surface": "무거워서"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-bi-gat",
+  "lang": "tagalog",
+  "word": "mabigat",
+  "romanization": "ma-bi-gat",
+  "english": "heavy",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "carry",
+    "ex": 1,
+    "surface": "mabigat"
+   }
+  ]
+ },
+ {
+  "id": "tl-bag",
+  "lang": "tagalog",
+  "word": "bag",
+  "romanization": "bag",
+  "english": "bag",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "carry",
+    "ex": 1,
+    "surface": "bag"
+   }
+  ]
+ },
+ {
+  "id": "ko-sseu-re-gi",
+  "lang": "korean",
+  "word": "쓰레기",
+  "romanization": "sseu-re-gi",
+  "english": "trash",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "throw-away",
+    "ex": 0,
+    "surface": "쓰레기"
+   }
+  ]
+ },
+ {
+  "id": "tl-ba-su-ra",
+  "lang": "tagalog",
+  "word": "basura",
+  "romanization": "ba-su-ra",
+  "english": "trash",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "throw-away",
+    "ex": 0,
+    "surface": "basura"
+   }
+  ]
+ },
+ {
+  "id": "ko-geu-geo",
+  "lang": "korean",
+  "word": "그거",
+  "romanization": "geu-geo",
+  "english": "that (thing)",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "throw-away",
+    "ex": 1,
+    "surface": "그거"
+   }
+  ]
+ },
+ {
+  "id": "ko-kkwak",
+  "lang": "korean",
+  "word": "꽉",
+  "romanization": "kkwak",
+  "english": "tightly",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "hold",
+    "ex": 1,
+    "surface": "꽉"
+   }
+  ]
+ },
+ {
+  "id": "tl-ma-hig-pit",
+  "lang": "tagalog",
+  "word": "mahigpit",
+  "romanization": "ma-hig-pit",
+  "english": "tight",
+  "pos": "adj",
+  "sources": [
+   {
+    "verb": "hold",
+    "ex": 1,
+    "surface": "mahigpit"
+   },
+   {
+    "verb": "hug",
+    "ex": 1,
+    "surface": "mahigpit"
+   }
+  ]
+ },
+ {
+  "id": "ko-i-bul",
+  "lang": "korean",
+  "word": "이불",
+  "romanization": "i-bul",
+  "english": "blanket",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "pull",
+    "ex": 1,
+    "surface": "이불"
+   }
+  ]
+ },
+ {
+  "id": "tl-ku-mot",
+  "lang": "tagalog",
+  "word": "kumot",
+  "romanization": "ku-mot",
+  "english": "blanket",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "pull",
+    "ex": 1,
+    "surface": "kumot"
+   }
+  ]
+ },
+ {
+  "id": "ko-il-ju-il",
+  "lang": "korean",
+  "word": "일주일",
+  "romanization": "il-ju-il",
+  "english": "one week",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "exercise",
+    "ex": 0,
+    "surface": "일주일에"
+   }
+  ]
+ },
+ {
+  "id": "ko-beon",
+  "lang": "korean",
+  "word": "번",
+  "romanization": "beon",
+  "english": "time(s)",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "exercise",
+    "ex": 0,
+    "surface": "번"
+   }
+  ]
+ },
+ {
+  "id": "tl-be-ses",
+  "lang": "tagalog",
+  "word": "beses",
+  "romanization": "be-ses",
+  "english": "time(s)",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "exercise",
+    "ex": 0,
+    "surface": "beses"
+   }
+  ]
+ },
+ {
+  "id": "tl-ling-go_",
+  "lang": "tagalog",
+  "word": "linggo",
+  "romanization": "ling-go",
+  "english": "week",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "exercise",
+    "ex": 0,
+    "surface": "linggo"
+   }
+  ]
+ },
+ {
+  "id": "ko-saeng-il",
+  "lang": "korean",
+  "word": "생일",
+  "romanization": "saeng-il",
+  "english": "birthday",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "celebrate",
+    "ex": 0,
+    "surface": "생일"
+   }
+  ]
+ },
+ {
+  "id": "tl-ka-a-ra-wan",
+  "lang": "tagalog",
+  "word": "kaarawan",
+  "romanization": "ka-a-ra-wan",
+  "english": "birthday",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "celebrate",
+    "ex": 0,
+    "surface": "kaarawan"
+   }
+  ]
+ },
+ {
+  "id": "ko-han-beon",
+  "lang": "korean",
+  "word": "한번",
+  "romanization": "han-beon",
+  "english": "once",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "try",
+    "ex": 0,
+    "surface": "한번"
+   }
+  ]
+ },
+ {
+  "id": "tl-min-san",
+  "lang": "tagalog",
+  "word": "minsan",
+  "romanization": "min-san",
+  "english": "once",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "try",
+    "ex": 0,
+    "surface": "minsan"
+   }
+  ]
+ },
+ {
+  "id": "tl-bu-hok",
+  "lang": "tagalog",
+  "word": "buhok",
+  "romanization": "bu-hok",
+  "english": "hair",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "cut",
+    "ex": 0,
+    "surface": "buhok"
+   }
+  ]
+ },
+ {
+  "id": "ko-yang-pa",
+  "lang": "korean",
+  "word": "양파",
+  "romanization": "yang-pa",
+  "english": "onion",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "cut",
+    "ex": 1,
+    "surface": "양파"
+   }
+  ]
+ },
+ {
+  "id": "tl-si-bu-yas",
+  "lang": "tagalog",
+  "word": "sibuyas",
+  "romanization": "si-bu-yas",
+  "english": "onion",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "cut",
+    "ex": 1,
+    "surface": "sibuyas"
+   }
+  ]
+ },
+ {
+  "id": "ko-got",
+  "lang": "korean",
+  "word": "곧",
+  "romanization": "got",
+  "english": "soon",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "get-ready",
+    "ex": 0,
+    "surface": "곧"
+   }
+  ]
+ },
+ {
+  "id": "tl-ba-ka",
+  "lang": "tagalog",
+  "word": "baka",
+  "romanization": "ba-ka",
+  "english": "maybe",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "rain",
+    "ex": 1,
+    "surface": "Baka"
+   }
+  ]
+ },
+ {
+  "id": "ko-gam-gi",
+  "lang": "korean",
+  "word": "감기",
+  "romanization": "gam-gi",
+  "english": "cold (illness)",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "catch-cold",
+    "ex": 0,
+    "surface": "감기에"
+   },
+   {
+    "verb": "catch-cold",
+    "ex": 1,
+    "surface": "감기"
+   }
+  ]
+ },
+ {
+  "id": "ko-yeo-haeng",
+  "lang": "korean",
+  "word": "여행",
+  "romanization": "yeo-haeng",
+  "english": "trip",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "save-money",
+    "ex": 0,
+    "surface": "여행"
+   }
+  ]
+ },
+ {
+  "id": "ko-don",
+  "lang": "korean",
+  "word": "돈",
+  "romanization": "don",
+  "english": "money",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "save-money",
+    "ex": 0,
+    "surface": "돈을"
+   },
+   {
+    "verb": "spend",
+    "ex": 0,
+    "surface": "돈을"
+   },
+   {
+    "verb": "lend",
+    "ex": 0,
+    "surface": "돈"
+   }
+  ]
+ },
+ {
+  "id": "tl-pe-ra",
+  "lang": "tagalog",
+  "word": "pera",
+  "romanization": "pe-ra",
+  "english": "money",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "save-money",
+    "ex": 0,
+    "surface": "pera"
+   },
+   {
+    "verb": "lend",
+    "ex": 0,
+    "surface": "pera"
+   }
+  ]
+ },
+ {
+  "id": "tl-la-hat",
+  "lang": "tagalog",
+  "word": "lahat",
+  "romanization": "la-hat",
+  "english": "all",
+  "pos": "pron",
+  "sources": [
+   {
+    "verb": "spend",
+    "ex": 1,
+    "surface": "lahat"
+   }
+  ]
+ },
+ {
+  "id": "ko-cha",
+  "lang": "korean",
+  "word": "차",
+  "romanization": "cha",
+  "english": "car",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "lend",
+    "ex": 1,
+    "surface": "차를"
+   }
+  ]
+ },
+ {
+  "id": "tl-kot-se",
+  "lang": "tagalog",
+  "word": "kotse",
+  "romanization": "kot-se",
+  "english": "car",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "lend",
+    "ex": 1,
+    "surface": "kotse"
+   }
+  ]
+ },
+ {
+  "id": "ko-kkok",
+  "lang": "korean",
+  "word": "꼭",
+  "romanization": "kkok",
+  "english": "tightly",
+  "pos": "adv",
+  "sources": [
+   {
+    "verb": "hug",
+    "ex": 1,
+    "surface": "꼭"
+   }
+  ]
+ },
+ {
+  "id": "ko-a-gi",
+  "lang": "korean",
+  "word": "아기",
+  "romanization": "a-gi",
+  "english": "baby",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "kiss",
+    "ex": 1,
+    "surface": "아기한테"
+   }
+  ]
+ },
+ {
+  "id": "tl-ba-by",
+  "lang": "tagalog",
+  "word": "baby",
+  "romanization": "ba-by",
+  "english": "baby",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "kiss",
+    "ex": 1,
+    "surface": "baby"
+   }
+  ]
+ },
+ {
+  "id": "ko-gi-sa-nim",
+  "lang": "korean",
+  "word": "기사님",
+  "romanization": "gi-sa-nim",
+  "english": "driver",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "thank",
+    "ex": 1,
+    "surface": "기사님한테"
+   }
+  ]
+ },
+ {
+  "id": "tl-dri-ver",
+  "lang": "tagalog",
+  "word": "driver",
+  "romanization": "dri-ver",
+  "english": "driver",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "thank",
+    "ex": 1,
+    "surface": "driver"
+   }
+  ]
+ },
+ {
+  "id": "ko-eon-ni",
+  "lang": "korean",
+  "word": "언니",
+  "romanization": "eon-ni",
+  "english": "older sister",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "apologize",
+    "ex": 1,
+    "surface": "언니한테"
+   }
+  ]
+ },
+ {
+  "id": "tl-a-te",
+  "lang": "tagalog",
+  "word": "ate",
+  "romanization": "a-te",
+  "english": "older sister",
+  "pos": "n",
+  "sources": [
+   {
+    "verb": "apologize",
+    "ex": 1,
+    "surface": "ate"
+   }
+  ]
+ }
+]

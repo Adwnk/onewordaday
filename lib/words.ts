@@ -1,7 +1,8 @@
 import pairsData from "@/data/pairs.json";
 
 export type Language = "korean" | "tagalog";
-export type Example = { text: string; romanization?: string; highlight: string; en: string; tense?: string; audio: string };
+export type ExampleVocab = { surface: string; start?: number; id: string };
+export type Example = { text: string; romanization?: string; highlight: string; en: string; tense?: string; audio: string; vocab?: ExampleVocab[] };
 export type Word = { word: string; romanization: string; definition: string; audio: string; examples: Example[] };
 export type Pair = { id: string; english: string; korean: Word; tagalog: Word };
 

@@ -64,7 +64,14 @@ def ko(text):
     return " ".join(ko_word(t) for t in toks)
 
 V="aeiou"
+# English / foreign loanwords common in Taglish: keep their own syllables
+LOAN={"girlfriend":"girl-friend","package":"pack-age","cellphone":"cell-phone","charger":"char-ger",
+ "assignment":"as-sign-ment","weekend":"week-end","library":"li-bra-ry","kimchi":"kim-chi","fried":"fried",
+ "rice":"rice","aircon":"air-con","jacket":"jack-et","driver":"dri-ver","baby":"ba-by","taxi":"tak-si",
+ "sorry":"sor-ry","seoul":"se-oul","korean":"ko-re-an","korea":"ko-re-a","late":"late","app":"app",
+ "mall":"mall","party":"par-ty","ballpen":"ball-pen","videoke":"vi-de-o-ke","sofa":"so-fa","drama":"dra-ma"}
 def tl_word(w):
+    if w.lower() in LOAN: return LOAN[w.lower()]
     w=w.lower().replace("ng","\0")  # ng is one consonant
     # syllable: (C)V(C) — split V C V -> V-CV, V CC V -> VC-CV, V V -> V-V
     segs=[]; cur=""; i=0
@@ -75,11 +82,12 @@ def tl_word(w):
     bounds=[]
     for a,b in zip(idx,idx[1:]):
         cons=b-a-1
-        glide=cons>=2 and chars[b-1] in "rlyw" and chars[b-2] in "bkdgptsc"
+        pair=chars[b-2]+chars[b-1]
+        glide=cons>=2 and (pair in ("tr","pr","br","dr","kr","gr") or (chars[b-1] in "yw" and chars[b-2] in "sktdn"))
         bounds.append(a+1 if cons<=1 else b-2 if glide else a+cons)
     parts=[];prev=0
     for bd in bounds: parts.append("".join(chars[prev:bd])); prev=bd
     parts.append("".join(chars[prev:]))
     return "-".join(parts).replace("\0","ng")
 def tl(text):
-    return " ".join("-".join(tl_word(p) for p in t.split("-")) for t in re.findall(r"[A-Za-zñÑ'\-]+",text))
+    return " ".join("-".join(tl_word(p) for p in t.split("-")) for t in re.findall(r"[A-Za-zñÑ0-9'\-]+",text))
