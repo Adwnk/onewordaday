@@ -5,7 +5,7 @@ export type Example = { text: string; romanization?: string; highlight: string; 
 export type Word = { word: string; romanization: string; definition: string; audio: string; examples: Example[] };
 export type Pair = { id: string; english: string; korean: Word; tagalog: Word };
 
-type RawExample = Omit<Example, "audio">;
+type RawExample = Omit<Example, "audio"> & { audioId?: string };
 type RawWord = Omit<Word, "audio" | "examples"> & { examples: RawExample[] };
 type RawPair = { id: string; english: string; korean: RawWord; tagalog: RawWord };
 
@@ -13,7 +13,7 @@ type RawPair = { id: string; english: string; korean: RawWord; tagalog: RawWord 
 const withAudio = (code: string, id: string, w: RawWord): Word => ({
   ...w,
   audio: `/audio/${code}/${id}.mp3`,
-  examples: w.examples.map((e, i) => ({ ...e, audio: `/audio/${code}/${id}-ex${i + 1}.mp3` })),
+  examples: w.examples.map((e, i) => ({ ...e, audio: `/audio/${code}/${e.audioId ?? `${id}-ex${i + 1}`}.mp3` })),
 });
 
 export const pairs: Pair[] = (pairsData as RawPair[]).map((p) => ({

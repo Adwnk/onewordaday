@@ -138,6 +138,14 @@ for i,en,ko,tl in P_:
             exs.append({"text":text,"romanization":R(text),"highlight":hl,"en":e,"tense":tense})
         return {"word":word,"romanization":rom,"definition":d,"examples":exs}
     out.append({"id":i,"english":en,"korean":w(ko,"ko"),"tagalog":w(tl,"tl")})
+# dedupe identical example audio: later copies point at the first clip
+seen={}
+for o in out:
+    for k in ("korean","tagalog"):
+        for n,e in enumerate(o[k]["examples"]):
+            key=(k,e["text"]); clip=f"{o['id']}-ex{n+1}"
+            if key in seen: e["audioId"]=seen[key]
+            else: seen[key]=clip
 ids=[o["id"] for o in out]; assert len(ids)==len(set(ids))
 Path(__file__).resolve().parent.parent.joinpath("data/pairs.json").write_text(json.dumps(out,ensure_ascii=False,indent=1)+"\n",encoding="utf-8")
 print(len(out),"pairs")
