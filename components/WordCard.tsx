@@ -13,6 +13,16 @@ const TENSE_STYLE: Record<string, string> = {
 
 export default function WordCard({ word, language }: { word: Word; language: Language }) {
   const l = LANGS[language];
+  const [shown, setShown] = useState<boolean[]>(() => word.examples.map(() => false));
+  // Reset reveal state when the word changes (render-time adjustment, no effect needed).
+  const [prevWord, setPrevWord] = useState(word);
+  if (prevWord !== word) {
+    setPrevWord(word);
+    setShown(word.examples.map(() => false));
+  }
+  const allShown = shown.length > 0 && shown.every(Boolean);
+  const toggleAll = () => setShown(word.examples.map(() => !allShown));
+  const toggleOne = (i: number) => setShown((s) => s.map((v, j) => (j === i ? !v : v)));
   return (
     <section className="rounded-2xl bg-white/80 p-6 shadow-sm ring-1 ring-stone-200">
       <p className="text-sm font-medium uppercase tracking-wide text-stone-500">
@@ -33,14 +43,31 @@ export default function WordCard({ word, language }: { word: Word; language: Lan
         {language === "tagalog" ? `Say it: ${word.romanization}` : word.romanization}
       </p>
       <p className="mt-3 text-stone-700">{word.definition}</p>
-      <ul className="mt-4 flex flex-col gap-2">
+      {word.examples.length > 0 && (
+        <div className="mt-4 flex items-center justify-between">
+          <p className="text-xs text-stone-400">Tap a sentence to hear it</p>
+          <button
+            type="button"
+            onClick={toggleAll}
+            aria-pressed={allShown}
+            aria-label={`${allShown ? "Hide" : "Show"} all ${l.label} translations`}
+            className={PILL}
+          >
+            {allShown ? "Hide all" : "Show all"}
+          </button>
+        </div>
+      )}
+      <ul className="mt-2 flex flex-col gap-2">
         {word.examples.map((ex, i) => (
-          <ExampleItem key={`${i}-${ex.text}`} ex={ex} index={i} codes={l.codes} />
+          <ExampleItem key={`${i}-${ex.text}`} ex={ex} index={i} codes={l.codes} revealed={!!shown[i]} onToggle={() => toggleOne(i)} />
         ))}
       </ul>
     </section>
   );
 }
+
+const PILL =
+  "min-h-8 shrink-0 rounded-full bg-white px-3 py-1 text-xs font-medium text-teal-700 ring-1 ring-teal-200 hover:bg-teal-50 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400";
 
 type Seg = { text: string; kind: "plain" | "hl" | "vocab"; vocab?: VocabEntry };
 
@@ -71,12 +98,28 @@ function segments(ex: Example, withVocab: boolean): Seg[] {
   return out;
 }
 
-function ExampleItem({ ex, index, codes }: { ex: Example; index: number; codes: string[] }) {
-  const [revealed, setRevealed] = useState(false);
+function ExampleItem({
+  ex,
+  index,
+  codes,
+  revealed,
+  onToggle,
+}: {
+  ex: Example;
+  index: number;
+  codes: string[];
+  revealed: boolean;
+  onToggle: () => void;
+}) {
   const [popup, setPopup] = useState<VocabEntry | null>(null);
+  // Close the vocab popup when the translation gets hidden (underlines disappear).
+  const [prevRevealed, setPrevRevealed] = useState(revealed);
+  if (prevRevealed !== revealed) {
+    setPrevRevealed(revealed);
+    if (!revealed) setPopup(null);
+  }
   const activate = () => {
     speak(ex.audio, ex.text, codes);
-    setRevealed((r) => !r);
     setPopup(null);
   };
   const openVocab = (e: React.SyntheticEvent, v: VocabEntry) => {
@@ -87,8 +130,7 @@ function ExampleItem({ ex, index, codes }: { ex: Example; index: number; codes: 
     <li
       role="button"
       tabIndex={0}
-      aria-expanded={revealed}
-      aria-label={`Example ${index + 1}: ${ex.text}. ${revealed ? "Tap to hide translation" : "Tap to hear and reveal translation"}`}
+      aria-label={`Example ${index + 1}: ${ex.text}. Tap to hear it`}
       onClick={activate}
       onKeyDown={(e) => {
         if (e.target !== e.currentTarget) return;
@@ -159,7 +201,19 @@ function ExampleItem({ ex, index, codes }: { ex: Example; index: number; codes: 
             {ex.tense}
           </span>
         )}
-        {!revealed && <p className="text-sm italic text-stone-400">Tap to reveal</p>}
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onToggle();
+          }}
+          onKeyDown={(e) => e.stopPropagation()}
+          aria-expanded={revealed}
+          aria-label={`${revealed ? "Hide" : "Show"} romanization and English for example ${index + 1}`}
+          className={`ml-auto ${PILL}`}
+        >
+          {revealed ? "Hide" : "Show"}
+        </button>
       </div>
       {revealed && (
         <div className="mt-1">

@@ -16,15 +16,28 @@ export default function DailyWords() {
   const pair = getPair(used[used.length - 1]);
 
   const refresh = () => {
+    window.scrollTo({ top: 0 });
     const next = randomUnusedIndex(used);
     setUsed((u) => (u.length >= pairCount ? [next] : [...u, next]));
   };
 
   return (
     <div className="flex flex-col gap-5">
-      <p className="text-center text-xl font-medium text-stone-600">
-        Today&apos;s verb: <span className="text-teal-700">{pair.english}</span>
-      </p>
+      <div className="sticky top-0 z-20 -mx-5 border-b border-stone-200/70 bg-[#faf7f2]/90 px-5 pb-2 pt-[calc(env(safe-area-inset-top)+0.5rem)] backdrop-blur">
+        <div className="flex items-center justify-between gap-3">
+          <p className="min-w-0 text-lg font-medium text-stone-600">
+            Today&apos;s verb: <span className="text-teal-700">{pair.english}</span>
+          </p>
+          <button
+            type="button"
+            onClick={refresh}
+            aria-label="Show a new verb"
+            className="min-h-9 shrink-0 rounded-full bg-teal-600 px-4 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-teal-700 active:scale-95"
+          >
+            ↻ New word
+          </button>
+        </div>
+      </div>
       <WordCard word={pair.korean} language="korean" />
       <WordCard word={pair.tagalog} language="tagalog" />
       <button

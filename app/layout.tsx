@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "One Word A Day",
   description: "Learn one everyday Korean and Tagalog word a day.",
 };
-export const viewport: Viewport = { width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
