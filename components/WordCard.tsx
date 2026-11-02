@@ -1,4 +1,6 @@
 "use client";
+
+import { useState } from "react";
 import { splitHighlight, type Word, type Language } from "@/lib/words";
 
 const TENSE_STYLE: Record<string, string> = {
@@ -70,46 +72,60 @@ export default function WordCard({ word, language }: { word: Word; language: Lan
       </p>
       <p className="mt-3 text-stone-700">{word.definition}</p>
       <ul className="mt-4 flex flex-col gap-2">
-        {word.examples.map((ex, i) => {
-          const [a, hl, b] = splitHighlight(ex.text, ex.highlight);
-          return (
-            <li
-              key={i}
-              role="button"
-              tabIndex={0}
-              aria-label={`Hear example ${i + 1}: ${ex.text}`}
-              onClick={() => speak(ex.audio, ex.text, l.codes)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  speak(ex.audio, ex.text, l.codes);
-                }
-              }}
-              className="cursor-pointer select-none rounded-xl bg-stone-50 p-3 ring-1 ring-stone-200 transition hover:bg-teal-50/60 hover:ring-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 active:scale-[0.99] active:bg-teal-100/60"
-            >
-              <div className="flex items-start gap-2">
-                <p className="flex-1 text-lg text-stone-900">
-                  {a}
-                  {hl && <mark className="rounded bg-amber-100 px-1 font-semibold text-stone-900">{hl}</mark>}
-                  {b}
-                </p>
-                <span aria-hidden="true" className="shrink-0 rounded-full bg-teal-50 p-1.5 text-lg ring-1 ring-teal-200">
-                  🔊
-                </span>
-              </div>
-              {ex.romanization && <p className="mt-0.5 text-sm italic text-teal-700">{ex.romanization}</p>}
-              <div className="mt-1 flex items-center gap-2">
-                {ex.tense && (
-                  <span className={`rounded-full px-2 py-0.5 text-xs font-medium uppercase tracking-wide ring-1 ${TENSE_STYLE[ex.tense] ?? "bg-amber-50 text-amber-800 ring-amber-200"}`}>
-                    {ex.tense}
-                  </span>
-                )}
-                <p className="text-sm italic text-stone-500">{ex.en}</p>
-              </div>
-            </li>
-          );
-        })}
+        {word.examples.map((ex, i) => (
+          <ExampleItem key={`${i}-${ex.text}`} ex={ex} index={i} codes={l.codes} />
+        ))}
       </ul>
     </section>
+  );
+}
+
+function ExampleItem({ ex, index, codes }: { ex: Word["examples"][number]; index: number; codes: (typeof LANGS)[Language]["codes"] }) {
+  const [revealed, setRevealed] = useState(false);
+  const [a, hl, b] = splitHighlight(ex.text, ex.highlight);
+  const activate = () => {
+    speak(ex.audio, ex.text, codes);
+    setRevealed((r) => !r);
+  };
+  return (
+    <li
+      role="button"
+      tabIndex={0}
+      aria-expanded={revealed}
+      aria-label={`Example ${index + 1}: ${ex.text}. ${revealed ? "Tap to hide translation" : "Tap to hear and reveal translation"}`}
+      onClick={activate}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          activate();
+        }
+      }}
+      className="cursor-pointer select-none rounded-xl bg-stone-50 p-3 ring-1 ring-stone-200 transition hover:bg-teal-50/60 hover:ring-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 active:scale-[0.99] active:bg-teal-100/60"
+    >
+      <div className="flex items-start gap-2">
+        <p className="flex-1 text-lg text-stone-900">
+          {a}
+          {hl && <mark className="rounded bg-amber-100 px-1 font-semibold text-stone-900">{hl}</mark>}
+          {b}
+        </p>
+        <span aria-hidden="true" className="shrink-0 rounded-full bg-teal-50 p-1.5 text-lg ring-1 ring-teal-200">
+          🔊
+        </span>
+      </div>
+      <div className="mt-1 flex items-center gap-2">
+        {ex.tense && (
+          <span className={`rounded-full px-2 py-0.5 text-xs font-medium uppercase tracking-wide ring-1 ${TENSE_STYLE[ex.tense] ?? "bg-amber-50 text-amber-800 ring-amber-200"}`}>
+            {ex.tense}
+          </span>
+        )}
+        {!revealed && <p className="text-sm italic text-stone-400">Tap to reveal</p>}
+      </div>
+      {revealed && (
+        <div className="mt-1">
+          {ex.romanization && <p className="text-sm italic text-teal-700">{ex.romanization}</p>}
+          <p className="text-sm italic text-stone-500">{ex.en}</p>
+        </div>
+      )}
+    </li>
   );
 }

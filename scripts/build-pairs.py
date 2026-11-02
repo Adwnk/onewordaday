@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from romanize import ko as ro_ko, tl as ro_tl
+from examples import E as ALIGNED
 P=[]
 def add(i,en,ko,tl): P.append((i,en,ko,tl))
 add("water","water",("물","mul","water",[("물 마실래요?","물","Do you want some water?","present"),("물을 많이 마셨어요.","물","I drank a lot of water.","past"),("물 좀 주세요.","물","Some water, please.","polite")]),
@@ -123,6 +124,10 @@ add("weather","weather",("날씨","nalssi","weather",[("오늘 날씨 어때요?
 P_ = P
 out=[]
 for i,en,ko,tl in P_:
+    # aligned one-to-one examples replace the per-language lists
+    A=ALIGNED[i]
+    ko=ko[:3]+([(k,kh,e,t) for e,t,k,kh,_,_ in A],)
+    tl=tl[:3]+([(x,xh,e,t) for e,t,_,_,x,xh in A],)
     def w(t,lang):
         word,rom,d,ex=t
         R=ro_ko if lang=='ko' else ro_tl

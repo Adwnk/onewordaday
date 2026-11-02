@@ -43,18 +43,18 @@
      "tense": "present"
     },
     {
-     "text": "Uminom ako ng tubig.",
-     "romanization": "u-mi-nom a-ko ng tu-big",
+     "text": "Uminom ako ng maraming tubig.",
+     "romanization": "u-mi-nom a-ko ng ma-ra-ming tu-big",
      "highlight": "tubig",
-     "en": "I drank water.",
+     "en": "I drank a lot of water.",
      "tense": "past"
     },
     {
-     "text": "Bibili ako ng tubig mamaya.",
-     "romanization": "bi-bi-li a-ko ng tu-big ma-ma-ya",
+     "text": "Pahingi po ng tubig.",
+     "romanization": "pa-hi-ngi po ng tu-big",
      "highlight": "tubig",
-     "en": "I'll buy water later.",
-     "tense": "future"
+     "en": "Some water, please.",
+     "tense": "polite"
     }
    ]
   }
@@ -99,7 +99,7 @@
      "text": "Kumain ka na ba?",
      "romanization": "ku-ma-in ka na ba",
      "highlight": "Kumain",
-     "en": "Have you eaten yet?",
+     "en": "Have you eaten?",
      "tense": "past"
     },
     {
@@ -110,10 +110,10 @@
      "tense": "present"
     },
     {
-     "text": "Kakain tayo mamaya.",
-     "romanization": "ka-ka-in ta-yo ma-ma-ya",
-     "highlight": "Kakain",
-     "en": "We'll eat later.",
+     "text": "Sabay tayong kumain?",
+     "romanization": "sa-bay ta-yong ku-ma-in",
+     "highlight": "kumain",
+     "en": "Want to eat together?",
      "tense": "future"
     }
    ]
@@ -131,7 +131,7 @@
      "text": "커피 마셔요.",
      "romanization": "keo-pi ma-syeo-yo",
      "highlight": "마셔요",
-     "en": "I drink coffee.",
+     "en": "I'm drinking coffee.",
      "tense": "present"
     },
     {
@@ -163,17 +163,17 @@
      "tense": "present"
     },
     {
-     "text": "Uminom siya ng gatas.",
-     "romanization": "u-mi-nom si-ya ng ga-tas",
+     "text": "Uminom ako ng gatas kahapon.",
+     "romanization": "u-mi-nom a-ko ng ga-tas ka-ha-pon",
      "highlight": "Uminom",
-     "en": "She drank milk.",
+     "en": "I drank milk yesterday.",
      "tense": "past"
     },
     {
-     "text": "Iinom tayo mamaya.",
-     "romanization": "i-i-nom ta-yo ma-ma-ya",
-     "highlight": "Iinom",
-     "en": "We'll drink later.",
+     "text": "Ano ang iinumin mo?",
+     "romanization": "a-no ang i-i-nu-min mo",
+     "highlight": "iinumin",
+     "en": "What will you drink?",
      "tense": "future"
     }
    ]
@@ -188,11 +188,11 @@
    "definition": "to go",
    "examples": [
     {
-     "text": "학교에 가요.",
-     "romanization": "hak-gyo-e ga-yo",
-     "highlight": "가요",
-     "en": "I go to school.",
-     "tense": "present"
+     "text": "시장에 갈 거예요.",
+     "romanization": "si-jang-e gal geo-ye-yo",
+     "highlight": "갈 거예요",
+     "en": "I'll go to the market.",
+     "tense": "future"
     },
     {
      "text": "어제 시장에 갔어요.",
@@ -202,11 +202,11 @@
      "tense": "past"
     },
     {
-     "text": "내일 갈 거예요.",
-     "romanization": "nae-il gal geo-ye-yo",
-     "highlight": "갈 거예요",
-     "en": "I will go tomorrow.",
-     "tense": "future"
+     "text": "어디 가요?",
+     "romanization": "eo-di ga-yo",
+     "highlight": "가요",
+     "en": "Where are you going?",
+     "tense": "question"
     }
    ]
   },
@@ -223,10 +223,10 @@
      "tense": "future"
     },
     {
-     "text": "Pumunta kami sa mall.",
-     "romanization": "pu-mun-ta ka-mi sa mall",
+     "text": "Pumunta ako sa palengke kahapon.",
+     "romanization": "pu-mun-ta a-ko sa pa-leng-ke ka-ha-pon",
      "highlight": "Pumunta",
-     "en": "We went to the mall.",
+     "en": "I went to the market yesterday.",
      "tense": "past"
     },
     {
@@ -252,7 +252,7 @@
      "romanization": "i-ri wa-yo",
      "highlight": "와요",
      "en": "Come here.",
-     "tense": "present"
+     "tense": "command"
     },
     {
      "text": "친구가 집에 왔어요.",
@@ -276,25 +276,25 @@
    "definition": "to arrive / come (dumating)",
    "examples": [
     {
-     "text": "Dumating na siya.",
-     "romanization": "du-ma-ting na si-ya",
+     "text": "Halika rito.",
+     "romanization": "ha-li-ka ri-to",
+     "highlight": "Halika",
+     "en": "Come here.",
+     "tense": "command"
+    },
+    {
+     "text": "Dumating ang kaibigan ko sa bahay.",
+     "romanization": "du-ma-ting ang ka-i-bi-gan ko sa ba-hay",
      "highlight": "Dumating",
-     "en": "He has arrived.",
+     "en": "My friend came over.",
      "tense": "past"
     },
     {
-     "text": "Darating ang bisita bukas.",
-     "romanization": "da-ra-ting ang bi-si-ta bu-kas",
-     "highlight": "Darating",
-     "en": "The guest will come tomorrow.",
+     "text": "Kailan ka darating?",
+     "romanization": "ka-i-lan ka da-ra-ting",
+     "highlight": "darating",
+     "en": "When will you come?",
      "tense": "future"
-    },
-    {
-     "text": "Dumarating ang bus.",
-     "romanization": "du-ma-ra-ting ang bus",
-     "highlight": "Dumarating",
-     "en": "The bus is coming.",
-     "tense": "present"
     }
    ]
   }
@@ -308,11 +308,11 @@
    "definition": "to sleep",
    "examples": [
     {
-     "text": "잘 자요!",
-     "romanization": "jal ja-yo",
+     "text": "이제 자요.",
+     "romanization": "i-je ja-yo",
      "highlight": "자요",
-     "en": "Sleep well!",
-     "tense": "polite"
+     "en": "Go to sleep now.",
+     "tense": "command"
     },
     {
      "text": "어젯밤에 늦게 잤어요.",
@@ -322,11 +322,11 @@
      "tense": "past"
     },
     {
-     "text": "이제 잘 거예요.",
-     "romanization": "i-je jal geo-ye-yo",
-     "highlight": "잘 거예요",
-     "en": "I'm going to sleep now.",
-     "tense": "future"
+     "text": "아이가 아직 자요.",
+     "romanization": "a-i-ga a-jik ja-yo",
+     "highlight": "자요",
+     "en": "The child is still sleeping.",
+     "tense": "present"
     }
    ]
   },
@@ -343,10 +343,10 @@
      "tense": "command"
     },
     {
-     "text": "Natulog ako nang maaga.",
-     "romanization": "na-tu-log a-ko nang ma-a-ga",
+     "text": "Natulog ako nang late kagabi.",
+     "romanization": "na-tu-log a-ko nang la-te ka-ga-bi",
      "highlight": "Natulog",
-     "en": "I slept early.",
+     "en": "I slept late last night.",
      "tense": "past"
     },
     {
@@ -368,13 +368,6 @@
    "definition": "to see; to watch",
    "examples": [
     {
-     "text": "영화 봐요.",
-     "romanization": "yeong-hwa bwa-yo",
-     "highlight": "봐요",
-     "en": "I watch a movie.",
-     "tense": "present"
-    },
-    {
      "text": "그거 봤어요?",
      "romanization": "geu-geo bwa-sseo-yo",
      "highlight": "봤어요",
@@ -387,6 +380,13 @@
      "highlight": "봐요",
      "en": "See you tomorrow!",
      "tense": "polite"
+    },
+    {
+     "text": "영화 봐요.",
+     "romanization": "yeong-hwa bwa-yo",
+     "highlight": "봐요",
+     "en": "I'm watching a movie.",
+     "tense": "present"
     }
    ]
   },
@@ -396,10 +396,10 @@
    "definition": "to see (makita)",
    "examples": [
     {
-     "text": "Nakita mo ba?",
-     "romanization": "na-ki-ta mo ba",
+     "text": "Nakita mo ba iyon?",
+     "romanization": "na-ki-ta mo ba i-yon",
      "highlight": "Nakita",
-     "en": "Did you see it?",
+     "en": "Did you see that?",
      "tense": "past"
     },
     {
@@ -407,13 +407,13 @@
      "romanization": "ki-ta ta-yo bu-kas",
      "highlight": "Kita",
      "en": "See you tomorrow!",
-     "tense": "future"
+     "tense": "polite"
     },
     {
-     "text": "Nakikita kita.",
-     "romanization": "na-ki-ki-ta ki-ta",
-     "highlight": "Nakikita",
-     "en": "I can see you.",
+     "text": "Nanonood ako ng pelikula.",
+     "romanization": "na-no-no-od a-ko ng pe-li-ku-la",
+     "highlight": "Nanonood",
+     "en": "I'm watching a movie.",
      "tense": "present"
     }
    ]
@@ -435,18 +435,18 @@
      "tense": "present"
     },
     {
-     "text": "어릴 때 사과를 좋아했어요.",
-     "romanization": "eo-ril ttae sa-gwa-reul jo-a-hae-sseo-yo",
-     "highlight": "좋아했어요",
-     "en": "I liked apples as a kid.",
-     "tense": "past"
+     "text": "이거 좋아해요?",
+     "romanization": "i-geo jo-a-hae-yo",
+     "highlight": "좋아해요",
+     "en": "Do you like this?",
+     "tense": "question"
     },
     {
-     "text": "뭐 좋아해요?",
-     "romanization": "mwo jo-a-hae-yo",
-     "highlight": "좋아해요",
-     "en": "What do you like?",
-     "tense": "question"
+     "text": "그 영화 좋아했어요.",
+     "romanization": "geu yeong-hwa jo-a-hae-sseo-yo",
+     "highlight": "좋아했어요",
+     "en": "I liked the movie.",
+     "tense": "past"
     }
    ]
   },
@@ -456,10 +456,10 @@
    "definition": "to like / want",
    "examples": [
     {
-     "text": "Gusto ko ng kape.",
-     "romanization": "gus-to ko ng ka-pe",
+     "text": "Gusto ko ang kimchi.",
+     "romanization": "gus-to ko ang kimc-hi",
      "highlight": "Gusto",
-     "en": "I want coffee.",
+     "en": "I like kimchi.",
      "tense": "present"
     },
     {
@@ -495,11 +495,11 @@
      "tense": "question"
     },
     {
-     "text": "도움이 필요했어요.",
-     "romanization": "do-u-mi pi-ryo-hae-sseo-yo",
-     "highlight": "필요했어요",
-     "en": "I needed help.",
-     "tense": "past"
+     "text": "도움이 필요해요.",
+     "romanization": "do-u-mi pi-ryo-hae-yo",
+     "highlight": "필요해요",
+     "en": "I need help.",
+     "tense": "present"
     }
    ]
   },
@@ -509,18 +509,18 @@
    "definition": "to need",
    "examples": [
     {
-     "text": "Kailangan ko ng tulong.",
-     "romanization": "ka-i-la-ngan ko ng tu-long",
-     "highlight": "Kailangan",
-     "en": "I need help.",
-     "tense": "present"
-    },
-    {
      "text": "Ano ang kailangan mo?",
      "romanization": "a-no ang ka-i-la-ngan mo",
      "highlight": "kailangan",
      "en": "What do you need?",
      "tense": "question"
+    },
+    {
+     "text": "Kailangan ko ng tulong.",
+     "romanization": "ka-i-la-ngan ko ng tu-long",
+     "highlight": "Kailangan",
+     "en": "I need help.",
+     "tense": "present"
     }
    ]
   }
@@ -541,10 +541,10 @@
      "tense": "present"
     },
     {
-     "text": "숙제 했어요?",
-     "romanization": "suk-je hae-sseo-yo",
+     "text": "벌써 했어요.",
+     "romanization": "beol-sseo hae-sseo-yo",
      "highlight": "했어요",
-     "en": "Did you do your homework?",
+     "en": "I already did it.",
      "tense": "past"
     },
     {
@@ -594,17 +594,10 @@
    "definition": "to buy",
    "examples": [
     {
-     "text": "빵을 사요.",
-     "romanization": "ppang-eul sa-yo",
-     "highlight": "사요",
-     "en": "I buy bread.",
-     "tense": "present"
-    },
-    {
-     "text": "새 신발을 샀어요.",
-     "romanization": "sae sin-ba-reul sa-sseo-yo",
+     "text": "빵을 샀어요.",
+     "romanization": "ppang-eul sa-sseo-yo",
      "highlight": "샀어요",
-     "en": "I bought new shoes.",
+     "en": "I bought bread.",
      "tense": "past"
     },
     {
@@ -613,6 +606,13 @@
      "highlight": "살 거예요",
      "en": "I'm going to buy milk.",
      "tense": "future"
+    },
+    {
+     "text": "언니가 과일을 사요.",
+     "romanization": "eon-ni-ga gwa-i-reul sa-yo",
+     "highlight": "사요",
+     "en": "She's buying fruit.",
+     "tense": "present"
     }
    ]
   },
@@ -632,7 +632,7 @@
      "text": "Bibili ako ng gatas.",
      "romanization": "bi-bi-li a-ko ng ga-tas",
      "highlight": "Bibili",
-     "en": "I'll buy milk.",
+     "en": "I'm going to buy milk.",
      "tense": "future"
     },
     {
@@ -657,21 +657,21 @@
      "text": "책을 읽어요.",
      "romanization": "chae-geul il-geo-yo",
      "highlight": "읽어요",
-     "en": "I read a book.",
+     "en": "I'm reading a book.",
      "tense": "present"
     },
     {
-     "text": "그 책 읽었어요?",
-     "romanization": "geu chaek il-geo-sseo-yo",
+     "text": "이거 읽었어요?",
+     "romanization": "i-geo il-geo-sseo-yo",
      "highlight": "읽었어요",
-     "en": "Did you read that book?",
+     "en": "Did you read this?",
      "tense": "past"
     },
     {
-     "text": "자기 전에 읽을 거예요.",
-     "romanization": "ja-gi jeo-ne il-geul geo-ye-yo",
+     "text": "이따가 읽을 거예요.",
+     "romanization": "i-tta-ga il-geul geo-ye-yo",
      "highlight": "읽을 거예요",
-     "en": "I'll read before bed.",
+     "en": "I'll read later.",
      "tense": "future"
     }
    ]
@@ -721,18 +721,18 @@
      "tense": "polite"
     },
     {
-     "text": "엄마한테 말했어요.",
-     "romanization": "eom-ma-han-te mal-hae-sseo-yo",
-     "highlight": "말했어요",
-     "en": "I told Mom.",
-     "tense": "past"
+     "text": "언니는 타갈로그어로 말해요.",
+     "romanization": "eon-ni-neun ta-gal-lo-geu-eo-ro mal-hae-yo",
+     "highlight": "말해요",
+     "en": "She speaks Tagalog.",
+     "tense": "present"
     },
     {
-     "text": "한국어로 말해요.",
-     "romanization": "han-gu-geo-ro mal-hae-yo",
-     "highlight": "말해요",
-     "en": "I speak in Korean.",
-     "tense": "present"
+     "text": "선생님이 말했어요.",
+     "romanization": "seon-saeng-ni-mi mal-hae-sseo-yo",
+     "highlight": "말했어요",
+     "en": "The teacher spoke.",
+     "tense": "past"
     }
    ]
   },
@@ -742,11 +742,11 @@
    "definition": "to speak (magsalita)",
    "examples": [
     {
-     "text": "Magsalita ka nang dahan-dahan.",
-     "romanization": "mag-sa-li-ta ka nang da-han-da-han",
+     "text": "Magsalita po kayo nang dahan-dahan.",
+     "romanization": "mag-sa-li-ta po ka-yo nang da-han-da-han",
      "highlight": "Magsalita",
-     "en": "Speak slowly.",
-     "tense": "command"
+     "en": "Please speak slowly.",
+     "tense": "polite"
     },
     {
      "text": "Nagsasalita siya ng Tagalog.",
@@ -756,8 +756,8 @@
      "tense": "present"
     },
     {
-     "text": "Nagsalita na ang guro.",
-     "romanization": "nag-sa-li-ta na ang gu-ro",
+     "text": "Nagsalita ang guro.",
+     "romanization": "nag-sa-li-ta ang gu-ro",
      "highlight": "Nagsalita",
      "en": "The teacher spoke.",
      "tense": "past"
@@ -781,17 +781,17 @@
      "tense": "present"
     },
     {
-     "text": "몰랐어요.",
-     "romanization": "mol-la-sseo-yo",
-     "highlight": "몰랐어요",
-     "en": "I didn't know.",
-     "tense": "past"
+     "text": "몰라요.",
+     "romanization": "mol-la-yo",
+     "highlight": "몰라요",
+     "en": "I don't know.",
+     "tense": "negative"
     },
     {
-     "text": "그 사람 알아요?",
-     "romanization": "geu sa-ram a-ra-yo",
+     "text": "알아요?",
+     "romanization": "a-ra-yo",
      "highlight": "알아요",
-     "en": "Do you know that person?",
+     "en": "Do you know?",
      "tense": "question"
     }
    ]
@@ -841,11 +841,11 @@
      "tense": "present"
     },
     {
-     "text": "많이 사랑했어요.",
-     "romanization": "ma-ni sa-rang-hae-sseo-yo",
-     "highlight": "사랑했어요",
-     "en": "I loved (you) a lot.",
-     "tense": "past"
+     "text": "우리 가족을 사랑해요.",
+     "romanization": "u-ri ga-jo-geul sa-rang-hae-yo",
+     "highlight": "사랑해요",
+     "en": "I love my family.",
+     "tense": "present"
     }
    ]
   },
@@ -867,13 +867,6 @@
      "highlight": "Mahal",
      "en": "I love my family.",
      "tense": "present"
-    },
-    {
-     "text": "Ang mahal nito!",
-     "romanization": "ang ma-hal ni-to",
-     "highlight": "mahal",
-     "en": "This is so expensive!",
-     "tense": "other meaning"
     }
    ]
   }
@@ -894,10 +887,10 @@
      "tense": "polite"
     },
     {
-     "text": "한 시간 기다렸어요.",
-     "romanization": "han si-gan gi-da-ryeo-sseo-yo",
+     "text": "오래 기다렸어요.",
+     "romanization": "o-rae gi-da-ryeo-sseo-yo",
      "highlight": "기다렸어요",
-     "en": "I waited an hour.",
+     "en": "I waited a long time.",
      "tense": "past"
     },
     {
@@ -915,11 +908,11 @@
    "definition": "to wait (maghintay)",
    "examples": [
     {
-     "text": "Hintay lang.",
-     "romanization": "hin-tay lang",
-     "highlight": "Hintay",
-     "en": "Just wait.",
-     "tense": "command"
+     "text": "Sandali lang, hintay ka.",
+     "romanization": "san-da-li lang hin-tay ka",
+     "highlight": "hintay",
+     "en": "Wait a moment.",
+     "tense": "polite"
     },
     {
      "text": "Naghintay ako nang matagal.",
@@ -975,24 +968,24 @@
    "definition": "help (tumulong)",
    "examples": [
     {
-     "text": "Tulungan mo ako.",
-     "romanization": "tu-lu-ngan mo a-ko",
+     "text": "Tulungan mo po ako!",
+     "romanization": "tu-lu-ngan mo po a-ko",
      "highlight": "Tulungan",
-     "en": "Help me.",
-     "tense": "command"
+     "en": "Please help me!",
+     "tense": "polite"
     },
     {
-     "text": "Tumulong siya sa akin.",
-     "romanization": "tu-mu-long si-ya sa a-kin",
-     "highlight": "Tumulong",
-     "en": "He helped me.",
+     "text": "Tinulungan ako ng kaibigan ko.",
+     "romanization": "ti-nu-lu-ngan a-ko ng ka-i-bi-gan ko",
+     "highlight": "Tinulungan",
+     "en": "My friend helped me.",
      "tense": "past"
     },
     {
-     "text": "Tutulong ako bukas.",
-     "romanization": "tu-tu-long a-ko bu-kas",
-     "highlight": "Tutulong",
-     "en": "I'll help tomorrow.",
+     "text": "Tutulungan kita.",
+     "romanization": "tu-tu-lu-ngan ki-ta",
+     "highlight": "Tutulungan",
+     "en": "I'll help you.",
      "tense": "future"
     }
    ]
@@ -1007,10 +1000,10 @@
    "definition": "to work",
    "examples": [
     {
-     "text": "회사에서 일해요.",
-     "romanization": "hoe-sa-e-seo il-hae-yo",
+     "text": "사무실에서 일해요.",
+     "romanization": "sa-mu-si-re-seo il-hae-yo",
      "highlight": "일해요",
-     "en": "I work at a company.",
+     "en": "I work at an office.",
      "tense": "present"
     },
     {
@@ -1038,21 +1031,21 @@
      "text": "Nagtatrabaho ako sa opisina.",
      "romanization": "nag-ta-tra-ba-ho a-ko sa o-pi-si-na",
      "highlight": "Nagtatrabaho",
-     "en": "I work in an office.",
+     "en": "I work at an office.",
      "tense": "present"
     },
     {
-     "text": "Nagtrabaho siya kahapon.",
-     "romanization": "nag-tra-ba-ho si-ya ka-ha-pon",
+     "text": "Nagtrabaho ako hanggang gabi kahapon.",
+     "romanization": "nag-tra-ba-ho a-ko hang-gang ga-bi ka-ha-pon",
      "highlight": "Nagtrabaho",
-     "en": "He worked yesterday.",
+     "en": "I worked late yesterday.",
      "tense": "past"
     },
     {
-     "text": "Magtatrabaho ako bukas.",
-     "romanization": "mag-ta-tra-ba-ho a-ko bu-kas",
+     "text": "Magtatrabaho rin ako bukas.",
+     "romanization": "mag-ta-tra-ba-ho rin a-ko bu-kas",
      "highlight": "Magtatrabaho",
-     "en": "I'll work tomorrow.",
+     "en": "I'll work tomorrow too.",
      "tense": "future"
     }
    ]
@@ -1102,17 +1095,17 @@
      "tense": "present"
     },
     {
-     "text": "Nagluto ako ng adobo.",
-     "romanization": "na-glu-to a-ko ng a-do-bo",
-     "highlight": "Nagluto",
-     "en": "I cooked adobo.",
+     "text": "Ako ang nagluto.",
+     "romanization": "a-ko ang na-glu-to",
+     "highlight": "nagluto",
+     "en": "I cooked.",
      "tense": "past"
     },
     {
-     "text": "Magluluto ako mamaya.",
-     "romanization": "ma-glu-lu-to a-ko ma-ma-ya",
+     "text": "Magluluto ako mamayang gabi.",
+     "romanization": "ma-glu-lu-to a-ko ma-ma-yang ga-bi",
      "highlight": "Magluluto",
-     "en": "I'll cook later.",
+     "en": "I'll cook tonight.",
      "tense": "future"
     }
    ]
@@ -1127,17 +1120,17 @@
    "definition": "cooked rice; a meal",
    "examples": [
     {
-     "text": "밥 먹었어요?",
-     "romanization": "bap meo-geo-sseo-yo",
+     "text": "밥 먹어요.",
+     "romanization": "bap meo-geo-yo",
      "highlight": "밥",
-     "en": "Have you eaten? (a greeting)",
-     "tense": "past"
+     "en": "Let's eat rice.",
+     "tense": "present"
     },
     {
-     "text": "밥이 맛있어요.",
-     "romanization": "ba-bi ma-si-sseo-yo",
+     "text": "밥 더 주세요.",
+     "romanization": "bap deo ju-se-yo",
      "highlight": "밥",
-     "en": "The rice is tasty.",
+     "en": "I want more rice.",
      "tense": "present"
     }
    ]
@@ -1194,18 +1187,18 @@
    "definition": "food",
    "examples": [
     {
-     "text": "Masarap ang pagkain.",
-     "romanization": "ma-sa-rap ang pag-ka-in",
+     "text": "Gusto mo ba ang pagkaing Koreano?",
+     "romanization": "gus-to mo ba ang pag-ka-ing ko-re-a-no",
      "highlight": "pagkain",
-     "en": "The food is delicious.",
-     "tense": "present"
+     "en": "Do you like Korean food?",
+     "tense": "question"
     },
     {
-     "text": "Saan tayo bibili ng pagkain?",
-     "romanization": "sa-an ta-yo bi-bi-li ng pag-ka-in",
+     "text": "Masarap ang pagkain kanina.",
+     "romanization": "ma-sa-rap ang pag-ka-in ka-ni-na",
      "highlight": "pagkain",
-     "en": "Where will we buy food?",
-     "tense": "future"
+     "en": "The food was delicious.",
+     "tense": "past"
     }
    ]
   }
@@ -1226,11 +1219,18 @@
      "tense": "present"
     },
     {
-     "text": "어제 그 피자 맛있었어요.",
-     "romanization": "eo-je geu pi-ja ma-si-sseo-sseo-yo",
-     "highlight": "맛있었어요",
-     "en": "That pizza yesterday was tasty.",
-     "tense": "past"
+     "text": "맛있어요?",
+     "romanization": "ma-si-sseo-yo",
+     "highlight": "맛있어요",
+     "en": "Is it delicious?",
+     "tense": "question"
+    },
+    {
+     "text": "요리가 맛있어요.",
+     "romanization": "yo-ri-ga ma-si-sseo-yo",
+     "highlight": "맛있어요",
+     "en": "Your cooking is delicious.",
+     "tense": "present"
     }
    ]
   },
@@ -1240,10 +1240,10 @@
    "definition": "delicious",
    "examples": [
     {
-     "text": "Ang sarap!",
-     "romanization": "ang sa-rap",
+     "text": "Ang sarap talaga!",
+     "romanization": "ang sa-rap ta-la-ga",
      "highlight": "sarap",
-     "en": "So tasty!",
+     "en": "It's really delicious!",
      "tense": "present"
     },
     {
@@ -1293,17 +1293,17 @@
    "definition": "coffee",
    "examples": [
     {
-     "text": "Magkape tayo.",
-     "romanization": "mag-ka-pe ta-yo",
-     "highlight": "Magkape",
-     "en": "Let's have coffee.",
-     "tense": "present"
+     "text": "Isang kape po.",
+     "romanization": "i-sang ka-pe po",
+     "highlight": "kape",
+     "en": "One coffee, please.",
+     "tense": "polite"
     },
     {
-     "text": "Uminom ako ng kape kanina.",
-     "romanization": "u-mi-nom a-ko ng ka-pe ka-ni-na",
+     "text": "Uminom ako ng kape kaninang umaga.",
+     "romanization": "u-mi-nom a-ko ng ka-pe ka-ni-nang u-ma-ga",
      "highlight": "kape",
-     "en": "I drank coffee earlier.",
+     "en": "I drank coffee this morning.",
      "tense": "past"
     }
    ]
@@ -1325,10 +1325,10 @@
      "tense": "present"
     },
     {
-     "text": "집에 있었어요.",
-     "romanization": "ji-be i-sseo-sseo-yo",
+     "text": "어제 집에 있었어요.",
+     "romanization": "eo-je ji-be i-sseo-sseo-yo",
      "highlight": "집",
-     "en": "I was at home.",
+     "en": "I was at home yesterday.",
      "tense": "past"
     }
    ]
@@ -1342,14 +1342,14 @@
      "text": "Uuwi na ako sa bahay.",
      "romanization": "u-u-wi na a-ko sa ba-hay",
      "highlight": "bahay",
-     "en": "I'm going home now.",
-     "tense": "future"
+     "en": "I'm going home.",
+     "tense": "present"
     },
     {
      "text": "Nasa bahay ako kahapon.",
      "romanization": "na-sa ba-hay a-ko ka-ha-pon",
      "highlight": "bahay",
-     "en": "I was home yesterday.",
+     "en": "I was at home yesterday.",
      "tense": "past"
     }
    ]
@@ -1364,18 +1364,18 @@
    "definition": "school",
    "examples": [
     {
-     "text": "학교에 가요.",
-     "romanization": "hak-gyo-e ga-yo",
+     "text": "학교에 다녀요.",
+     "romanization": "hak-gyo-e da-nyeo-yo",
      "highlight": "학교",
      "en": "I go to school.",
      "tense": "present"
     },
     {
-     "text": "학교가 끝났어요.",
-     "romanization": "hak-gyo-ga kkeun-na-sseo-yo",
+     "text": "학교가 가까워요.",
+     "romanization": "hak-gyo-ga ga-kka-wo-yo",
      "highlight": "학교",
-     "en": "School is over.",
-     "tense": "past"
+     "en": "The school is close.",
+     "tense": "present"
     }
    ]
   },
@@ -1388,7 +1388,7 @@
      "text": "Pumapasok ako sa paaralan.",
      "romanization": "pu-ma-pa-sok a-ko sa pa-a-ra-lan",
      "highlight": "paaralan",
-     "en": "I attend school.",
+     "en": "I go to school.",
      "tense": "present"
     },
     {
@@ -1434,14 +1434,14 @@
      "text": "Siya ang kaibigan ko.",
      "romanization": "si-ya ang ka-i-bi-gan ko",
      "highlight": "kaibigan",
-     "en": "She is my friend.",
+     "en": "This is my friend.",
      "tense": "present"
     },
     {
-     "text": "Nakita ko ang kaibigan ko.",
-     "romanization": "na-ki-ta ko ang ka-i-bi-gan ko",
+     "text": "Nakipagkita ako sa kaibigan.",
+     "romanization": "na-ki-pag-ki-ta a-ko sa ka-i-bi-gan",
      "highlight": "kaibigan",
-     "en": "I saw my friend.",
+     "en": "I met a friend.",
      "tense": "past"
     }
    ]
@@ -1463,11 +1463,11 @@
      "tense": "question"
     },
     {
-     "text": "가족이랑 여행 갔어요.",
-     "romanization": "ga-jo-gi-rang yeo-haeng ga-sseo-yo",
+     "text": "가족이랑 같이 있어요.",
+     "romanization": "ga-jo-gi-rang ga-chi i-sseo-yo",
      "highlight": "가족",
-     "en": "I traveled with family.",
-     "tense": "past"
+     "en": "I'm with my family.",
+     "tense": "present"
     }
    ]
   },
@@ -1477,11 +1477,11 @@
    "definition": "family",
    "examples": [
     {
-     "text": "Mahal ko ang pamilya ko.",
-     "romanization": "ma-hal ko ang pa-mil-ya ko",
+     "text": "Ilan kayo sa pamilya?",
+     "romanization": "i-lan ka-yo sa pa-mil-ya",
      "highlight": "pamilya",
-     "en": "I love my family.",
-     "tense": "present"
+     "en": "How many are in your family?",
+     "tense": "question"
     },
     {
      "text": "Kasama ko ang pamilya ko.",
@@ -1502,11 +1502,11 @@
    "definition": "mom",
    "examples": [
     {
-     "text": "엄마, 배고파요.",
-     "romanization": "eom-ma bae-go-pa-yo",
+     "text": "엄마 어디 있어요?",
+     "romanization": "eom-ma eo-di i-sseo-yo",
      "highlight": "엄마",
-     "en": "Mom, I'm hungry.",
-     "tense": "present"
+     "en": "Where is Mom?",
+     "tense": "question"
     },
     {
      "text": "엄마가 전화했어요.",
@@ -1555,10 +1555,10 @@
      "tense": "present"
     },
     {
-     "text": "아빠가 사 줬어요.",
-     "romanization": "a-ppa-ga sa jwo-sseo-yo",
+     "text": "아빠가 이거 샀어요.",
+     "romanization": "a-ppa-ga i-geo sa-sseo-yo",
      "highlight": "아빠",
-     "en": "Dad bought it for me.",
+     "en": "Dad bought this.",
      "tense": "past"
     }
    ]
@@ -1601,11 +1601,11 @@
      "tense": "question"
     },
     {
-     "text": "오늘 바빴어요.",
-     "romanization": "o-neul ba-ppa-sseo-yo",
+     "text": "오늘 기분이 좋아요.",
+     "romanization": "o-neul gi-bu-ni jo-a-yo",
      "highlight": "오늘",
-     "en": "I was busy today.",
-     "tense": "past"
+     "en": "I'm happy today.",
+     "tense": "present"
     }
    ]
   },
@@ -1618,8 +1618,8 @@
      "text": "Ano ang gagawin mo ngayon?",
      "romanization": "a-no ang ga-ga-win mo nga-yon",
      "highlight": "ngayon",
-     "en": "What will you do today?",
-     "tense": "future"
+     "en": "What are you doing today?",
+     "tense": "question"
     },
     {
      "text": "Masaya ako ngayon.",
@@ -1643,7 +1643,7 @@
      "text": "내일 만나요.",
      "romanization": "nae-il man-na-yo",
      "highlight": "내일",
-     "en": "Let's meet tomorrow.",
+     "en": "See you tomorrow.",
      "tense": "future"
     },
     {
@@ -1668,10 +1668,10 @@
      "tense": "future"
     },
     {
-     "text": "Aalis ako bukas.",
-     "romanization": "a-a-lis a-ko bu-kas",
+     "text": "Uulan bukas.",
+     "romanization": "u-u-lan bu-kas",
      "highlight": "bukas",
-     "en": "I'm leaving tomorrow.",
+     "en": "It will rain tomorrow.",
      "tense": "future"
     }
    ]
@@ -1693,10 +1693,10 @@
      "tense": "past"
     },
     {
-     "text": "어제 피곤했어요.",
-     "romanization": "eo-je pi-gon-hae-sseo-yo",
+     "text": "어제 비가 왔어요.",
+     "romanization": "eo-je bi-ga wa-sseo-yo",
      "highlight": "어제",
-     "en": "I was tired yesterday.",
+     "en": "It rained yesterday.",
      "tense": "past"
     }
    ]
@@ -1732,11 +1732,11 @@
    "definition": "now",
    "examples": [
     {
-     "text": "지금 어디예요?",
-     "romanization": "ji-geum eo-di-ye-yo",
+     "text": "지금 가요!",
+     "romanization": "ji-geum ga-yo",
      "highlight": "지금",
-     "en": "Where are you now?",
-     "tense": "question"
+     "en": "Let's go now!",
+     "tense": "present"
     },
     {
      "text": "지금 갈게요.",
@@ -1760,11 +1760,11 @@
      "tense": "present"
     },
     {
-     "text": "Kumain na ako.",
-     "romanization": "ku-ma-in na a-ko",
+     "text": "Aalis na ako.",
+     "romanization": "a-a-lis na a-ko",
      "highlight": "na",
-     "en": "I've already eaten.",
-     "tense": "past"
+     "en": "I'll go now.",
+     "tense": "future"
     }
    ]
   }
@@ -1778,18 +1778,18 @@
    "definition": "time; hour",
    "examples": [
     {
-     "text": "시간 있어요?",
-     "romanization": "si-gan i-sseo-yo",
-     "highlight": "시간",
-     "en": "Do you have time?",
+     "text": "지금 몇 시예요?",
+     "romanization": "ji-geum myeot si-ye-yo",
+     "highlight": "시",
+     "en": "What time is it?",
      "tense": "question"
     },
     {
-     "text": "시간이 없었어요.",
-     "romanization": "si-ga-ni eop-seo-sseo-yo",
+     "text": "시간이 없어요.",
+     "romanization": "si-ga-ni eop-seo-yo",
      "highlight": "시간",
-     "en": "I didn't have time.",
-     "tense": "past"
+     "en": "I don't have time.",
+     "tense": "negative"
     }
    ]
   },
@@ -1824,17 +1824,17 @@
    "definition": "good; nice",
    "examples": [
     {
-     "text": "날씨가 좋아요.",
-     "romanization": "nal-ssi-ga jo-a-yo",
+     "text": "좋아요.",
+     "romanization": "jo-a-yo",
      "highlight": "좋아요",
-     "en": "The weather is nice.",
+     "en": "That's good.",
      "tense": "present"
     },
     {
-     "text": "좋았어요!",
-     "romanization": "jo-a-sseo-yo",
+     "text": "오늘 하루 좋았어요.",
+     "romanization": "o-neul ha-ru jo-a-sseo-yo",
      "highlight": "좋았어요",
-     "en": "It was good!",
+     "en": "My day was good.",
      "tense": "past"
     }
    ]
@@ -1845,17 +1845,17 @@
    "definition": "good; well (also: maganda)",
    "examples": [
     {
-     "text": "Mabuti naman ako.",
-     "romanization": "ma-bu-ti na-man a-ko",
+     "text": "Mabuti iyan.",
+     "romanization": "ma-bu-ti i-yan",
      "highlight": "Mabuti",
-     "en": "I'm doing well.",
+     "en": "That's good.",
      "tense": "present"
     },
     {
-     "text": "Mabuti at dumating ka.",
-     "romanization": "ma-bu-ti at du-ma-ting ka",
-     "highlight": "Mabuti",
-     "en": "Good that you came.",
+     "text": "Naging mabuti ang araw ko.",
+     "romanization": "na-ging ma-bu-ti ang a-raw ko",
+     "highlight": "mabuti",
+     "en": "My day was good.",
      "tense": "past"
     }
    ]
@@ -1870,10 +1870,10 @@
    "definition": "pretty",
    "examples": [
     {
-     "text": "정말 예뻐요.",
+     "text": "정말 예뻐요!",
      "romanization": "jeong-mal ye-ppeo-yo",
      "highlight": "예뻐요",
-     "en": "It's really pretty.",
+     "en": "You're so pretty!",
      "tense": "present"
     },
     {
@@ -1894,15 +1894,15 @@
      "text": "Ang ganda mo!",
      "romanization": "ang gan-da mo",
      "highlight": "ganda",
-     "en": "You're so beautiful!",
+     "en": "You're so pretty!",
      "tense": "present"
     },
     {
-     "text": "Maganda ang araw ngayon.",
-     "romanization": "ma-gan-da ang a-raw nga-yon",
+     "text": "Maganda ang mga bulaklak.",
+     "romanization": "ma-gan-da ang mga bu-la-klak",
      "highlight": "Maganda",
-     "en": "It's a beautiful day.",
-     "tense": "present"
+     "en": "The flowers were pretty.",
+     "tense": "past"
     }
    ]
   }
@@ -1937,17 +1937,17 @@
    "definition": "big",
    "examples": [
     {
-     "text": "Malaki ang bahay nila.",
-     "romanization": "ma-la-ki ang ba-hay ni-la",
+     "text": "Malaki ang bahay na ito.",
+     "romanization": "ma-la-ki ang ba-hay na i-to",
      "highlight": "Malaki",
-     "en": "Their house is big.",
+     "en": "This house is big.",
      "tense": "present"
     },
     {
-     "text": "Lumaki na ang bata.",
-     "romanization": "lu-ma-ki na ang ba-ta",
+     "text": "Lumaki na nang husto ang bata.",
+     "romanization": "lu-ma-ki na nang hus-to ang ba-ta",
      "highlight": "Lumaki",
-     "en": "The child has grown.",
+     "en": "The child grew a lot.",
      "tense": "past"
     }
    ]
@@ -1983,17 +1983,17 @@
    "definition": "small",
    "examples": [
     {
-     "text": "Maliit ang bag ko.",
-     "romanization": "ma-li-it ang bag ko",
+     "text": "Maliit ang bag.",
+     "romanization": "ma-li-it ang bag",
      "highlight": "Maliit",
-     "en": "My bag is small.",
+     "en": "The bag is small.",
      "tense": "present"
     },
     {
-     "text": "Maliit pa siya noon.",
-     "romanization": "ma-li-it pa si-ya no-on",
+     "text": "Maliit pala ang sapatos.",
+     "romanization": "ma-li-it pa-la ang sa-pa-tos",
      "highlight": "Maliit",
-     "en": "He was still small then.",
+     "en": "The shoes were small.",
      "tense": "past"
     }
    ]
@@ -2032,15 +2032,15 @@
      "text": "Ang init ngayon!",
      "romanization": "ang i-nit nga-yon",
      "highlight": "init",
-     "en": "It's so hot today!",
+     "en": "It's so hot today.",
      "tense": "present"
     },
     {
-     "text": "Mainit ang kape.",
-     "romanization": "ma-i-nit ang ka-pe",
+     "text": "Mainit kahapon.",
+     "romanization": "ma-i-nit ka-ha-pon",
      "highlight": "Mainit",
-     "en": "The coffee is hot.",
-     "tense": "present"
+     "en": "It was hot yesterday.",
+     "tense": "past"
     }
    ]
   }
@@ -2075,18 +2075,18 @@
    "definition": "cold",
    "examples": [
     {
-     "text": "Malamig dito.",
-     "romanization": "ma-la-mig di-to",
+     "text": "Malamig sa labas.",
+     "romanization": "ma-la-mig sa la-bas",
      "highlight": "Malamig",
-     "en": "It's cold here.",
+     "en": "It's cold outside.",
      "tense": "present"
     },
     {
-     "text": "Gusto ko ng malamig na tubig.",
-     "romanization": "gus-to ko ng ma-la-mig na tu-big",
-     "highlight": "malamig",
-     "en": "I want cold water.",
-     "tense": "present"
+     "text": "Malamig kagabi.",
+     "romanization": "ma-la-mig ka-ga-bi",
+     "highlight": "Malamig",
+     "en": "It was cold last night.",
+     "tense": "past"
     }
    ]
   }
@@ -2121,17 +2121,17 @@
    "definition": "happy; fun",
    "examples": [
     {
-     "text": "Masaya ako.",
-     "romanization": "ma-sa-ya a-ko",
+     "text": "Masaya ako ngayon.",
+     "romanization": "ma-sa-ya a-ko nga-yon",
      "highlight": "Masaya",
-     "en": "I'm happy.",
+     "en": "I'm happy now.",
      "tense": "present"
     },
     {
-     "text": "Masaya ang party kagabi.",
-     "romanization": "ma-sa-ya ang party ka-ga-bi",
+     "text": "Masayang-masaya ako noon.",
+     "romanization": "ma-sa-yang-ma-sa-ya a-ko no-on",
      "highlight": "Masaya",
-     "en": "The party last night was fun.",
+     "en": "I was really happy then.",
      "tense": "past"
     }
    ]
@@ -2153,11 +2153,11 @@
      "tense": "present"
     },
     {
-     "text": "어제 피곤했어요.",
-     "romanization": "eo-je pi-gon-hae-sseo-yo",
-     "highlight": "피곤했어요",
-     "en": "I was tired yesterday.",
-     "tense": "past"
+     "text": "피곤해요?",
+     "romanization": "pi-gon-hae-yo",
+     "highlight": "피곤해요",
+     "en": "Are you tired?",
+     "tense": "question"
     }
    ]
   },
@@ -2167,10 +2167,10 @@
    "definition": "tired",
    "examples": [
     {
-     "text": "Pagod na ako.",
-     "romanization": "pa-god na a-ko",
+     "text": "Pagod na pagod ako.",
+     "romanization": "pa-god na pa-god a-ko",
      "highlight": "Pagod",
-     "en": "I'm tired now.",
+     "en": "I'm so tired.",
      "tense": "present"
     },
     {
@@ -2199,11 +2199,11 @@
      "tense": "present"
     },
     {
-     "text": "아까 배고팠어요.",
-     "romanization": "a-kka bae-go-pa-sseo-yo",
-     "highlight": "배고팠어요",
-     "en": "I was hungry earlier.",
-     "tense": "past"
+     "text": "배고파요?",
+     "romanization": "bae-go-pa-yo",
+     "highlight": "배고파요",
+     "en": "Are you hungry?",
+     "tense": "question"
     }
    ]
   },
@@ -2216,13 +2216,13 @@
      "text": "Gutom na ako.",
      "romanization": "gu-tom na a-ko",
      "highlight": "Gutom",
-     "en": "I'm hungry now.",
+     "en": "I'm hungry.",
      "tense": "present"
     },
     {
-     "text": "Nagugutom ka ba?",
-     "romanization": "na-gu-gu-tom ka ba",
-     "highlight": "Nagugutom",
+     "text": "Gutom ka ba?",
+     "romanization": "gu-tom ka ba",
+     "highlight": "Gutom",
      "en": "Are you hungry?",
      "tense": "question"
     }
@@ -2245,10 +2245,10 @@
      "tense": "question"
     },
     {
-     "text": "얼마였어요?",
-     "romanization": "eol-ma-yeo-sseo-yo",
+     "text": "얼마 냈어요?",
+     "romanization": "eol-ma nae-sseo-yo",
      "highlight": "얼마",
-     "en": "How much was it?",
+     "en": "How much did you pay?",
      "tense": "past"
     }
    ]
@@ -2305,18 +2305,18 @@
    "definition": "where (nasaan = where is)",
    "examples": [
     {
-     "text": "Saan ka pupunta?",
-     "romanization": "sa-an ka pu-pun-ta",
+     "text": "Saan ang banyo?",
+     "romanization": "sa-an ang ban-yo",
      "highlight": "Saan",
-     "en": "Where are you going?",
-     "tense": "future"
-    },
-    {
-     "text": "Nasaan ang banyo?",
-     "romanization": "na-sa-an ang ban-yo",
-     "highlight": "Nasaan",
      "en": "Where is the bathroom?",
      "tense": "question"
+    },
+    {
+     "text": "Saan ka pumunta?",
+     "romanization": "sa-an ka pu-mun-ta",
+     "highlight": "Saan",
+     "en": "Where did you go?",
+     "tense": "past"
     }
    ]
   }
@@ -2376,17 +2376,17 @@
    "definition": "yes (polite)",
    "examples": [
     {
-     "text": "네, 알겠어요.",
-     "romanization": "ne al-ge-sseo-yo",
+     "text": "네, 좋아요.",
+     "romanization": "ne jo-a-yo",
      "highlight": "네",
-     "en": "Yes, I understand.",
-     "tense": "polite"
+     "en": "Yes, okay.",
+     "tense": "casual"
     },
     {
-     "text": "네, 맞아요.",
-     "romanization": "ne ma-ja-yo",
+     "text": "네, 먹었어요.",
+     "romanization": "ne meo-geo-sseo-yo",
      "highlight": "네",
-     "en": "Yes, that's right.",
+     "en": "Yes, I've eaten.",
      "tense": "polite"
     }
    ]
@@ -2401,13 +2401,13 @@
      "romanization": "o-o si-ge",
      "highlight": "Oo",
      "en": "Yes, okay.",
-     "tense": "present"
+     "tense": "casual"
     },
     {
      "text": "Opo, kumain na po ako.",
      "romanization": "o-po ku-ma-in na po a-ko",
      "highlight": "Opo",
-     "en": "Yes, I've eaten (polite).",
+     "en": "Yes, I've eaten.",
      "tense": "polite"
     }
    ]
@@ -2425,7 +2425,7 @@
      "text": "아니요, 괜찮아요.",
      "romanization": "a-ni-yo gwaen-cha-na-yo",
      "highlight": "아니요",
-     "en": "No, I'm okay.",
+     "en": "No, thank you.",
      "tense": "polite"
     },
     {
@@ -2447,13 +2447,13 @@
      "romanization": "hin-di sa-la-mat",
      "highlight": "Hindi",
      "en": "No, thank you.",
-     "tense": "present"
+     "tense": "polite"
     },
     {
-     "text": "Hindi ako kumain.",
-     "romanization": "hin-di a-ko ku-ma-in",
+     "text": "Hindi, hindi ako kumain.",
+     "romanization": "hin-di hin-di a-ko ku-ma-in",
      "highlight": "Hindi",
-     "en": "I didn't eat.",
+     "en": "No, I didn't eat.",
      "tense": "past"
     }
    ]
@@ -2475,11 +2475,11 @@
      "tense": "polite"
     },
     {
-     "text": "고마워요!",
-     "romanization": "go-ma-wo-yo",
-     "highlight": "고마워요",
-     "en": "Thanks! (friendly)",
-     "tense": "casual"
+     "text": "정말 감사합니다.",
+     "romanization": "jeong-mal gam-sa-ham-ni-da",
+     "highlight": "감사합니다",
+     "en": "Thank you very much.",
+     "tense": "polite"
     }
    ]
   },
@@ -2492,14 +2492,14 @@
      "text": "Salamat sa tulong mo.",
      "romanization": "sa-la-mat sa tu-long mo",
      "highlight": "Salamat",
-     "en": "Thanks for your help.",
-     "tense": "present"
+     "en": "Thank you for helping.",
+     "tense": "polite"
     },
     {
      "text": "Maraming salamat po.",
      "romanization": "ma-ra-ming sa-la-mat po",
      "highlight": "salamat",
-     "en": "Thank you very much (polite).",
+     "en": "Thank you very much.",
      "tense": "polite"
     }
    ]
@@ -2535,18 +2535,18 @@
    "definition": "hello; how are you",
    "examples": [
     {
-     "text": "Kumusta ka?",
-     "romanization": "ku-mus-ta ka",
+     "text": "Kumusta, ikinagagalak kitang makilala!",
+     "romanization": "ku-mus-ta i-ki-na-ga-ga-lak ki-tang ma-ki-la-la",
      "highlight": "Kumusta",
-     "en": "How are you?",
-     "tense": "question"
+     "en": "Hello, nice to meet you!",
+     "tense": "polite"
     },
     {
-     "text": "Kumusta po kayo?",
-     "romanization": "ku-mus-ta po ka-yo",
+     "text": "Kumusta!",
+     "romanization": "ku-mus-ta",
      "highlight": "Kumusta",
-     "en": "How are you? (polite)",
-     "tense": "polite"
+     "en": "Hi! (casual)",
+     "tense": "casual"
     }
    ]
   }
@@ -2567,11 +2567,11 @@
      "tense": "polite"
     },
     {
-     "text": "늦어서 죄송합니다.",
-     "romanization": "neu-jeo-seo joe-song-ham-ni-da",
-     "highlight": "죄송합니다",
-     "en": "Sorry I'm late. (formal)",
-     "tense": "formal"
+     "text": "늦어서 미안해요.",
+     "romanization": "neu-jeo-seo mi-an-hae-yo",
+     "highlight": "미안해요",
+     "en": "Sorry I'm late.",
+     "tense": "polite"
     }
    ]
   },
@@ -2584,15 +2584,15 @@
      "text": "Pasensya na.",
      "romanization": "pa-sen-sya na",
      "highlight": "Pasensya",
-     "en": "Sorry about that.",
-     "tense": "present"
+     "en": "I'm sorry.",
+     "tense": "polite"
     },
     {
-     "text": "Pasensya na po, nahuli ako.",
-     "romanization": "pa-sen-sya na po na-hu-li a-ko",
+     "text": "Pasensya na, nahuli ako.",
+     "romanization": "pa-sen-sya na na-hu-li a-ko",
      "highlight": "Pasensya",
-     "en": "Sorry, I was late (polite).",
-     "tense": "past"
+     "en": "Sorry I'm late.",
+     "tense": "polite"
     }
    ]
   }
@@ -2613,11 +2613,11 @@
      "tense": "question"
     },
     {
-     "text": "괜찮았어요.",
-     "romanization": "gwaen-cha-na-sseo-yo",
-     "highlight": "괜찮았어요",
-     "en": "It was okay.",
-     "tense": "past"
+     "text": "저는 괜찮아요.",
+     "romanization": "jeo-neun gwaen-cha-na-yo",
+     "highlight": "괜찮아요",
+     "en": "I'm okay.",
+     "tense": "present"
     }
    ]
   },
@@ -2627,18 +2627,18 @@
    "definition": "okay; fine (ayos lang)",
    "examples": [
     {
-     "text": "Ayos lang ako.",
-     "romanization": "a-yos lang a-ko",
-     "highlight": "Ayos",
-     "en": "I'm okay.",
-     "tense": "present"
-    },
-    {
      "text": "Ayos ka lang ba?",
      "romanization": "a-yos ka lang ba",
      "highlight": "Ayos",
      "en": "Are you okay?",
      "tense": "question"
+    },
+    {
+     "text": "Ayos lang ako.",
+     "romanization": "a-yos lang a-ko",
+     "highlight": "Ayos",
+     "en": "I'm okay.",
+     "tense": "present"
     }
    ]
   }
@@ -2662,7 +2662,7 @@
      "text": "돈을 다 썼어요.",
      "romanization": "do-neul da sseo-sseo-yo",
      "highlight": "돈",
-     "en": "I spent all the money.",
+     "en": "I spent all my money.",
      "tense": "past"
     }
    ]
@@ -2683,7 +2683,7 @@
      "text": "Naubos ang pera ko.",
      "romanization": "na-u-bos ang pe-ra ko",
      "highlight": "pera",
-     "en": "My money ran out.",
+     "en": "I spent all my money.",
      "tense": "past"
     }
    ]
@@ -2710,6 +2710,13 @@
      "highlight": "전화",
      "en": "I called Mom.",
      "tense": "past"
+    },
+    {
+     "text": "이따가 전화할게요.",
+     "romanization": "i-tta-ga jeon-hwa-hal-ge-yo",
+     "highlight": "전화",
+     "en": "I'll call later.",
+     "tense": "future"
     }
    ]
   },
@@ -2719,11 +2726,11 @@
    "definition": "call (tumawag)",
    "examples": [
     {
-     "text": "Tawagan mo ako.",
-     "romanization": "ta-wa-gan mo a-ko",
+     "text": "Tawagan mo po ako.",
+     "romanization": "ta-wa-gan mo po a-ko",
      "highlight": "Tawagan",
-     "en": "Call me.",
-     "tense": "command"
+     "en": "Please call me.",
+     "tense": "polite"
     },
     {
      "text": "Tumawag ako kay Nanay.",
@@ -2751,10 +2758,10 @@
    "definition": "car (also: tea)",
    "examples": [
     {
-     "text": "차가 막혀요.",
-     "romanization": "cha-ga ma-kyeo-yo",
+     "text": "그의 차는 새 차예요.",
+     "romanization": "geu-ui cha-neun sae cha-ye-yo",
      "highlight": "차",
-     "en": "Traffic is jammed.",
+     "en": "His car is new.",
      "tense": "present"
     },
     {
@@ -2779,10 +2786,10 @@
      "tense": "present"
     },
     {
-     "text": "Sumakay kami sa kotse.",
-     "romanization": "su-ma-kay ka-mi sa kot-se",
+     "text": "Bumili ako ng bagong kotse.",
+     "romanization": "bu-mi-li a-ko ng ba-gong kot-se",
      "highlight": "kotse",
-     "en": "We rode in the car.",
+     "en": "I bought a new car.",
      "tense": "past"
     }
    ]
@@ -2818,18 +2825,18 @@
    "definition": "weather; time/season",
    "examples": [
     {
-     "text": "Maganda ang panahon ngayon.",
-     "romanization": "ma-gan-da ang pa-na-hon nga-yon",
+     "text": "Kumusta ang panahon ngayon?",
+     "romanization": "ku-mus-ta ang pa-na-hon nga-yon",
      "highlight": "panahon",
-     "en": "The weather is nice today.",
-     "tense": "present"
+     "en": "How's the weather today?",
+     "tense": "question"
     },
     {
-     "text": "Uulan daw bukas.",
-     "romanization": "u-u-lan daw bu-kas",
-     "highlight": "Uulan",
-     "en": "They say it'll rain tomorrow.",
-     "tense": "future"
+     "text": "Maganda ang panahon kanina.",
+     "romanization": "ma-gan-da ang pa-na-hon ka-ni-na",
+     "highlight": "panahon",
+     "en": "The weather was nice.",
+     "tense": "past"
     }
    ]
   }
