@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { vocab, sourceSentence, type VocabEntry } from "@/lib/vocab";
 import { LANGS, speak } from "@/lib/speak";
 
@@ -17,14 +17,45 @@ function shuffled<T>(arr: T[]): T[] {
   return a;
 }
 
-export default function WordBank() {
+export default function WordBank({
+  focusId,
+  onFocused,
+  onView,
+  active,
+}: {
+  focusId: string | null;
+  onFocused: () => void;
+  onView: (id: string) => void;
+  active: boolean;
+}) {
   const [filter, setFilter] = useState<Filter>("both");
   const [order, setOrder] = useState<VocabEntry[]>(vocab);
   const [pos, setPos] = useState(0);
   const [flipped, setFlipped] = useState(false);
 
+  if (focusId != null) {
+    const nextOrder = order.some((v) => v.id === focusId) ? order : vocab;
+    const idx = nextOrder.findIndex((v) => v.id === focusId);
+    const nextPos = idx >= 0 ? idx : 0;
+    if (filter !== "both" || order !== nextOrder || pos !== nextPos || flipped) {
+      setFilter("both");
+      setOrder(nextOrder);
+      setPos(nextPos);
+      setFlipped(false);
+    }
+  }
+
+  useEffect(() => {
+    if (focusId != null) onFocused();
+  }, [focusId, onFocused]);
+
   const list = useMemo(() => order.filter((v) => filter === "both" || v.lang === filter), [order, filter]);
-  const card = list[Math.min(pos, list.length - 1)];
+  const card = list[Math.min(pos, Math.max(list.length - 1, 0))];
+
+  useEffect(() => {
+    if (!active || !card) return;
+    onView(card.id);
+  }, [active, card, onView]);
 
   const go = (d: number) => {
     setFlipped(false);
@@ -41,7 +72,7 @@ export default function WordBank() {
     setFlipped(false);
   };
 
-  if (!card) return <p className="text-center text-stone-500">No words yet.</p>;
+  if (!card) return <p className="text-center text-stone-500 dark:text-stone-400">No words yet.</p>;
   const l = LANGS[card.lang];
   const src = sourceSentence(card);
   const flip = () => setFlipped((f) => !f);
@@ -55,7 +86,7 @@ export default function WordBank() {
             type="button"
             aria-pressed={filter === f}
             onClick={() => choose(f)}
-            className={`rounded-full px-4 py-1.5 text-sm font-medium ring-1 ${filter === f ? "bg-teal-600 text-white ring-teal-600" : "bg-white text-stone-700 ring-stone-300"}`}
+            className={`rounded-full px-4 py-1.5 text-sm font-medium ring-1 ${filter === f ? "bg-teal-600 text-white ring-teal-600" : "bg-white text-stone-700 ring-stone-300 dark:bg-stone-800 dark:text-stone-200 dark:ring-stone-600"}`}
           >
             {f === "both" ? "Both" : `${LANGS[f].flag} ${LANGS[f].label}`}
           </button>
@@ -74,13 +105,13 @@ export default function WordBank() {
             flip();
           }
         }}
-        className="flex min-h-64 cursor-pointer select-none flex-col items-center justify-center gap-3 rounded-2xl bg-white/80 p-6 text-center shadow-sm ring-1 ring-stone-200 transition hover:ring-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 active:bg-teal-50/60"
+        className="flex min-h-64 cursor-pointer select-none flex-col items-center justify-center gap-3 rounded-2xl bg-white/80 p-6 text-center shadow-sm ring-1 ring-stone-200 transition hover:ring-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 active:bg-teal-50/60 dark:bg-stone-800 dark:ring-stone-600 dark:hover:ring-teal-700 dark:active:bg-teal-950/60"
       >
-        <p className="text-sm font-medium uppercase tracking-wide text-stone-500">
+        <p className="text-sm font-medium uppercase tracking-wide text-stone-500 dark:text-stone-400">
           {l.flag} {l.label} · {POS[card.pos] ?? card.pos}
         </p>
         <div className="flex items-center gap-3">
-          <h2 className="text-4xl font-semibold text-stone-900">{card.word}</h2>
+          <h2 className="text-4xl font-semibold text-stone-900 dark:text-stone-100">{card.word}</h2>
           <button
             type="button"
             aria-label={`Hear ${card.word}`}
@@ -88,19 +119,19 @@ export default function WordBank() {
               e.stopPropagation();
               speak(card.audio, card.word, l.codes);
             }}
-            className="rounded-full bg-teal-50 p-2 text-2xl ring-1 ring-teal-200 hover:bg-teal-100 active:scale-95"
+            className="rounded-full bg-teal-50 p-2 text-2xl ring-1 ring-teal-200 hover:bg-teal-100 active:scale-95 dark:bg-teal-950 dark:ring-teal-800 dark:hover:bg-teal-900"
           >
             🔊
           </button>
         </div>
         {flipped ? (
           <div className="flex flex-col gap-1">
-            <p className="text-lg italic text-teal-700">{card.romanization}</p>
-            <p className="text-xl text-stone-800">{card.english}</p>
+            <p className="text-lg italic text-teal-700 dark:text-teal-300">{card.romanization}</p>
+            <p className="text-xl text-stone-800 dark:text-stone-100">{card.english}</p>
             {src && (
-              <div className="mt-3 rounded-xl bg-stone-50 p-3 text-left ring-1 ring-stone-200">
-                <p className="text-stone-900">{src.text}</p>
-                <p className="text-sm italic text-stone-500">{src.en}</p>
+              <div className="mt-3 rounded-xl bg-stone-50 p-3 text-left ring-1 ring-stone-200 dark:bg-stone-900 dark:ring-stone-600">
+                <p className="text-stone-900 dark:text-stone-100">{src.text}</p>
+                <p className="text-sm italic text-stone-500 dark:text-stone-400">{src.en}</p>
                 <p className="mt-1 text-xs text-stone-400">from the verb “{src.verb}”</p>
               </div>
             )}
@@ -111,13 +142,13 @@ export default function WordBank() {
       </div>
 
       <div className="flex items-center justify-between">
-        <button type="button" onClick={() => go(-1)} className="rounded-full bg-white px-4 py-2 ring-1 ring-stone-300 active:scale-95">
+        <button type="button" onClick={() => go(-1)} className="rounded-full bg-white px-4 py-2 ring-1 ring-stone-300 active:scale-95 dark:bg-stone-800 dark:text-stone-100 dark:ring-stone-600">
           ← Prev
         </button>
-        <span className="text-sm text-stone-500">
+        <span className="text-sm text-stone-500 dark:text-stone-400">
           {Math.min(pos, list.length - 1) + 1} / {list.length}
         </span>
-        <button type="button" onClick={() => go(1)} className="rounded-full bg-white px-4 py-2 ring-1 ring-stone-300 active:scale-95">
+        <button type="button" onClick={() => go(1)} className="rounded-full bg-white px-4 py-2 ring-1 ring-stone-300 active:scale-95 dark:bg-stone-800 dark:text-stone-100 dark:ring-stone-600">
           Next →
         </button>
       </div>
