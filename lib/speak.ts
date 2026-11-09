@@ -1,6 +1,7 @@
 "use client";
 
 import type { Language } from "@/lib/words";
+import { notifySpeechEnd, notifySpeechStart } from "@/lib/gameAudio";
 
 export const LANGS: Record<Language, { label: string; codes: string[]; flag: string }> = {
   korean: { label: "Korean", codes: ["ko-KR", "ko"], flag: "🇰🇷" },
@@ -38,7 +39,18 @@ export function speak(src: string, text: string, codes: string[]) {
     fell = true;
     speakSynth(text, codes);
   };
-  audio.addEventListener("error", fallback);
-  audio.play().catch(fallback);
+  const ended = () => {
+    if (current !== audio) return;
+    notifySpeechEnd();
+  };
+  audio.addEventListener("ended", ended);
+  audio.addEventListener("error", () => {
+    ended();
+    fallback();
+  });
+  audio.play().then(() => notifySpeechStart()).catch(() => {
+    ended();
+    fallback();
+  });
 }
 
