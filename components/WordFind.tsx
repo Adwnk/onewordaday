@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState, type PointerEvent } from "react";
-import { playFanfare, playLetterTick } from "@/lib/gameAudio";
+import { playFanfare } from "@/lib/gameAudio";
 import { LANGS, speak } from "@/lib/speak";
 import { generateWordFind, sameLine, type Cell, type WordFindPuzzle } from "@/lib/wordFind";
 
@@ -99,7 +99,6 @@ export default function WordFind() {
     const next = [cell];
     selectingRef.current = next;
     setSelecting(next);
-    playLetterTick();
   };
 
   const onGridPointerMove = (e: PointerEvent<HTMLDivElement>) => {
@@ -108,8 +107,6 @@ export default function WordFind() {
     const next = lineTo(prev[0], e.clientX, e.clientY);
     const same = next.length === prev.length && next.every((cell, i) => cell.r === prev[i].r && cell.c === prev[i].c);
     if (same) return;
-    const sameDir = prev.length > 1 && next.length > 1 && next[1].r === prev[1].r && next[1].c === prev[1].c;
-    if (next.length > prev.length || (!sameDir && next.length > 1)) playLetterTick();
     selectingRef.current = next;
     setSelecting(next);
   };

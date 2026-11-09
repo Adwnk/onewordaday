@@ -37,27 +37,38 @@ function canPlace(grid: (string | null)[][], r: number, c: number, dir: Cell, le
   return true;
 }
 
+function shuffled<T>(items: T[]): T[] {
+  const a = [...items];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/** Pick a direction first (all 8 equally likely), then a random start that fits it. */
 function placeWord(grid: (string | null)[][], word: GameWord): Cell[] | null {
   const size = grid.length;
   const letters = word.grid;
-  const starts: { r: number; c: number; dir: Cell }[] = [];
-  for (const dir of DIRS) {
+  for (const dir of shuffled(DIRS)) {
+    const starts: Cell[] = [];
     for (let r = 0; r < size; r++) {
       for (let c = 0; c < size; c++) {
-        if (canPlace(grid, r, c, dir, letters)) starts.push({ r, c, dir });
+        if (canPlace(grid, r, c, dir, letters)) starts.push({ r, c });
       }
     }
+    if (starts.length === 0) continue;
+    const pick = starts[Math.floor(Math.random() * starts.length)];
+    const cells: Cell[] = [];
+    for (let i = 0; i < letters.length; i++) {
+      const rr = pick.r + dir.r * i;
+      const cc = pick.c + dir.c * i;
+      grid[rr][cc] = letters[i];
+      cells.push({ r: rr, c: cc });
+    }
+    return cells;
   }
-  if (starts.length === 0) return null;
-  const pick = starts[Math.floor(Math.random() * starts.length)];
-  const cells: Cell[] = [];
-  for (let i = 0; i < letters.length; i++) {
-    const rr = pick.r + pick.dir.r * i;
-    const cc = pick.c + pick.dir.c * i;
-    grid[rr][cc] = letters[i];
-    cells.push({ r: rr, c: cc });
-  }
-  return cells;
+  return null;
 }
 
 function fillRandom(grid: (string | null)[][]): string[][] {

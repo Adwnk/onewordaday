@@ -7,14 +7,6 @@ const TRACKS = [
   "/audio/music/bach-prelude.mp3",
 ];
 
-const TICKS = [
-  "/audio/sfx/letter-select-0.mp3",
-  "/audio/sfx/letter-select-1.mp3",
-  "/audio/sfx/letter-select-2.mp3",
-  "/audio/sfx/letter-select-3.mp3",
-  "/audio/sfx/letter-select-4.mp3",
-];
-
 const FANFARE = "/audio/sfx/word-found.mp3";
 const FADE = 2.4;
 const MUSIC_VOL = 0.72;
@@ -24,11 +16,9 @@ let ctx: AudioContext | null = null;
 let musicGain: GainNode | null = null;
 let sfxGain: GainNode | null = null;
 let musicBuffers: AudioBuffer[] = [];
-let tickBuffers: AudioBuffer[] = [];
 let fanfareBuffer: AudioBuffer | null = null;
 let musicLoading: Promise<void> | null = null;
 let sfxLoading: Promise<void> | null = null;
-let lastTick: AudioBufferSourceNode | null = null;
 let hidden = false;
 
 let gameRefs = 0;
@@ -37,7 +27,6 @@ let order: number[] = [];
 let trackIndex = 0;
 let current: { source: AudioBufferSourceNode; gain: GainNode } | null = null;
 let nextTimer = 0;
-let tickCursor = 0;
 let speechActive = false;
 
 function audioContext(): AudioContext {
@@ -60,13 +49,11 @@ async function decode(url: string): Promise<AudioBuffer> {
   return audioContext().decodeAudioData(buf.slice(0));
 }
 
-/** Short SFX load on their own so taps never wait on the music beds. */
+/** The fanfare loads on its own so it never waits on the music beds. */
 function ensureSfx(): Promise<void> {
   if (!sfxLoading) {
     sfxLoading = (async () => {
-      const [ticks, fanfare] = await Promise.all([Promise.all(TICKS.map(decode)), decode(FANFARE)]);
-      tickBuffers = ticks;
-      fanfareBuffer = fanfare;
+      fanfareBuffer = await decode(FANFARE);
     })().catch(() => {
       sfxLoading = null;
     });
@@ -201,42 +188,15 @@ export function notifySpeechEnd() {
   musicGain.gain.linearRampToValueAtTime(MUSIC_VOL, now + 0.45);
 }
 
-function playBuffer(buffer: AudioBuffer | null, isTick = false) {
+function playBuffer(buffer: AudioBuffer | null) {
   if (!buffer || !getGameSettings().sfx || hidden) return;
   const ac = audioContext();
   if (ac.state === "suspended") void ac.resume();
   if (!sfxGain) return;
-  if (isTick && lastTick) {
-    // cut the previous tick so fast drags don't pile clips on top of each other
-    try {
-      lastTick.stop();
-    } catch {
-      /* already done */
-    }
-    lastTick = null;
-  }
   const source = ac.createBufferSource();
   source.buffer = buffer;
   source.connect(sfxGain);
   source.start();
-  if (isTick) {
-    lastTick = source;
-    source.onended = () => {
-      if (lastTick === source) lastTick = null;
-    };
-  }
-}
-
-export function playLetterTick() {
-  if (!getGameSettings().sfx) return;
-  if (!tickBuffers.length) {
-    // first tap only kicks off the (tiny) load; never queue a late tick
-    void ensureSfx();
-    return;
-  }
-  const buf = tickBuffers[tickCursor % tickBuffers.length];
-  tickCursor += 1;
-  playBuffer(buf, true);
 }
 
 export function playFanfare() {
