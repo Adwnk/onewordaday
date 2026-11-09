@@ -33,33 +33,50 @@ export default function WordFind() {
     selectingRef.current = null;
   };
 
-  const cellAt = (clientX: number, clientY: number): Cell | null => {
+  /** Fractional grid position (in cells) of a pointer, clamped to the board. */
+  const posAt = (clientX: number, clientY: number) => {
     const el = gridRef.current;
     if (!el) return null;
     const rect = el.getBoundingClientRect();
     const { size } = puzzle;
-    const c = Math.floor(((clientX - rect.left) / rect.width) * size);
-    const r = Math.floor(((clientY - rect.top) / rect.height) * size);
-    if (r < 0 || c < 0 || r >= size || c >= size) return null;
+    const x = ((clientX - rect.left) / rect.width) * size;
+    const y = ((clientY - rect.top) / rect.height) * size;
+    return { x, y };
+  };
+
+  const cellAt = (clientX: number, clientY: number): Cell | null => {
+    const p = posAt(clientX, clientY);
+    if (!p) return null;
+    const c = Math.floor(p.x);
+    const r = Math.floor(p.y);
+    if (r < 0 || c < 0 || r >= puzzle.size || c >= puzzle.size) return null;
     return { r, c };
   };
 
-  const extendSelection = (cells: Cell[], next: Cell): Cell[] => {
-    const already = cells.findIndex((p) => p.r === next.r && p.c === next.c);
-    if (already >= 0) {
-      if (cells.length >= 2 && already === cells.length - 2) return cells.slice(0, -1);
-      return cells;
+  /** Straight line from the start cell toward the finger, snapped to the nearest of 8 directions. */
+  const lineTo = (start: Cell, clientX: number, clientY: number): Cell[] => {
+    const p = posAt(clientX, clientY);
+    if (!p) return [start];
+    const dx = p.x - (start.c + 0.5);
+    const dy = p.y - (start.r + 0.5);
+    const dist = Math.hypot(dx, dy);
+    if (dist < 0.5) return [start];
+    const angle = Math.atan2(dy, dx);
+    const step = Math.round(angle / (Math.PI / 4));
+    const dirC = Math.round(Math.cos(step * (Math.PI / 4)));
+    const dirR = Math.round(Math.sin(step * (Math.PI / 4)));
+    // project the finger onto that direction to get how many cells along
+    const unit = Math.hypot(dirC, dirR);
+    const along = (dx * dirC + dy * dirR) / (unit * unit);
+    const n = Math.max(0, Math.round(along));
+    const { size } = puzzle;
+    const cells: Cell[] = [start];
+    for (let i = 1; i <= n; i++) {
+      const r = start.r + dirR * i;
+      const c = start.c + dirC * i;
+      if (r < 0 || c < 0 || r >= size || c >= size) break;
+      cells.push({ r, c });
     }
-    if (cells.length === 0) return [next];
-    const start = cells[0];
-    if (cells.length === 1) {
-      if (Math.max(Math.abs(next.r - start.r), Math.abs(next.c - start.c)) !== 1) return cells;
-      return [start, next];
-    }
-    const dirR = Math.sign(cells[1].r - start.r);
-    const dirC = Math.sign(cells[1].c - start.c);
-    const last = cells[cells.length - 1];
-    if (next.r === last.r + dirR && next.c === last.c + dirC) return [...cells, next];
     return cells;
   };
 
@@ -86,13 +103,13 @@ export default function WordFind() {
   };
 
   const onGridPointerMove = (e: PointerEvent<HTMLDivElement>) => {
-    if (!selectingRef.current) return;
-    const cell = cellAt(e.clientX, e.clientY);
-    if (!cell) return;
     const prev = selectingRef.current;
-    const next = extendSelection(prev, cell);
-    if (next === prev) return;
-    if (next.length > prev.length) playLetterTick();
+    if (!prev) return;
+    const next = lineTo(prev[0], e.clientX, e.clientY);
+    const same = next.length === prev.length && next.every((cell, i) => cell.r === prev[i].r && cell.c === prev[i].c);
+    if (same) return;
+    const sameDir = prev.length > 1 && next.length > 1 && next[1].r === prev[1].r && next[1].c === prev[1].c;
+    if (next.length > prev.length || (!sameDir && next.length > 1)) playLetterTick();
     selectingRef.current = next;
     setSelecting(next);
   };
@@ -119,25 +136,34 @@ export default function WordFind() {
 
   return (
     <section className="flex flex-col gap-4">
-      <div className="flex flex-wrap gap-2">
-        {puzzle.placed.map((p) => {
-          const isFound = found.has(p.word.id);
-          return (
-            <button
-              key={p.word.id}
-              type="button"
-              onClick={() => onWordTap(p.word.id)}
-              className={`rounded-full px-3 py-1 text-lg font-medium ring-1 ${
-                hintArmed && !isFound
-                  ? "bg-teal-50 ring-teal-300 dark:bg-teal-950 dark:ring-teal-700"
-                  : "bg-white ring-stone-200 dark:bg-stone-800 dark:ring-stone-600"
-              }`}
-              style={isFound ? { color: colorOf(p.word.id), textDecoration: "line-through" } : undefined}
-            >
-              {p.word.korean}
-            </button>
-          );
-        })}
+      <div className="flex flex-col divide-y divide-stone-100 rounded-2xl bg-white/80 px-4 py-1 ring-1 ring-stone-200 dark:divide-stone-700 dark:bg-stone-800 dark:ring-stone-600">
+        {puzzle.groups.map((g) => (
+          <div key={g.label} className="flex items-center gap-3 py-2.5">
+            <p className="w-20 shrink-0 text-[11px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">{g.label}</p>
+            <div className="flex flex-wrap gap-x-2 gap-y-1">
+              {g.ids.map((id) => {
+                const p = puzzle.placed.find((x) => x.word.id === id);
+                if (!p) return null;
+                const isFound = found.has(id);
+                return (
+                  <button
+                    key={id}
+                    type="button"
+                    onClick={() => onWordTap(id)}
+                    className={`rounded-full px-2.5 py-0.5 text-lg font-semibold ${
+                      hintArmed && !isFound
+                        ? "bg-teal-50 ring-1 ring-teal-300 dark:bg-teal-950 dark:ring-teal-700"
+                        : "text-stone-900 dark:text-stone-100"
+                    }`}
+                    style={isFound ? { color: colorOf(id), textDecoration: "line-through", textDecorationThickness: 2 } : undefined}
+                  >
+                    {p.word.korean}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="flex items-center justify-between gap-3">
@@ -171,11 +197,12 @@ export default function WordFind() {
         <p className="text-sm text-teal-700 dark:text-teal-300">Tap a Korean word to circle its next letter.</p>
       )}
 
+      <div className="rounded-2xl bg-white p-3 ring-1 ring-stone-200 dark:bg-stone-800 dark:ring-stone-600">
       <div
         ref={gridRef}
         role="grid"
         aria-label="Word find grid"
-        className="relative aspect-square w-full touch-none select-none overflow-hidden rounded-2xl bg-white ring-1 ring-stone-200 dark:bg-stone-800 dark:ring-stone-600"
+        className="relative aspect-square w-full touch-none select-none"
         onPointerDown={onGridPointerDown}
         onPointerMove={onGridPointerMove}
         onPointerUp={finishSelection}
@@ -207,6 +234,9 @@ export default function WordFind() {
               opacity="0.35"
             />
           )}
+          {selecting && selecting.length === 1 && (
+            <circle cx={selecting[0].c + 0.5} cy={selecting[0].r + 0.5} r="0.36" fill="#0d9488" opacity="0.35" />
+          )}
           {puzzle.placed.map((p) => {
             const n = revealed[p.word.id] ?? 0;
             if (!n || found.has(p.word.id)) return null;
@@ -226,15 +256,17 @@ export default function WordFind() {
         <div className="relative grid h-full w-full" style={{ gridTemplateColumns: `repeat(${puzzle.size}, minmax(0, 1fr))` }}>
           {puzzle.grid.map((row, r) =>
             row.map((ch, c) => (
-              <div key={`${r}-${c}`} role="gridcell" className="grid place-items-center text-sm font-semibold text-stone-800 dark:text-stone-100 sm:text-base">
+              <div key={`${r}-${c}`} role="gridcell" className="grid place-items-center font-bold text-stone-800 dark:text-stone-100"
+                style={{ fontSize: `min(${puzzle.size <= 10 ? 22 : puzzle.size === 11 ? 20 : 18}px, ${Math.round(70 / puzzle.size)}vw)` }}>
                 {ch}
               </div>
             )),
           )}
         </div>
       </div>
+      </div>
 
-      {done && <p className="text-center text-sm font-medium text-teal-700 dark:text-teal-300">Nice — you found every word. Start a new puzzle whenever you like.</p>}
+      {done && <p className="text-center text-sm font-medium text-teal-700 dark:text-teal-300">Nice — you found all nine. Start a new puzzle whenever you like.</p>}
     </section>
   );
 }

@@ -16,6 +16,7 @@ export default function AppTabs({
   onFocusedVocab,
   onViewVocab,
   bankActive,
+  onOpenVerb,
 }: {
   tab: Tab;
   onTab: (tab: Tab) => void;
@@ -27,6 +28,7 @@ export default function AppTabs({
   onFocusedVocab: () => void;
   onViewVocab: (id: string) => void;
   bankActive: boolean;
+  onOpenVerb: (pairIndex: number) => void;
 }) {
   const tabs: [Tab, string][] = [
     ["daily", "📅 Daily verb"],
@@ -57,7 +59,7 @@ export default function AppTabs({
         <DailyWords jumpTo={jumpPair} onJumped={onJumpedPair} onView={onViewPair} active={dailyActive} />
       </div>
       <div hidden={tab !== "bank"}>
-        <WordBank focusId={focusVocab} onFocused={onFocusedVocab} onView={onViewVocab} active={bankActive} />
+        <WordBank focusId={focusVocab} onFocused={onFocusedVocab} onView={onViewVocab} active={bankActive} onOpenVerb={onOpenVerb} />
       </div>
     </div>
   );

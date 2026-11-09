@@ -132,6 +132,7 @@ function Shell() {
           onFocusedVocab={onFocusedVocab}
           onViewVocab={onViewVocab}
           bankActive={view === "main" && tab === "bank"}
+          onOpenVerb={openVerb}
         />
       </div>
 

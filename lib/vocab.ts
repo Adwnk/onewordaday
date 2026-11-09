@@ -24,7 +24,8 @@ export const vocabById: Record<string, VocabEntry> = Object.fromEntries(vocab.ma
 /** The first sentence a vocab word appears in (native text + English). */
 export function sourceSentence(v: VocabEntry) {
   const s = v.sources[0];
-  const pair = pairs.find((p) => p.id === s?.verb);
+  const pairIndex = pairs.findIndex((p) => p.id === s?.verb);
+  const pair = pairIndex >= 0 ? pairs[pairIndex] : undefined;
   const ex = pair?.[v.lang].examples[s.ex];
-  return ex ? { text: ex.text, en: ex.en, verb: pair.english } : null;
+  return ex && pair ? { text: ex.text, en: ex.en, audio: ex.audio, verb: pair.english, pairIndex } : null;
 }

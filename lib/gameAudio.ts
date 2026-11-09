@@ -26,8 +26,10 @@ let sfxGain: GainNode | null = null;
 let musicBuffers: AudioBuffer[] = [];
 let tickBuffers: AudioBuffer[] = [];
 let fanfareBuffer: AudioBuffer | null = null;
-let loaded = false;
-let loading: Promise<void> | null = null;
+let musicLoading: Promise<void> | null = null;
+let sfxLoading: Promise<void> | null = null;
+let lastTick: AudioBufferSourceNode | null = null;
+let hidden = false;
 
 let gameRefs = 0;
 let playing = false;
@@ -58,23 +60,29 @@ async function decode(url: string): Promise<AudioBuffer> {
   return audioContext().decodeAudioData(buf.slice(0));
 }
 
-async function ensureLoaded() {
-  if (loaded) return;
-  if (!loading) {
-    loading = (async () => {
-      audioContext();
-      const [music, ticks, fanfare] = await Promise.all([
-        Promise.all(TRACKS.map(decode)),
-        Promise.all(TICKS.map(decode)),
-        decode(FANFARE),
-      ]);
-      musicBuffers = music;
+/** Short SFX load on their own so taps never wait on the music beds. */
+function ensureSfx(): Promise<void> {
+  if (!sfxLoading) {
+    sfxLoading = (async () => {
+      const [ticks, fanfare] = await Promise.all([Promise.all(TICKS.map(decode)), decode(FANFARE)]);
       tickBuffers = ticks;
       fanfareBuffer = fanfare;
-      loaded = true;
-    })();
+    })().catch(() => {
+      sfxLoading = null;
+    });
   }
-  await loading;
+  return sfxLoading;
+}
+
+function ensureMusic(): Promise<void> {
+  if (!musicLoading) {
+    musicLoading = (async () => {
+      musicBuffers = await Promise.all(TRACKS.map(decode));
+    })().catch(() => {
+      musicLoading = null;
+    });
+  }
+  return musicLoading;
 }
 
 function shuffleOrder() {
@@ -141,10 +149,11 @@ function playTrack(index: number, fadeIn: number) {
 }
 
 async function startPlayback() {
-  if (playing || gameRefs <= 0 || !getGameSettings().music) return;
-  await ensureLoaded();
+  if (playing || hidden || gameRefs <= 0 || !getGameSettings().music) return;
+  await ensureMusic();
+  if (!musicBuffers.length) return;
   await audioContext().resume();
-  if (playing || gameRefs <= 0 || !getGameSettings().music) return;
+  if (playing || hidden || gameRefs <= 0 || !getGameSettings().music) return;
   if (!order.length) shuffleOrder();
   playing = true;
   playTrack(order[trackIndex], 1.2);
@@ -156,12 +165,14 @@ function haltPlayback() {
 }
 
 export function resumeAudio() {
+  if (hidden) return;
   if (ctx && ctx.state === "suspended") void ctx.resume();
   if (gameRefs > 0 && getGameSettings().music && !playing) void startPlayback();
 }
 
 export function enterGameAudio() {
   gameRefs += 1;
+  void ensureSfx();
   void startPlayback();
 }
 
@@ -190,34 +201,78 @@ export function notifySpeechEnd() {
   musicGain.gain.linearRampToValueAtTime(MUSIC_VOL, now + 0.45);
 }
 
-function playBuffer(buffer: AudioBuffer | null) {
-  if (!buffer || !getGameSettings().sfx) return;
+function playBuffer(buffer: AudioBuffer | null, isTick = false) {
+  if (!buffer || !getGameSettings().sfx || hidden) return;
   const ac = audioContext();
-  void ac.resume();
+  if (ac.state === "suspended") void ac.resume();
   if (!sfxGain) return;
+  if (isTick && lastTick) {
+    // cut the previous tick so fast drags don't pile clips on top of each other
+    try {
+      lastTick.stop();
+    } catch {
+      /* already done */
+    }
+    lastTick = null;
+  }
   const source = ac.createBufferSource();
   source.buffer = buffer;
   source.connect(sfxGain);
   source.start();
+  if (isTick) {
+    lastTick = source;
+    source.onended = () => {
+      if (lastTick === source) lastTick = null;
+    };
+  }
 }
 
 export function playLetterTick() {
   if (!getGameSettings().sfx) return;
-  void (async () => {
-    await ensureLoaded();
-    if (!tickBuffers.length) return;
-    const buf = tickBuffers[tickCursor % tickBuffers.length];
-    tickCursor += 1;
-    playBuffer(buf);
-  })();
+  if (!tickBuffers.length) {
+    // first tap only kicks off the (tiny) load; never queue a late tick
+    void ensureSfx();
+    return;
+  }
+  const buf = tickBuffers[tickCursor % tickBuffers.length];
+  tickCursor += 1;
+  playBuffer(buf, true);
 }
 
 export function playFanfare() {
   if (!getGameSettings().sfx) return;
-  void (async () => {
-    await ensureLoaded();
+  if (fanfareBuffer) {
     playBuffer(fanfareBuffer);
-  })();
+    return;
+  }
+  void ensureSfx().then(() => playBuffer(fanfareBuffer));
+}
+
+/** Pause music while the app is in the background; pick it back up on return. */
+function onVisibility() {
+  const nowHidden = document.visibilityState === "hidden";
+  if (nowHidden === hidden) return;
+  hidden = nowHidden;
+  if (hidden) {
+    haltPlayback();
+    if (ctx && ctx.state === "running") void ctx.suspend();
+  } else {
+    if (ctx && ctx.state === "suspended") void ctx.resume();
+    if (gameRefs > 0 && getGameSettings().music) void startPlayback();
+  }
+}
+
+if (typeof document !== "undefined") {
+  hidden = document.visibilityState === "hidden";
+  document.addEventListener("visibilitychange", onVisibility);
+  window.addEventListener("pagehide", () => {
+    hidden = true;
+    haltPlayback();
+  });
+  window.addEventListener("pageshow", () => {
+    hidden = document.visibilityState === "hidden";
+    if (!hidden && gameRefs > 0 && getGameSettings().music) void startPlayback();
+  });
 }
 
 subscribeGameSettings(() => {

@@ -1,4 +1,4 @@
-import { pickGameWords, type GameWord } from "@/lib/gameWords";
+import { pickThemedWords, type GameWord } from "@/lib/gameWords";
 
 export type Cell = { r: number; c: number };
 
@@ -11,6 +11,7 @@ export type WordFindPuzzle = {
   size: number;
   grid: string[][];
   placed: PlacedWord[];
+  groups: { label: string; ids: string[] }[];
 };
 
 const DIRS: Cell[] = [
@@ -64,7 +65,7 @@ function fillRandom(grid: (string | null)[][]): string[][] {
   return grid.map((row) => row.map((ch) => ch ?? letters[Math.floor(Math.random() * letters.length)]));
 }
 
-function tryGenerate(size: number, words: GameWord[]): WordFindPuzzle | null {
+function tryGenerate(size: number, words: GameWord[]): Omit<WordFindPuzzle, "groups"> | null {
   const empty: (string | null)[][] = Array.from({ length: size }, () => Array<string | null>(size).fill(null));
   const placed: PlacedWord[] = [];
   for (const word of words) {
@@ -75,13 +76,17 @@ function tryGenerate(size: number, words: GameWord[]): WordFindPuzzle | null {
   return { size, grid: fillRandom(empty), placed };
 }
 
-export function generateWordFind(count = 10): WordFindPuzzle {
+export function generateWordFind(): WordFindPuzzle {
   for (const size of [10, 11, 12]) {
     for (let attempt = 0; attempt < 40; attempt++) {
-      const words = pickGameWords(count);
-      if (words.length < count) continue;
+      const groups = pickThemedWords(3, 3);
+      if (!groups) continue;
+      // place longest first so they fit, but keep theme order for display
+      const words = groups.flatMap((g) => g.words).sort((a, b) => b.grid.length - a.grid.length);
       const puzzle = tryGenerate(size, words);
-      if (puzzle) return puzzle;
+      if (puzzle) {
+        return { ...puzzle, groups: groups.map((g) => ({ label: g.label, ids: g.words.map((w) => w.id) })) };
+      }
     }
   }
   throw new Error("Could not generate a word-find puzzle");

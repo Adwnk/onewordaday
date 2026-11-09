@@ -22,11 +22,13 @@ export default function WordBank({
   onFocused,
   onView,
   active,
+  onOpenVerb,
 }: {
   focusId: string | null;
   onFocused: () => void;
   onView: (id: string) => void;
   active: boolean;
+  onOpenVerb: (pairIndex: number) => void;
 }) {
   const [filter, setFilter] = useState<Filter>("both");
   const [order, setOrder] = useState<VocabEntry[]>(vocab);
@@ -130,9 +132,32 @@ export default function WordBank({
             <p className="text-xl text-stone-800 dark:text-stone-100">{card.english}</p>
             {src && (
               <div className="mt-3 rounded-xl bg-stone-50 p-3 text-left ring-1 ring-stone-200 dark:bg-stone-900 dark:ring-stone-600">
-                <p className="text-stone-900 dark:text-stone-100">{src.text}</p>
+                <button
+                  type="button"
+                  aria-label={`Hear: ${src.text}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    speak(src.audio, src.text, l.codes);
+                  }}
+                  className="-m-1 flex w-[calc(100%+0.5rem)] items-start gap-2 rounded-lg p-1 text-left hover:bg-teal-50 active:bg-teal-100 dark:hover:bg-teal-950 dark:active:bg-teal-900"
+                >
+                  <span className="flex-1 text-stone-900 dark:text-stone-100">{src.text}</span>
+                  <span aria-hidden className="text-base">🔊</span>
+                </button>
                 <p className="text-sm italic text-stone-500 dark:text-stone-400">{src.en}</p>
-                <p className="mt-1 text-xs text-stone-400">from the verb “{src.verb}”</p>
+                <p className="mt-1 text-xs text-stone-400">
+                  from the verb{" "}
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onOpenVerb(src.pairIndex);
+                    }}
+                    className="font-medium text-teal-700 underline decoration-teal-300 underline-offset-2 dark:text-teal-300 dark:decoration-teal-700"
+                  >
+                    “{src.verb}”
+                  </button>
+                </p>
               </div>
             )}
           </div>

@@ -1,5 +1,5 @@
 import { vocab } from "@/lib/vocab";
-import { pairs } from "@/lib/words";
+import { THEMES } from "@/lib/themes";
 
 export type GameWord = {
   id: string;
@@ -24,23 +24,6 @@ export function toGridWord(english: string): string | null {
   return tokens[tokens.length - 1];
 }
 
-function fromPairs(): GameWord[] {
-  return pairs.flatMap((p) => {
-    const grid = toGridWord(p.english);
-    if (!grid) return [];
-    return [
-      {
-        id: `verb:${p.id}`,
-        korean: p.korean.word,
-        romanization: p.korean.romanization,
-        english: p.english,
-        grid,
-        audio: p.korean.audio,
-      },
-    ];
-  });
-}
-
 function fromVocab(): GameWord[] {
   return vocab.flatMap((v) => {
     if (v.lang !== "korean") return [];
@@ -59,7 +42,8 @@ function fromVocab(): GameWord[] {
   });
 }
 
-export const allGameWords: GameWord[] = [...fromPairs(), ...fromVocab()];
+/** Korean Word Bank words only (no daily verbs). */
+export const allGameWords: GameWord[] = fromVocab();
 
 function shuffle<T>(items: T[]): T[] {
   const a = [...items];
@@ -86,4 +70,37 @@ export function pickGameWords(n: number, excludeId?: string): GameWord[] {
     picked.push(w);
   }
   return picked;
+}
+
+export type ThemeGroup = { label: string; words: GameWord[] };
+
+const byKorean = new Map(allGameWords.map((w) => [w.korean, w]));
+
+/** Themes that resolve to real Word Bank words. */
+export const gameThemes: ThemeGroup[] = THEMES.map((t) => ({
+  label: t.label,
+  words: t.words.map((k) => byKorean.get(k)).filter((w): w is GameWord => !!w),
+})).filter((t) => t.words.length >= 3);
+
+/** Pick `themeCount` themes with `perTheme` words each; no Hangul or grid spelling repeats on one board. */
+export function pickThemedWords(themeCount = 3, perTheme = 3): ThemeGroup[] | null {
+  const usedKo = new Set<string>();
+  const usedGrid = new Set<string>();
+  const groups: ThemeGroup[] = [];
+  for (const theme of shuffle(gameThemes)) {
+    if (groups.length >= themeCount) break;
+    const words: GameWord[] = [];
+    for (const w of shuffle(theme.words)) {
+      if (words.length >= perTheme) break;
+      if (usedKo.has(w.korean) || usedGrid.has(w.grid) || words.some((x) => x.grid === w.grid)) continue;
+      words.push(w);
+    }
+    if (words.length < perTheme) continue;
+    for (const w of words) {
+      usedKo.add(w.korean);
+      usedGrid.add(w.grid);
+    }
+    groups.push({ label: theme.label, words });
+  }
+  return groups.length === themeCount ? groups : null;
 }
