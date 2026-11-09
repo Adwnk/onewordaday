@@ -24,10 +24,48 @@ export function toGridWord(english: string): string | null {
   return tokens[tokens.length - 1];
 }
 
+/**
+ * Hand-picked grid words for multi-word meanings (keyed by Hangul), so the grid never
+ * shows just the last word (e.g. "karaoke room" -> ROOM). null = leave out of the games.
+ */
+const GRID_OVERRIDES: Record<string, string | null> = {
+  노래방: "KARAOKE",
+  어젯밤: "LASTNIGHT",
+  방금: "JUSTNOW",
+  이번: "THISTIME",
+  매일: "EVERYDAY",
+  밤새: "ALLNIGHT",
+  작년: "LASTYEAR",
+  핸드폰: "CELLPHONE",
+  전화번호: "PHONENUM",
+  에어컨: "AIRCON",
+  가스레인지: "GASSTOVE",
+  일주일: "ONEWEEK",
+  언니: "UNNI",
+  치킨: "CHICKEN",
+  김치볶음밥: "FRIEDRICE",
+  전기세: null,
+  조금: null,
+  좀: null,
+  잠깐: null,
+  위: null,
+  많이: null,
+  계속: null,
+  곡: null, // "(song) counter" is a grammar word, not a findable noun
+};
+
+function isMultiWord(english: string): boolean {
+  const s = (english.replace(/^to\s+/i, "").split(";")[0] ?? "").replace(/\(.*?\)/g, "").trim();
+  return s.split(/\s+/).length > 1;
+}
+
 function fromVocab(): GameWord[] {
   return vocab.flatMap((v) => {
     if (v.lang !== "korean") return [];
-    const grid = toGridWord(v.english);
+    let grid: string | null;
+    if (v.word in GRID_OVERRIDES) grid = GRID_OVERRIDES[v.word];
+    else if (isMultiWord(v.english)) grid = null; // never fall back to a fragment
+    else grid = toGridWord(v.english);
     if (!grid) return [];
     return [
       {
